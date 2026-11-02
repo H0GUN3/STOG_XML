@@ -1,0 +1,135 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Reusing configuration cache.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResources
+> Task :app:generateDebugBuildConfig
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:generateDebugResources
+> Task :app:writeDebugAppMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:checkDebugDuplicateClasses
+> Task :app:extractDeepLinksDebug
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:javaPreCompileDebug
+> Task :app:desugarDebugFileDependencies
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:processDebugNavigationResources
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:mergeDebugAssets
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:mergeDebugJniLibFolders
+> Task :app:packageDebugAndroidTestResources
+> Task :app:compileDebugNavigationResources
+> Task :app:compileDebugAndroidTestNavigationResources
+> Task :app:compressDebugAssets
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:checkDebugAarMetadata
+> Task :app:mergeLibDexDebug
+> Task :app:mergeLibDexDebugAndroidTest
+> Task :app:validateSigningDebug
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:processDebugMainManifest
+> Task :app:processDebugAndroidTestManifest
+> Task :app:generateDebugAndroidTestBuildConfig
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:mergeExtDexDebugAndroidTest
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:generateDebugAndroidTestGlobalSynthetics
+> Task :app:processDebugAndroidTestResources
+> Task :app:mergeDebugJavaResource
+> Task :app:processDebugResources
+> Task :app:mergeExtDexDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :app:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:compileDebugAndroidTestJavaWithJavac
+> Task :app:dexBuilderDebugAndroidTest
+> Task :app:mergeProjectDexDebugAndroidTest
+> Task :app:packageDebug
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:createDebugApkListingFileRedirect
+Starting 1 tests on Pixel_8(AVD) - 16
+
+com.stog.app.auth.TripFlowUiTest > emptyListCreateAndEmptyBasketRenderAsOneProductJourney[Pixel_8(AVD) - 16] [31mFAILED [0m
+	androidx.test.espresso.NoActivityResumedException: Pressed back and killed the app
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+Tests on Pixel_8(AVD) - 16 failed: There was 1 failure(s).
+Finished 1 tests on Pixel_8(AVD) - 16
+Execute com.stog.app.auth.TripFlowUiTest.emptyListCreateAndEmptyBasketRenderAsOneProductJourney: FAILED
+androidx.test.espresso.NoActivityResumedException: androidx.test.espresso.NoActivityResumedException: Pressed back and killed the app
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:2842)
+at androidx.test.espresso.base.EspressoExceptionHandler.handleSafely(EspressoExceptionHandler.java:34)
+at androidx.test.espresso.base.EspressoExceptionHandler.handleSafely(EspressoExceptionHandler.java:26)
+at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:385)
+at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:212)
+at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:140)
+at androidx.test.espresso.Espresso.pressBack(Espresso.java:237)
+at com.stog.app.auth.TripFlowUiTest.emptyListCreateAndEmptyBasketRenderAsOneProductJourney(TripFlowUiTest.java:120)
+
+androidx.test.espresso.NoActivityResumedException: Pressed back and killed the app
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:2842)
+at androidx.test.espresso.base.EspressoExceptionHandler.handleSafely(EspressoExceptionHandler.java:34)
+at androidx.test.espresso.base.EspressoExceptionHandler.handleSafely(EspressoExceptionHandler.java:26)
+at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:385)
+at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:212)
+at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:140)
+at androidx.test.espresso.Espresso.pressBack(Espresso.java:237)
+at com.stog.app.auth.TripFlowUiTest.emptyListCreateAndEmptyBasketRenderAsOneProductJourney(TripFlowUiTest.java:120)
+> Task :app:connectedDebugAndroidTest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:connectedDebugAndroidTest' (registered by plugin 'com.android.internal.application').
+> There were failing tests. See the report at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/app/build/reports/androidTests/connected/debug/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 25s
+70 actionable tasks: 70 executed
+Configuration cache entry reused.

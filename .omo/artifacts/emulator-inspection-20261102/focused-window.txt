@@ -1,0 +1,2 @@
+  mCurrentFocus=Window{c0c380d u0 com.stog.app/com.stog.app.MainActivity}
+  mFocusedApp=ActivityRecord{30240014 u0 com.stog.app/.MainActivity t254}

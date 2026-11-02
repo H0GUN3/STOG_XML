@@ -1,0 +1,6 @@
+fixture_peer_keep_alive=true
+framing=content-length
+status_200=true
+json_body_exact=true
+forwarded_before_1_second=true
+elapsed_millis=0

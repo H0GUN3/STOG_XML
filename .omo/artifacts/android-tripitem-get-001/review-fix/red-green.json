@@ -1,0 +1,42 @@
+{
+  "result": "PASS",
+  "historicalCorrection": {
+    "originalLog": "../logs/red-unit.log",
+    "classification": "scaffold compile failure; NOT behavioral RED",
+    "originalBehavioralFirst": "NOT_VERIFIED",
+    "correctedMetadata": "../red-proof.json"
+  },
+  "currentBehaviorCharacterization": {
+    "beforeReviewEdits": "existing protected GET regression suite passed 6/6",
+    "log": "logs/current-get-characterization.log"
+  },
+  "reviewFixRed": {
+    "malformedSuccess": {
+      "result": "EXPECTED ASSERTION FAILURE",
+      "observed": "all six malformed identifier/date/state payloads incorrectly produced SUCCESS",
+      "log": "logs/red-malformed-success.log"
+    },
+    "releaseFixture": {
+      "result": "EXPECTED POLICY FAILURE",
+      "observed": "assembleRelease with stogLocalInstrumentationFixture=true succeeded before the guard",
+      "log": "logs/red-release-fixture-accepted.log"
+    },
+    "releaseSeamAttempt": {
+      "classification": "INVALID_CHECK, not RED",
+      "observed": "testReleaseUnitTest task does not exist",
+      "log": "logs/red-release-fixture-seam.log"
+    }
+  },
+  "green": {
+    "malformedSuccess": "8/8 AuthApiClientTripItemTest instrumentation tests passed; valid basket/scheduled fields are asserted exactly and six malformed payloads are RETRYABLE_ERROR",
+    "releaseFixture": "fixture-flag assembleRelease failed closed; normal assembleRelease passed",
+    "releaseSeam": "release bytecode shows installDebugFixture and clearDebugFixture both call an unconditionally throwing guard",
+    "logs": [
+      "logs/green-malformed-success.log",
+      "logs/green-release-fixture-rejected-final.log",
+      "logs/green-release-build-final.log",
+      "logs/release-bytecode-guard-final.txt"
+    ]
+  },
+  "failedAttemptsPreserved": "runtime-failures.json"
+}

@@ -1,0 +1,126 @@
+8080
+64117
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Reusing configuration cache.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:generateDebugAndroidTestResources
+> Task :app:writeDebugAppMetadata
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:extractDeepLinksDebug
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:javaPreCompileDebug
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:compileDebugAndroidTestNavigationResources
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:mergeDebugJniLibFolders
+> Task :app:packageDebugAndroidTestResources
+> Task :app:desugarDebugFileDependencies
+> Task :app:processDebugNavigationResources
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:compileDebugNavigationResources
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:checkDebugDuplicateClasses
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:validateSigningDebug
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:mergeLibDexDebugAndroidTest
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:mergeLibDexDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:processDebugMainManifest
+> Task :app:processDebugAndroidTestManifest
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:generateDebugAndroidTestBuildConfig
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:mergeExtDexDebugAndroidTest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugAndroidTestResources
+> Task :app:mergeDebugResources
+> Task :app:generateDebugAndroidTestGlobalSynthetics
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:mergeExtDexDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :app:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+
+> Task :app:compileDebugAndroidTestJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:dexBuilderDebugAndroidTest
+> Task :app:mergeProjectDexDebugAndroidTest
+> Task :app:packageDebugAndroidTest
+> Task :app:assembleDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 38s
+69 actionable tasks: 69 executed
+Configuration cache entry reused.
+/sdcard/Pictures/STOG-R2b-Real-E2E/./: 6 files pulled, 0 skipped. 15.9 MB/s (719141 bytes in 0.043s)
+psql:<stdin>:1: NOTICE:  drop cascades to 17 other objects
+DETAIL:  drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.flyway_schema_history
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.stog_user
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.trip
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.trip_member
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.place
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.trip_item
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.request_execution
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.auth_identity
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.auth_login_exchange
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.auth_session
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.auth_refresh_token
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.trip_create_execution
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.trip_invitation
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.trip_command_execution
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.trip_invitation_attempt
+drop cascades to table stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.trip_cover
+drop cascades to function stog_mvp_trip_1f7afeb87a3d422ba8b6932d3badf6d1.enforce_trip_cover_same_trip()
+Real cover E2E postconditions failed.
+위치 C:\Users\GUN\AndroidStudioProjects\STOG_2\.omo\artifacts\mvp-trip-002\r2b\Run-Real-Cover-E2E.ps1:312 문자:45
++ ... s -contains $false) { throw 'Real cover E2E postconditions failed.' }
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Real cover E2E postconditions failed.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Real cover E2E postconditions failed.
+ 

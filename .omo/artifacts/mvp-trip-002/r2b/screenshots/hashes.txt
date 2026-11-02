@@ -1,0 +1,6 @@
+622fd445fe34a5972454a25d249c0c34dcd1de34e55b8815900858ab5877148a *.omo/artifacts/mvp-trip-002/r2b/screenshots/01-native-picker-preview-portrait.png
+589cedc1d3365db2ca66fee7b2e1fe005310936ce3ecb77694bbd8e6a06fbf74 *.omo/artifacts/mvp-trip-002/r2b/screenshots/02-real-backend-sanitized-green.png
+aa9fb08ca5fc32597e0aab83ad82e8c110a8144eb8f9602f4c6438b673c9735d *.omo/artifacts/mvp-trip-002/r2b/screenshots/03-dropped-replacement-replayed-blue.png
+f475c8c08d26fc2f6b0ff0eafda2efc91c9571b49d5eb1b166547a10a2d28b01 *.omo/artifacts/mvp-trip-002/r2b/screenshots/04-remove-confirmation-cancel.png
+89cbdc83fb83c6c500c9bad892eb8a4e3a97d3f74ebfb14e8daa4baaa3055359 *.omo/artifacts/mvp-trip-002/r2b/screenshots/05-native-remove-complete.png
+0fe0a9e8ee8b0e7573ae9bd024e58db2ce57196440a0772fd4bf2ae382015d69 *.omo/artifacts/mvp-trip-002/r2b/screenshots/06-logout-clears-private-cover.png

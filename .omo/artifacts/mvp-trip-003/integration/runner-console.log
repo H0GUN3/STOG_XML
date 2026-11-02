@@ -1,0 +1,28 @@
+psql:<stdin>:1: ERROR:  trailing junk after numeric literal at or near "45de80cc"
+LINE 1: ...ad_address,description,latitude,longitude)VALUES('45de80cc-f...
+                                                             ^
+psql:<stdin>:1: NOTICE:  drop cascades to 17 other objects
+DETAIL:  drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.flyway_schema_history
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.stog_user
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.trip
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.trip_member
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.place
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.trip_item
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.request_execution
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.auth_identity
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.auth_login_exchange
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.auth_session
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.auth_refresh_token
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.trip_create_execution
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.trip_invitation
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.trip_command_execution
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.trip_invitation_attempt
+drop cascades to table stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.trip_cover
+drop cascades to function stog_mvp_trip_8b169bd38e544f3ebb996f590df9c28b.enforce_trip_cover_same_trip()
+psql failed
+위치 C:\Users\GUN\AndroidStudioProjects\STOG_2\.omo\artifacts\mvp-trip-003\Run-Real-R3a-E2E.ps1:15 문자:425
++ ...  -d $database -f -};if($LASTEXITCODE-ne0){throw 'psql failed'};return ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (psql failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : psql failed
+ 

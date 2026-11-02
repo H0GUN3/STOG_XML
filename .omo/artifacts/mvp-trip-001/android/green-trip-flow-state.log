@@ -1,0 +1,39 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as configuration cache cannot be reused because file 'app\build.gradle' has changed.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:javaPreCompileDebug
+> Task :app:generateDebugBuildConfig
+> Task :app:extractDeepLinksDebug
+> Task :app:generateDebugResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:processDebugNavigationResources
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:compileDebugNavigationResources
+> Task :app:processDebugMainManifest
+> Task :app:packageDebugResources
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:compileDebugUnitTestJavaWithJavac
+> Task :app:testDebugUnitTest
+
+BUILD SUCCESSFUL in 17s
+25 actionable tasks: 25 executed
+Configuration cache entry stored.

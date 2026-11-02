@@ -1,0 +1,57 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :processResources
+> Task :classes
+
+> Task :compileTestJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+
+TripCoverMultipartHttpIntegrationTest > actualUrlQueryIsRejectedIndependentlyOfMultipartFormParts() FAILED
+    java.lang.IllegalStateException at DefaultCacheAwareContextLoaderDelegate.java:195
+        Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException at ConstructorResolver.java:804
+            Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException at ConstructorResolver.java:804
+                Caused by: org.springframework.beans.factory.BeanCreationException at AbstractBeanFactory.java:322
+                    Caused by: org.springframework.beans.factory.BeanCreationException at ConstructorResolver.java:657
+                        Caused by: org.springframework.beans.BeanInstantiationException at SimpleInstantiationStrategy.java:183
+                            Caused by: org.springframework.beans.factory.BeanCreationException at ConstructorResolver.java:657
+                                Caused by: org.springframework.beans.BeanInstantiationException at SimpleInstantiationStrategy.java:183
+                                    Caused by: org.springframework.boot.jdbc.autoconfigure.DataSourceProperties$DataSourceBeanCreationException at DataSourceProperties.java:179
+
+TripCoverMultipartHttpIntegrationTest > duplicateImageOrFilenameLessCommandPartsAreRejected() FAILED
+    java.lang.IllegalStateException at DefaultCacheAwareContextLoaderDelegate.java:157
+
+TripCoverMultipartHttpIntegrationTest > androidShapedImageAndFilenameLessJsonCommandReachControllerService() FAILED
+    java.lang.IllegalStateException at DefaultCacheAwareContextLoaderDelegate.java:157
+
+TripCoverMultipartHttpIntegrationTest > unknownFileAndTextFormPartsAreRejected() FAILED
+    java.lang.IllegalStateException at DefaultCacheAwareContextLoaderDelegate.java:157
+
+4 tests completed, 4 failed
+
+> Task :test FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/backend/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/backend/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 17s
+4 actionable tasks: 4 executed

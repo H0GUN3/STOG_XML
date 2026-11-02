@@ -1,0 +1,5 @@
+test-class matches:
+migration:
+BOOT-INF/classes/db/migration/V1__basket_save_foundation.sql
+binding:
+server.address=127.0.0.1

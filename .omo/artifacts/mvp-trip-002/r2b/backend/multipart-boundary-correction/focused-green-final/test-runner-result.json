@@ -1,0 +1,31 @@
+{
+    "startedUtc":  "2026-10-06T03:41:09.5577701Z",
+    "finishedUtc":  "2026-10-06T03:41:38.9116296Z",
+    "database":  "stog_backend_test",
+    "serverVersionNumber":  "180006",
+    "connectionOnly":  false,
+    "focusedTests":  [
+                         "com.stog.backend.TripCoverMultipartHttpIntegrationTest",
+                         "com.stog.backend.TripCoverPostgresIntegrationTest",
+                         "com.stog.backend.TripProductControllerTest"
+                     ],
+    "bootJarSkipped":  true,
+    "fixtureRole":  "stog_m1_002_eb60f4a555a84438958c00c4cd87deec",
+    "generatedFixture":  true,
+    "provisionAcknowledgementRecovered":  false,
+    "authenticatedNonSuperuser":  true,
+    "ownSchemaAccessVerified":  true,
+    "windowsJdbcVerification":  "run-by-gradle",
+    "cleanupSucceeded":  true,
+    "invocationResourcesRemaining":  "0|0",
+    "preexistingMetadataUnchanged":  true,
+    "preexistingTaskPrefixCountsBefore":  "4|4",
+    "preexistingTaskPrefixCountsAfter":  "4|4",
+    "gradleExit":  0,
+    "error":  null,
+    "cleanupError":  null,
+    "passwordOutput":  "none",
+    "generatedMediaRoot":  true,
+    "mediaRootCleanupSucceeded":  true,
+    "sanitizedLog":  ".omo/artifacts/mvp-trip-002/r2b/backend/multipart-boundary-correction/focused-green-final/logs/postgres-runner-connection-only.log"
+}

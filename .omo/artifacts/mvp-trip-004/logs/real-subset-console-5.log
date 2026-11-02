@@ -1,0 +1,25 @@
+psql:<stdin>:1: NOTICE:  drop cascades to 17 other objects
+DETAIL:  drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.flyway_schema_history
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.stog_user
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.trip
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.trip_member
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.place
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.trip_item
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.request_execution
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.auth_identity
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.auth_login_exchange
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.auth_session
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.auth_refresh_token
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.trip_create_execution
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.trip_invitation
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.trip_command_execution
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.trip_invitation_attempt
+drop cascades to table stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.trip_cover
+drop cascades to function stog_r3b_b2dc0b42fb2244b58a5b04f0d1468577.enforce_trip_cover_same_trip()
+인덱스가 배열 범위를 벗어났습니다.
+위치 C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\test\scripts\Run-SemasImportVerification.ps1:24 문자:42
++ ... eDataString($row[1]);$region=[uri]::EscapeDataString($row[3]);$catego ...
++                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], IndexOutOfRangeException
+    + FullyQualifiedErrorId : System.IndexOutOfRangeException
+ 

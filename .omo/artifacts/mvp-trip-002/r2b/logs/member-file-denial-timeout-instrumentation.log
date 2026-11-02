@@ -1,0 +1,50 @@
+﻿INSTRUMENTATION_STATUS: class=com.stog.app.auth.RealBackendTripCoverUiTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.stog.app.auth.RealBackendTripCoverUiTest:
+INSTRUMENTATION_STATUS: test=nativePickerSanitizesReplaysSharesRevokesRemovesAndDeletesPrivately
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.stog.app.auth.RealBackendTripCoverUiTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: expected:<404> but was:<-1>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.stog.app.auth.RealBackendTripCoverUiTest.assertImageDenied(RealBackendTripCoverUiTest.java:215)
+	at com.stog.app.auth.RealBackendTripCoverUiTest.nativePickerSanitizesReplaysSharesRevokesRemovesAndDeletesPrivately(RealBackendTripCoverUiTest.java:140)
+
+INSTRUMENTATION_STATUS: stream=
+Error in nativePickerSanitizesReplaysSharesRevokesRemovesAndDeletesPrivately(com.stog.app.auth.RealBackendTripCoverUiTest):
+java.lang.AssertionError: expected:<404> but was:<-1>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.stog.app.auth.RealBackendTripCoverUiTest.assertImageDenied(RealBackendTripCoverUiTest.java:215)
+	at com.stog.app.auth.RealBackendTripCoverUiTest.nativePickerSanitizesReplaysSharesRevokesRemovesAndDeletesPrivately(RealBackendTripCoverUiTest.java:140)
+
+INSTRUMENTATION_STATUS: test=nativePickerSanitizesReplaysSharesRevokesRemovesAndDeletesPrivately
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 27.797
+There was 1 failure:
+1) nativePickerSanitizesReplaysSharesRevokesRemovesAndDeletesPrivately(com.stog.app.auth.RealBackendTripCoverUiTest)
+java.lang.AssertionError: expected:<404> but was:<-1>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.stog.app.auth.RealBackendTripCoverUiTest.assertImageDenied(RealBackendTripCoverUiTest.java:215)
+	at com.stog.app.auth.RealBackendTripCoverUiTest.nativePickerSanitizesReplaysSharesRevokesRemovesAndDeletesPrivately(RealBackendTripCoverUiTest.java:140)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

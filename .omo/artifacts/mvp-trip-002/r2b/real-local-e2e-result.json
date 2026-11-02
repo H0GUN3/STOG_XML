@@ -1,0 +1,76 @@
+﻿{
+    "result":  "PASS",
+    "surface":  "native Android document picker -\u003e response-loss proxy -\u003e real Spring backend -\u003e isolated PostgreSQL V1-V5/private media root",
+    "provider":  "literal-loopback synthetic Kakao fixture through normal exchange/security filter; real Kakao NOT_RUN",
+    "instrumentationTests":  1,
+    "replacementResponseLossReplayExactlyOne":  true,
+    "privateCoverLifecycle":  true,
+    "exactNoopReplay":  true,
+    "exactFilePairs":  true,
+    "noOpCallbackContract":  "backend 111-test gate TripCoverPostgresIntegrationTest asserts event count unchanged on UNCHANGED/replay",
+    "nativePickerAndExpectedPixels":  true,
+    "removedMemberAndDeletedTripDenied":  true,
+    "invalidInputsLeaveNoPointer":  true,
+    "softDeleteRetainsPrivatePointer":  true,
+    "logoutNoStaleContent":  true,
+    "crashScanClean":  true,
+    "providerCalls":  {
+                          "member_token_info":  2,
+                          "member_user_info":  2,
+                          "nonmember_token_info":  1,
+                          "nonmember_user_info":  1,
+                          "create_requests":  9,
+                          "create_responses_dropped":  1,
+                          "refresh_expirations":  0,
+                          "id_only_insertions":  0,
+                          "backend_responses_framed":  55,
+                          "backend_content_length_responses":  9,
+                          "backend_chunked_responses":  46,
+                          "cover_statuses":  [
+                                                 201,
+                                                 201,
+                                                 200,
+                                                 400,
+                                                 400,
+                                                 413,
+                                                 413,
+                                                 201,
+                                                 201
+                                             ],
+                          "cover_error_codes":  [
+                                                    "INVALID_COVER",
+                                                    "INVALID_COVER",
+                                                    "COVER_TOO_LARGE",
+                                                    "COVER_TOO_LARGE"
+                                                ],
+                          "drop_next_cover_response":  false,
+                          "dropped_cover_statuses":  [
+                                                         201
+                                                     ],
+                          "denied_cover_probes":  4,
+                          "denied_cover_probe_errors":  [
+
+                                                        ]
+                      },
+    "database":  {
+                     "identity_rows":  2,
+                     "trips":  2,
+                     "soft_deleted":  1,
+                     "covers":  4,
+                     "cover_executions":  7,
+                     "current_cover_pointers":  1,
+                     "set_request_rows":  4,
+                     "remove_request_rows":  3,
+                     "unchanged_rows":  1,
+                     "main_plan_version":  9,
+                     "invalid_plan_version":  0
+                 },
+    "privateFiles":  {
+                         "directories":  4,
+                         "displayFiles":  4,
+                         "thumbnailFiles":  4
+                     },
+    "databaseFixture":  "generated isolated non-superuser role/schema in stog_backend_test, migrated V1-V5",
+    "generatedFixtureIdsRecorded":  "subjects are generated fixture IDs; tokens omitted",
+    "credentialsRecorded":  false
+}

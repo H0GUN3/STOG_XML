@@ -1,0 +1,92 @@
+{
+  "result": "R3A_IMPLEMENTED_LOCAL_VERIFIED",
+  "scope": "R3a Android producer plus actual generated Android-to-Spring-to-isolated-PostgreSQL V1-V6 integration",
+  "preimplementation_red": {
+    "compile_scaffold_red": {
+      "command": ":app:compileDebugAndroidTestSources",
+      "exit": 1,
+      "observation": "17 missing R3 transport symbols before implementation",
+      "log": "logs/red-android-compile.log"
+    },
+    "behavioral_red": "NOT_VERIFIED",
+    "limitation": "The preserved compiler/scaffold failure is not behavioral evidence; old source was not reconstructed or rerun."
+  },
+  "focused_green": {
+    "tests": 4,
+    "failures": 0,
+    "font_scale": 1.3,
+    "light_log": "logs/focused-light-tests-2.log",
+    "dark_ui_tests": 1,
+    "dark_log": "logs/focused-dark-ui.log"
+  },
+  "final_android_gate": {
+    "command_exit": 0,
+    "jvm": {"tests": 16, "failures": 0, "errors": 0, "skipped": 0},
+    "instrumentation": {"tests": 49, "failures": 0, "errors": 0, "skipped": 0},
+    "excluded_real_backend_harnesses": [
+      "RealBackendTripCollaborationUiTest",
+      "RealBackendTripCoverUiTest",
+      "RealBackendTripItemUiTest",
+      "RealBackendTripProductUiTest",
+      "RealBackendPlaceFlowUiTest"
+    ],
+    "exclusion_reason": "They require separately provisioned real-backend instrumentation arguments and are not local Android tests.",
+    "lint": {"errors": 0, "warnings": 4},
+    "assemble_debug": "PASS",
+    "log": "../integration/logs/final-android-gate-pass-2.log"
+  },
+  "wire": {
+    "verified": [
+      "GET /api/places with percent-encoded query/region/category, limit=20 and cursor",
+      "GET /api/places/{place_id} exact required nullable DTO",
+      "POST /api/trips/{trip_id}/trip-items with place_id, expected_plan_version and stable request_id",
+      "Bearer transport, redirect denial and refresh-once path reused"
+    ],
+    "test": "PlaceApiClientTest"
+  },
+  "recovery": {
+    "verified": [
+      "ambiguous save retry reuses request_id and version",
+      "version conflict reloads trip and requires a new explicit request_id at fresh version",
+      "query/results/selected Place/Back/recreation recovery",
+      "bounded page-depth and stable scroll anchor state",
+      "new query/trip/logout generation invalidation"
+    ]
+  },
+  "visual_qa": {
+    "device": "Pixel_8 AVD API 36",
+    "portrait": true,
+    "font_scale": 1.3,
+    "surfaces": ["light", "dark"],
+    "observed": ["keyboard search", "result", "text detail", "missing image", "missing coordinates", "explicit save", "system Back", "recreation"],
+    "screenshots": ["ui/light/STOG-R3a-QA", "ui/dark/STOG-R3a-QA"]
+  },
+  "diagnostics": "zero diagnostics on all changed Java files",
+  "cleanup": {
+    "font_scale_restored": 1.0,
+    "night_mode_restored": "yes",
+    "app_uninstalled": true,
+    "test_app_uninstalled": true,
+    "reverse_rules": 0,
+    "owned_emulator_stopped": true,
+    "crash_scan": "empty"
+  },
+  "real_local_integration": {
+    "result": "PASS",
+    "behavioral_red": "../integration/blocker.json preserves the native continuation failure before the production correction",
+    "evidence": "../integration/real-local-e2e-result.json",
+    "correction": "place_search_results now uses the existing bounded native RecyclerView viewport pattern; 128dp center-bounded gestures reach page end without system-navigation interception",
+    "postconditions": "search_requests=2, save_requests=2, one dropped 201, same request/version/place retry, trip_items=1, request_executions=1, plan_version=1, same common Place ID",
+    "surface": "selected trip -> Unicode/filter search -> page 2 -> detail -> explicit lost-save replay -> basket reload -> Back/recreation -> logout",
+    "cleanup": "0|0 role/schema, metadata restored, media/runtime/reverse/settings/emulator cleaned"
+  },
+  "canonical_limitations": {
+    "preimplementation_behavioral_red": "NOT_VERIFIED; the later real-integration pagination failure is valid behavioral RED for the bounded correction",
+    "r3a_status": "IMPLEMENTED / LOCAL VERIFIED; full R3 not complete",
+    "full_r3_remaining": ["production ingest and normalization", "deduplication and refresh", "pg_trgm partial/similarity", "PostGIS spatial behavior", "representative imagery", "shared map/detail"]
+  },
+  "remaining": [
+    "Production public-data ingest, deduplication and refresh remain full-R3 work.",
+    "Normative pg_trgm/PostGIS, representative imagery, and shared map/detail remain full-R3 work."
+  ]
+}

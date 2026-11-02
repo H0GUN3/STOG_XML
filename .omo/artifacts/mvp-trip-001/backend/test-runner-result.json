@@ -1,0 +1,28 @@
+{
+    "startedUtc":  "2026-10-01T08:54:38.8698895Z",
+    "finishedUtc":  "2026-10-01T08:55:02.4351298Z",
+    "database":  "stog_backend_test",
+    "serverVersionNumber":  "180006",
+    "connectionOnly":  false,
+    "focusedTests":  [
+                         "com.stog.backend.TripProductPostgresIntegrationTest",
+                         "com.stog.backend.BasketSavePostgresIntegrationTest"
+                     ],
+    "bootJarSkipped":  true,
+    "fixtureRole":  "stog_m1_002_4dba584212ca470ea139af8c03696d1d",
+    "generatedFixture":  true,
+    "provisionAcknowledgementRecovered":  false,
+    "authenticatedNonSuperuser":  true,
+    "ownSchemaAccessVerified":  true,
+    "windowsJdbcVerification":  "run-by-gradle",
+    "cleanupSucceeded":  true,
+    "invocationResourcesRemaining":  "0|0",
+    "preexistingMetadataUnchanged":  true,
+    "preexistingTaskPrefixCountsBefore":  "4|4",
+    "preexistingTaskPrefixCountsAfter":  "4|4",
+    "gradleExit":  0,
+    "error":  null,
+    "cleanupError":  null,
+    "passwordOutput":  "none",
+    "sanitizedLog":  ".omo/artifacts/mvp-trip-001/backend/logs/postgres-runner-connection-only.log"
+}

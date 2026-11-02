@@ -1,0 +1,97 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as configuration cache cannot be reused because Gradle property 'stogLocalInstrumentationFixture' has changed.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:generateDebugAndroidTestResources
+> Task :app:generateDebugBuildConfig
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:extractDeepLinksDebug
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:javaPreCompileDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
+> Task :app:processDebugNavigationResources
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:compileDebugNavigationResources
+> Task :app:packageDebugAndroidTestResources
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:processDebugAndroidTestManifest
+> Task :app:generateDebugAndroidTestBuildConfig
+> Task :app:processDebugMainManifest
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+
+> Task :app:compileDebugAndroidTestJavaWithJavac FAILED
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\RealBackendTripCollaborationUiTest.java:52: error: clearDebugFixture() is not public in AuthViewModel; cannot be accessed from outside package
+        AuthViewModel.clearDebugFixture();
+                     ^
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\RealBackendTripCollaborationUiTest.java:113: error: installDebugFixture(DebugFixture) is not public in AuthViewModel; cannot be accessed from outside package
+        AuthViewModel.installDebugFixture(app -> {
+                     ^
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\RealBackendTripCollaborationUiTest.java:115: error: constructor AuthViewModel in class AuthViewModel cannot be applied to given types;
+            return new AuthViewModel(api, new AuthStateMachine(true, kakao, api));
+                   ^
+  required: AuthApiClient,AuthStateMachine
+  found:    AuthApiClient,AuthStateMachine
+  reason: AuthViewModel(AuthApiClient,AuthStateMachine) is not public in AuthViewModel; cannot be accessed from outside package
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\RealBackendTripCollaborationUiTest.java:113: error: DebugFixture is not public in AuthViewModel; cannot be accessed from outside package
+        AuthViewModel.installDebugFixture(app -> {
+                                          ^
+Note: C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\RealBackendTripProductUiTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugAndroidTestJavaWithJavac' (registered by plugin 'com.android.internal.application').
+> Compilation failed; see the compiler output below.
+  Note: C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\RealBackendTripProductUiTest.java uses or overrides a deprecated API.
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\RealBackendTripCollaborationUiTest.java:115: error: constructor AuthViewModel in class AuthViewModel cannot be applied to given types;
+              return new AuthViewModel(api, new AuthStateMachine(true, kakao, api));
+                     ^
+    required: AuthApiClient,AuthStateMachine
+    found:    AuthApiClient,AuthStateMachine
+    reason: AuthViewModel(AuthApiClient,AuthStateMachine) is not public in AuthViewModel; cannot be accessed from outside package
+  Note: Recompile with -Xlint:deprecation for details.
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\RealBackendTripCollaborationUiTest.java:52: error: clearDebugFixture() is not public in AuthViewModel; cannot be accessed from outside package
+          AuthViewModel.clearDebugFixture();
+                       ^
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\RealBackendTripCollaborationUiTest.java:113: error: installDebugFixture(DebugFixture) is not public in AuthViewModel; cannot be accessed from outside package
+          AuthViewModel.installDebugFixture(app -> {
+                       ^
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\RealBackendTripCollaborationUiTest.java:113: error: DebugFixture is not public in AuthViewModel; cannot be accessed from outside package
+          AuthViewModel.installDebugFixture(app -> {
+                                            ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  4 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 11s
+34 actionable tasks: 34 executed
+Configuration cache entry stored.

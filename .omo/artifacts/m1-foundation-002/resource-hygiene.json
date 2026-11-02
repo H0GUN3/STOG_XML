@@ -1,0 +1,25 @@
+{
+  "RESULT": "PASS_WITH_PRESERVED_UNCERTAINTY",
+  "EVIDENCE": {
+    "scope": "Existing WSL PostgreSQL 18.6 stog_backend_test; no runner active.",
+    "catalogCommand": "wsl.exe -u postgres -- psql -X -d stog_backend_test -Atq -c \"SELECT roles and schemas matching stog_m1_002_; SELECT public/task14 owners and ACLs;\"",
+    "catalogExit": 0,
+    "identity": "stog_backend_test|180006",
+    "residualCandidates": [
+      {"role":"stog_m1_002_1f927d8310153eeec78f7f0170bb473a","schema":"stog_m1_002_1f927d8310153eeec78f7f0170bb473a","roleFlags":"NOSUPERUSER, LOGIN","schemaOwner":"same role","databaseConnectGrant":"present"},
+      {"role":"stog_m1_002_8413da55897cb8d056e9875c6753b4bd","schema":"stog_m1_002_8413da55897cb8d056e9875c6753b4bd","roleFlags":"NOSUPERUSER, LOGIN","schemaOwner":"same role","databaseConnectGrant":"present"},
+      {"role":"stog_m1_002_cbab93f4f9b33b7838fce031746b49df","schema":"stog_m1_002_cbab93f4f9b33b7838fce031746b49df","roleFlags":"NOSUPERUSER, LOGIN","schemaOwner":"same role","databaseConnectGrant":"present"},
+      {"role":"stog_m1_002_e3df9da86d53f30585e86da2d5cfa018","schema":"stog_m1_002_e3df9da86d53f30585e86da2d5cfa018","roleFlags":"NOSUPERUSER, LOGIN","schemaOwner":"same role","databaseConnectGrant":"present"}
+    ],
+    "ownershipTrace": {
+      "capturedTaskInvocations": ["stog_m1_002_7e541e03a3da40f5b7df19b2d340be93 (failed probe; recovery cleanup 0|0)","35cf61fa58594967992cbb197616e551","44f44945573a4fdaa42067894250aa3e","6d39b6703fbf4bc0ad714928630cee69","7bc13761add5486e8cabca730e587c54","29dceb1b282f4c6798476dbbc8120ea0","075b4473a07244e4a91cfbd1f71b06af","c60cf959cd4746039696a3e89fc747a3","b59c97c0437e407db1499fad4528e40b","a3974bf91d41489eb39d3bfe77f57308"],
+      "source": [".omo/artifacts/m1-foundation-002/logs/postgres-runner-connection-only.log", ".omo/artifacts/m1-foundation-002/test-runner-result.json", "initial child execution record: dag_8d92df11-1b00-4e59-b4e9-e0b1ad28eaf3 (attempt1), timestamp 2026-09-22T07:28:36.209Z, linked output .omo/agent/sessions/--C--Users-GUN-AndroidStudioProjects-STOG_2--/2026-09-22T00-46-53-893Z_01a0c694-77c5-7a80-a9a6-6af513cd109c.jsonl", "initial child output artifact .omo/agent/sessions/--C--Users-GUN-AndroidStudioProjects-STOG_2--/2026-09-22T00-46-53-893Z_01a0c694-77c5-7a80-a9a6-6af513cd109c-artifacts/eval-8ea5fe2a-2ce2-4a8b-a655-cb982813f90c.log"],
+      "exactCandidateMatches": 0,
+      "initialAttemptFinding": "The bounded initial child records contain provisioning/cleanup evidence for other generated names, but no exact creation or failure event for any of the four residual candidates.",
+      "conclusion": "Candidates remain unattributed/current-run-preexisting; name format and owner metadata do not prove creation by this task."
+    },
+    "protectedMetadata": {"publicOwner":"stog_backend_test","task14Schemas":"task14_concurrent_115f7f78f2ff4a249df82495008e641e, task14_v23_bc6a8f7b128543a4b6512dbec3d73fac, task14_v23_f6af165a8ed64cda9de905837b72c853","task14Owners":"stog_backend_test","protectedWrites":"none"},
+    "cleanup": {"commands":"none; no ownership-proven DROP was available","exit":"not applicable","resourcesRemoved":0}
+  },
+  "REMAINING_PROBLEMS": ["Four exact prefix-matching role/schema pairs remain. Their origin cannot be traced to a captured invocation from this goal, so deletion would be unsafe and was not attempted.","Database ACL output shows each residual has its own CONNECT grant; no global reset or public/task14 change was made."]
+}

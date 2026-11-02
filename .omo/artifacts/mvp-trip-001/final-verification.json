@@ -1,0 +1,112 @@
+{
+  "task": "MVP-TRIP-001",
+  "verifiedAt": "2026-10-01",
+  "overallStatus": "VERIFIED_R1_LOCAL_INCREMENT",
+  "scopeBoundary": "R1 trip create/My Trips/detail/empty and ID-only basket only; whole product MVP and R2-R9 are incomplete",
+  "historyPreserved": {
+    "preCorrection": ".omo/artifacts/mvp-trip-001/final-verification-pre-correction.json",
+    "priorBlockedVerification": "previous revisions of this file and retained real-local failure logs",
+    "originalAndroidApiUiBehavioralRed": "NOT_VERIFIED_HISTORICAL_ABSENCE_CANNOT_BE_REPAIRED",
+    "laterCorrections": "Back and logout teardown each have genuine focused RED/GREEN evidence; harness proxy, refresh observer, provider reattachment, visual fixture and cleanup failures remain in logs"
+  },
+  "sourceReview": {
+    "status": "PASS",
+    "producerHandoffs": [
+      ".omo/artifacts/mvp-trip-001/backend/handoff.md",
+      ".omo/artifacts/mvp-trip-001/android/handoff.md"
+    ],
+    "contractChecks": {
+      "dtoParsingAuthorizationIdempotencyCursorLegacyNullability": "PASS_BY_SOURCE_AND_REUSED_UNCHANGED_BACKEND_GATE",
+      "v3Checksum": "b6079d26454442b1373b65650e46a62218427c7c15f595edd7d784e60a2ab206",
+      "androidSmallSavedStateBoundedPageAndCursorRecovery": "PASS",
+      "releaseFixtureBoundary": "PASS",
+      "canonicalTripFlowClass": "com.stog.app.auth.TripFlowUiTest"
+    },
+    "lspDiagnostics": "0 on changed production/test Java files before builds"
+  },
+  "backendExactGate": {
+    "status": "PASS_REUSED_UNCHANGED_INPUTS",
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File backend/src/test/scripts/Run-PostgresIntegration.ps1",
+    "evidence": ".omo/artifacts/mvp-trip-001/logs/backend-exact-gate.log",
+    "rerunThisRound": false
+  },
+  "androidExactGate": {
+    "status": "PASS",
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .omo/artifacts/mvp-trip-001/Run-Android-Revalidation-Gate.ps1",
+    "instrumentation": "24/24 PASS, 0 skipped, 0 failed",
+    "jvm": "PASS",
+    "lint": "PASS",
+    "assembleDebug": "PASS",
+    "evidence": ".omo/artifacts/mvp-trip-001/logs/android-exact-gate-revalidation.log",
+    "cleanup": ".omo/artifacts/mvp-trip-001/android-revalidation-cleanup.json"
+  },
+  "integratedHarness": {
+    "status": "PASS",
+    "test": "app/src/androidTest/java/com/stog/app/auth/RealBackendTripProductUiTest.java",
+    "runner": ".omo/artifacts/mvp-trip-001/Run-Real-Local-E2E.ps1",
+    "providerAndLossProxy": ".omo/artifacts/mvp-trip-001/provider_and_loss_proxy.py",
+    "surface": "Pixel_8 API 36.1 emulator UI -> framed response-loss proxy -> actual local Spring backend -> generated isolated PostgreSQL V1-V3 role/schema",
+    "authentication": "generated literal-loopback synthetic Kakao credentials through normal exchange and security filter; no principal bypass and no real key/provider",
+    "evidence": [
+      ".omo/artifacts/mvp-trip-001/logs/e2e-instrumentation.log",
+      ".omo/artifacts/mvp-trip-001/logs/e2e-crash-scan.log",
+      ".omo/artifacts/mvp-trip-001/real-local-e2e-result.json"
+    ],
+    "verified": [
+      "member empty My Trips and local create validation",
+      "first committed create response loss followed by same pending request replay",
+      "exactly one trip, creator membership and create execution",
+      "detail and explicit empty basket",
+      "landscape recreation at font scale 1.30 and dark-mode recreation",
+      "generated ID-only basket fallback with plan version advance",
+      "system Back restored exactly one list row",
+      "access expiry caused one refresh/retry and retained exactly one row",
+      "member logout, nonmember normal login, empty list and detail nondisclosing 404",
+      "final logout cleared private content and clean AndroidRuntime crash scan",
+      "focus and exact IME-inset visibility signal before create capture"
+    ],
+    "facts": {
+      "memberProviderVerification": "1 token-info / 1 user-info",
+      "nonmemberProviderVerification": "1 token-info / 1 user-info",
+      "createRequests": 2,
+      "createResponsesDropped": 1,
+      "refreshExpirations": 1,
+      "identityRows": 2,
+      "ownedTrips": 1,
+      "nonmemberMemberships": 0,
+      "createExecutions": 1,
+      "basketItems": 1,
+      "credentialsRecorded": false
+    }
+  },
+  "visualEvidence": {
+    "status": "PASS_WITH_CAPTURE_LIMITATION_NOTED",
+    "directory": ".omo/artifacts/mvp-trip-001/screenshots",
+    "screenshots": 10,
+    "inspection": "All current PNGs were inspected. Empty/create/detail/empty basket/light/landscape/font 1.30/dark/ID-only fallback/Back list/nonmember empty/final signed-out are visible. The IME visibility was asserted from WindowInsets before capture; the software keyboard itself is not visible in the resulting headless-emulator PNG. No token, credential or private user identifier is visible. The UUID in the ID-only basket image is a generated fixture item ID.",
+    "readme": ".omo/artifacts/mvp-trip-001/screenshots/README.md"
+  },
+  "cleanup": {
+    "status": "PASS",
+    "receipt": ".omo/artifacts/mvp-trip-001/cleanup-receipt.json",
+    "ownedRoleAndSchemaRemaining": "0|0",
+    "preexistingMetadataRestored": true,
+    "backendAndPort8080Absent": true,
+    "providerPythonAbsent": true,
+    "ownedEmulatorQemuDeviceAndShutdownHelpersAbsent": true,
+    "adbReverseRestored": true,
+    "fontAndRotationRestored": true,
+    "durableDatabaseRetained": true,
+    "dpapiCredentialRetained": true,
+    "realUserProviderPublicTlsUntouched": true
+  },
+  "notRun": [
+    "API 23 runtime",
+    "API 37 runtime",
+    "physical device",
+    "TalkBack",
+    "real Kakao provider combined with protected trip flow",
+    "public HTTPS/TLS"
+  ],
+  "remainingProductScope": "R2-R9 remain tracked, including collaboration/lifecycle/cover, Place search/add, basket mutation/delete, schedule/plan editing, SSE, Instagram, map/camera/CELL/EXP/Discover/MY/STOBEE and release operations."
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "MVP-TRIP-001 logout/list teardown correction",
+  "ownedEmulators": ["Pixel_8 emulator-5562 test run", "Pixel_8 emulator-5562 cleanup verification"],
+  "emulatorProcessesAbsent": true,
+  "emulatorDeviceAbsent": true,
+  "listener8080Absent": true,
+  "packagesRemainingMatchingComStogApp": 0,
+  "adbReverseRemaining": 0,
+  "restoredSettings": {
+    "fontScale": "1.0",
+    "accelerometerRotation": "1",
+    "userRotation": "0"
+  },
+  "ownedMediaProviderIdsRemoved": [163, 164, 165],
+  "preexistingMediaPreserved": {
+    "id": 205,
+    "displayName": "mvp-trip-detail-empty.png"
+  },
+  "backendProviderDatabaseRealUserPhysicalDeviceTouched": false
+}

@@ -1,0 +1,44 @@
+{
+  "result": "PASS",
+  "scope": "MVP-TRIP-002 R2b private cover final local increment",
+  "producerGates": {
+    "backend": {"tests":111,"failures":0,"errors":0,"skipped":0,"bootJar":"PASS","evidence":"backend/member-denial-correction/verification-summary.json","bootJarProvenance":"bootjar-provenance.json"},
+    "android": {"jvm":16,"instrumentation":44,"failures":0,"errors":0,"skipped":0,"lint":"PASS","assemble":"PASS","evidence":"android/review-correction/evidence.md"}
+  },
+  "realE2E": {
+    "result":"PASS",
+    "surface":"native Android document picker -> selective response-loss proxy -> corrected bootJar -> isolated PostgreSQL V1-V5/private media root",
+    "instrumentation":"logs/e2e-instrumentation.log",
+    "machineReceipt":"real-local-e2e-result.json",
+    "verified":[
+      "native picker cancel and generated green PNG selection",
+      "bounded private preview and expected green pixels",
+      "real multipart initial SET 201 and authenticated display/thumbnail",
+      "native blue replacement SET 201 committed response dropped and same-request replay 200",
+      "exact replacement cover identity and expected blue pixels",
+      "removed-member metadata/file/thumbnail generic 404",
+      "native remove confirmation cancel then confirm",
+      "exact 200 UNCHANGED no-op and replay without version/file/ledger duplication",
+      "same UUID accepted across SET and REMOVE command types",
+      "malformed/truncated, MIME mismatch, byte and pixel bounds rejected without pointer",
+      "soft-deleted-trip metadata/file/thumbnail generic 404 with private pointer retained",
+      "logout clears private UI"
+    ],
+    "providerFacts":{"coverRequests":9,"successfulResponseDrops":1,"droppedStatuses":[201],"deniedCoverProbes":4,"probeErrors":0},
+    "database":{"identities":2,"trips":2,"softDeleted":1,"covers":4,"coverExecutions":7,"setRows":4,"removeRows":3,"unchangedRows":1,"mainPlanVersion":9,"invalidInputPlanVersion":0},
+    "files":{"directories":4,"displayFiles":4,"thumbnailFiles":4},
+    "crashScanClean":true,
+    "screenshots":"screenshots/*.png"
+  },
+  "cleanup": {
+    "ownedRoleAndSchemaRemaining":"0|0",
+    "privateMediaRootRemoved":true,
+    "preexistingMetadataRestored":true,
+    "backendProviderEmulatorListenerReverseAbsent":true,
+    "fontRotationRestored":true,
+    "evidence":"cleanup-receipt.json"
+  },
+  "historicalFailuresPreserved":["historical-first400-failure.json","attempts.md"],
+  "statusDecision":"R2a and R2b are locally verified; no R3 implementation was started",
+  "notRun":["real Kakao","public network/TLS","hardware API23/37","TalkBack","Android 16 large-screen portrait enforcement"]
+}

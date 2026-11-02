@@ -1,0 +1,1 @@
+    topResumedActivity=ActivityRecord{39031666 u0 com.stog.app/.MainActivity t202}

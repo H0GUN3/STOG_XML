@@ -1,0 +1,13 @@
+owned device before cleanup:
+List of devices attached
+emulator-5572          device product:sdk_gphone64_x86_64 model:sdk_gphone64_x86_64 device:emu64xa transport_id:4
+
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+OK: killing emulator, bye bye
+OK
+owned emulator removed
+package check:
+OK: killing emulator, bye bye
+OK
+owned emulator removed after package check

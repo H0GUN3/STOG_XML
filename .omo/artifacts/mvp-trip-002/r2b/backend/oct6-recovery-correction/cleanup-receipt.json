@@ -1,0 +1,18 @@
+{
+  "source": "full-gate-final/test-runner-result.json",
+  "generatedFixture": true,
+  "authenticatedNonSuperuser": true,
+  "ownSchemaAccessVerified": true,
+  "invocationResourcesRemaining": "0|0",
+  "cleanupSucceeded": true,
+  "generatedMediaRoot": true,
+  "mediaRootCleanupSucceeded": true,
+  "preexistingMetadataUnchanged": true,
+  "preexistingTaskPrefixCountsBefore": "4|4",
+  "preexistingTaskPrefixCountsAfter": "4|4",
+  "passwordOutput": "none",
+  "error": null,
+  "cleanupError": null,
+  "retainedDatabaseOrRealRowsFilesTouched": false,
+  "dpapiProviderPublicNetworkOperations": "not run"
+}

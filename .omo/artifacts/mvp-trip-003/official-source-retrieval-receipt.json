@@ -1,0 +1,12 @@
+{
+  "retrievedDate":"2026-10-06",
+  "mode":"one anonymous official download through portal UI request sequence; bounded ZIP/header/first-row inspection; no import",
+  "dataset":{"id":"15083033","snapshot":"20260630","publisher":"소상공인시장진흥공단","cost":"무료","rights":"이용허락범위 제한 없음"},
+  "download":{"checkLimit":{"needCaptcha":false},"httpStatus":200,"contentLength":352699739,"localIgnoredPath":".omo/local/r3-source-qa/SEMAS_store_20260630.zip","sha256":"57aa361544108ff4fc73334f87d2ced61e41fe8638dd70bcd842930f865d2386"},
+  "archive":{"entries":17,"csvFiles":16,"instructionFiles":1,"encoding":"UTF-8","delimiter":",","identicalHeaders":true,"columns":39},
+  "boundedSample":{"rowsPerCsv":1,"sourceIdsNonblank":true,"sourceIdsUniqueAcross16Samples":true,"longitudeRange":[126.569908451853,129.263536613542],"latitudeRange":[33.5116371028632,37.8782755585983]},
+  "coordinateDocumentation":{"source":"https://www.data.go.kr/data/15012005/openapi.do","crs":"WGS84","axes":{"longitude":"경도","latitude":"위도"}},
+  "sourceId":{"csvColumn":"상가업소번호","apiField":"bizesId","officialMeaning":"establishment-assigned serial number"},
+  "noUserGate":true,
+  "noDbOrAccountOrProviderMutation":true
+}

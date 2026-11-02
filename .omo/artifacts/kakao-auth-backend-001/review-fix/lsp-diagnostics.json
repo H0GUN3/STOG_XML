@@ -1,0 +1,22 @@
+{
+  "recordedUtc": "2026-09-28T06:31:00Z",
+  "tool": "lsp_diagnostics",
+  "runs": [
+    {
+      "path": "backend/src/main/java/com/stog/backend",
+      "extension": ".java",
+      "filesScanned": 15,
+      "filesWithErrors": 0,
+      "totalDiagnostics": 0,
+      "rawResult": "Directory scanned; Files with errors: 0; Total diagnostics: 0"
+    },
+    {
+      "path": "backend/src/test/java/com/stog/backend",
+      "extension": ".java",
+      "filesScanned": 6,
+      "filesWithErrors": 0,
+      "totalDiagnostics": 0,
+      "rawResult": "Directory scanned; Files with errors: 0; Total diagnostics: 0"
+    }
+  ]
+}

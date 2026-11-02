@@ -1,0 +1,16 @@
+﻿{
+    "ownedRoleAndSchemaRemaining":  "0|0",
+    "preexistingMetadataRestored":  true,
+    "privateMediaRootRemoved":  true,
+    "backendPid":  24472,
+    "backendAbsent":  true,
+    "fixturePid":  45516,
+    "fixtureAbsent":  true,
+    "port8080Absent":  true,
+    "emulatorPid":  43696,
+    "deviceAbsent":  true,
+    "reverseBefore":  "",
+    "reverseAfter":  "",
+    "settingsRestored":  true,
+    "preexistingEmulatorTouched":  false
+}

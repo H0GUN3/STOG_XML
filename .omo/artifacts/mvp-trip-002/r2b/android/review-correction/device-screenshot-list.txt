@@ -1,0 +1,28 @@
+/sdcard/Pictures/STOG-R2b-QA/mvp-trip-detail-empty (1).png
+/sdcard/Pictures/STOG-R2b-QA/mvp-trip-detail-empty (2).png
+/sdcard/Pictures/STOG-R2b-QA/mvp-trip-detail-empty (3).png
+/sdcard/Pictures/STOG-R2b-QA/mvp-trip-detail-empty.png
+/sdcard/Pictures/STOG-R2b-QA/r2b-auth-ended-cover-cleared (1).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-auth-ended-cover-cleared.png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-landscape-light (1).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-landscape-light (2).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-landscape-light (3).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-landscape-light.png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-portrait-dark (1).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-portrait-dark (2).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-portrait-dark (3).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-portrait-dark.png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-portrait-light (1).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-portrait-light (2).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-portrait-light (3).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-content-portrait-light.png
+/sdcard/Pictures/STOG-R2b-QA/r2b-membership-denied-cover-cleared (1).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-membership-denied-cover-cleared.png
+/sdcard/Pictures/STOG-R2b-QA/r2b-preview-portrait-light (1).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-preview-portrait-light (2).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-preview-portrait-light (3).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-preview-portrait-light.png
+/sdcard/Pictures/STOG-R2b-QA/r2b-remove-dialog-landscape-dark (1).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-remove-dialog-landscape-dark (2).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-remove-dialog-landscape-dark (3).png
+/sdcard/Pictures/STOG-R2b-QA/r2b-remove-dialog-landscape-dark.png

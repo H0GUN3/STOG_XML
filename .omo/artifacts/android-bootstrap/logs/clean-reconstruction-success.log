@@ -1,0 +1,91 @@
+JAVA_HOME=/c/Program Files/Java/jdk-17
+JAVA_TOOL_OPTIONS=-Djava.net.preferIPv4Stack=true
+GRADLE_USER_HOME=/c/Users/GUN/AndroidStudioProjects/STOG_2/.omo/artifacts/android-bootstrap/reconstruction-final/gradle-home
+Picked up JAVA_TOOL_OPTIONS: -Djava.net.preferIPv4Stack=true
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: assembleDebug lintDebug testDebugUnitTest
+Picked up JAVA_TOOL_OPTIONS: -Djava.net.preferIPv4Stack=true
+
+Picked up JAVA_TOOL_OPTIONS: -Djava.net.preferIPv4Stack=true
+
+Picked up JAVA_TOOL_OPTIONS: -Djava.net.preferIPv4Stack=true
+
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:extractProguardFiles
+> Task :app:writeDebugAppMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:extractDeepLinksDebug
+> Task :app:javaPreCompileDebug
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:packageDebugResources
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugAssets
+> Task :app:processDebugNavigationResources
+> Task :app:compressDebugAssets
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:checkDebugAarMetadata
+> Task :app:compileDebugNavigationResources
+> Task :app:processDebugMainManifest
+> Task :app:parseDebugLocalResources
+> Task :app:desugarDebugFileDependencies
+> Task :app:generateDebugRFile
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:mergeDebugJavaResource
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:testDebugUnitTest NO-SOURCE
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeExtDexDebug
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:generateDebugLintReportModel
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/.omo/artifacts/android-bootstrap/reconstruction-final/source/app/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/.omo/artifacts/android-bootstrap/reconstruction-final/source/app/build/reports/lint-results-debug.sarif
+
+> Task :app:lintDebug
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/.omo/artifacts/android-bootstrap/reconstruction-final/source/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 16s
+47 actionable tasks: 47 executed
+Configuration cache entry stored.

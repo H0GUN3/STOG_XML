@@ -1,0 +1,27 @@
+Starting a Gradle Daemon, 64 busy and 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+SemasPlaceImporterTest > validSemasCsvHasAnExecutableImporter() FAILED
+    org.opentest4j.AssertionFailedError at SemasPlaceImporterTest.java:9
+        Caused by: java.lang.ClassNotFoundException at SemasPlaceImporterTest.java:9
+
+1 test completed, 1 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/backend/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 8s
+4 actionable tasks: 2 executed, 2 up-to-date

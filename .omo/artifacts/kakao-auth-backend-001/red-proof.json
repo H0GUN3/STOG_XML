@@ -1,0 +1,1 @@
+{"command":"gradlew -p backend test --tests com.stog.backend.AuthenticationBoundaryTest","expected":"failure before auth implementation","exitCode":1}

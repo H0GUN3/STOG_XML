@@ -1,0 +1,12 @@
+Night mode: auto
+font_scale=1.0
+rotation=free
+night=Night mode: auto
+reverse=
+List of devices attached
+emulator-5554          offline product:sdk_gphone64_x86_64 model:sdk_gphone64_x86_64 device:emu64xa transport_id:2
+
+
+Final process/device observation:
+List of devices attached
+

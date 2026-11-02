@@ -1,0 +1,47 @@
+{
+  "preservedFailures": [
+    {
+      "stage": "release fixture seam test attempt",
+      "command": ":app:testReleaseUnitTest --tests AuthViewModelFixtureGuardTest",
+      "result": "INVALID_CHECK",
+      "fact": "AGP exposes no testReleaseUnitTest task in this project; this is not counted as RED evidence",
+      "log": "logs/red-release-fixture-seam.log",
+      "replacementProof": "normal assembleRelease passed, fixture-flag assembleRelease failed closed, and release bytecode shows both fixture mutation methods unconditionally call an always-throwing guard"
+    },
+    {
+      "stage": "first enhanced cleanup E2E attempt",
+      "result": "HARNESS_TIMEOUT",
+      "fact": "The 600-second caller timeout occurred after provider/backend readiness and before any fresh instrumentation receipt. No fresh cleanup.json was produced; the prior cleanup.json remains historical and is not attributed to this attempt.",
+      "recovery": "No backend 8080 listener, emulator, reverse-capable device, or owned runtime process remained when inspected. The launcher was changed from an unbounded fixed-serial wait with captured emulator pipes to explicit port 5560, file-redirected emulator output, and a bounded adb readiness process. A fresh full fixture run is required for verified cleanup.",
+      "newReadinessLogs": ["../logs/provider-fixture.log", "../logs/backend-e2e.log"]
+    },
+    {
+      "stage": "second enhanced cleanup E2E attempt",
+      "result": "FAILED_BEFORE_INSTRUMENTATION",
+      "fact": "adb transport became available before Android's activity service; the immediate activity readiness command failed. Cleanup then encountered a missing reverse mapping before the former launcher could finish its receipt.",
+      "recovery": "Exact owned PIDs 45160/5192 (backend launcher/listener), 18472 (provider fixture), and 45224 plus descendants (emulator) were removed; no 8080 listener or connected emulator remained. The launcher now awaits the bounded boot_progress_enable_screen log event and removes reverse mappings only after recording successful creation.",
+      "freshReceipt": "NOT_PRODUCED; historical cleanup.json was not relabeled"
+    },
+    {
+      "stage": "third enhanced cleanup E2E attempt",
+      "result": "INSTRUMENTATION_FAILED_CLEANUP_PASSED",
+      "fact": "The repeated nonmember-trip assertion subscribed while the previous trip-not-found state was current, accepted that stale state before the new request reached LOADING, and then observed LOADING in the UI assertion.",
+      "recovery": "The deterministic observer now requires the exact new LOADING transition before accepting the expected terminal state. Fresh cleanup.json independently proved owned rows 0|0|0|0, aggregate restoration, launcher/listener/provider/emulator absence, reverse restoration, and font/rotation restoration for the failed run.",
+      "log": "../logs/e2e-instrumentation-failure.log"
+    },
+    {
+      "stage": "first expanded-value cleanup receipt run",
+      "result": "E2E_PASSED_RECEIPT_FAILED",
+      "fact": "All E2E assertions passed and every cleanup check except listenerPidAbsent passed. Port 8080 was already absent; the owned Java listener process exited shortly after the instantaneous PID check.",
+      "recovery": "The launcher now retains the exact listener Process handle, waits on its exit event with a 10-second bound, and force-stops only that owned handle if necessary before writing the receipt. No PID-only inference or polling is used.",
+      "receipt": "../cleanup.json was overwritten only by the subsequent fresh run"
+    },
+    {
+      "stage": "first final Android gate attempt",
+      "result": "FAILED",
+      "fact": "17 instrumentation tests passed, but Lint found three API-26 java.time usages incompatible with minSdk 23",
+      "log": "logs/final-android-gate.log",
+      "recovery": "Date validation was replaced by strict API-23-compatible parsing; the next complete gate passed."
+    }
+  ]
+}

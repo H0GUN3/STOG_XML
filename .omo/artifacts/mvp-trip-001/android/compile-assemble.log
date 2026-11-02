@@ -1,0 +1,68 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: :app:compileDebugAndroidTestJavaWithJavac :app:assembleDebug
+> Task :app:preBuild UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:generateDebugAndroidTestResources
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:extractDeepLinksDebug
+> Task :app:generateDebugBuildConfig
+> Task :app:validateSigningDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:packageDebugAndroidTestResources
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:processDebugNavigationResources
+> Task :app:mergeDebugAssets
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:compressDebugAssets
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:processDebugAndroidTestManifest
+> Task :app:desugarDebugFileDependencies
+> Task :app:generateDebugAndroidTestBuildConfig
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:processDebugMainManifest
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest
+> Task :app:processDebugManifest
+> Task :app:mergeDebugJavaResource
+> Task :app:compileDebugJavaWithJavac
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:compileDebugAndroidTestJavaWithJavac
+> Task :app:mergeExtDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+
+BUILD SUCCESSFUL in 28s
+50 actionable tasks: 38 executed, 12 up-to-date
+Configuration cache entry stored.

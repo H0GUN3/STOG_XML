@@ -1,0 +1,42 @@
+{
+  "task": "M1-SHARED-FOUNDATION-003",
+  "result": "PASS",
+  "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File backend/src/test/scripts/Run-PostgresIntegration.ps1",
+  "gradleTasks": ["test", "bootJar"],
+  "gradleExit": 0,
+  "tests": {
+    "total": 33,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "suites": {
+      "AuthenticationBoundaryTest": 3,
+      "BasketSaveControllerTest": 6,
+      "BasketSavePostgresIntegrationTest": 24
+    }
+  },
+  "realPostgreSQL": {
+    "database": "stog_backend_test",
+    "serverVersionNumber": "180006",
+    "generatedFixture": true,
+    "authenticatedNonSuperuser": true,
+    "ownSchemaAccessVerified": true,
+    "windowsJdbcVerification": "run-by-gradle",
+    "cleanupSucceeded": true,
+    "invocationResourcesRemaining": "0|0",
+    "preexistingMetadataUnchanged": true,
+    "preexistingTaskPrefixCountsBefore": "4|4",
+    "preexistingTaskPrefixCountsAfter": "4|4"
+  },
+  "package": {
+    "path": "backend/build/libs/stog-backend-0.0.1-SNAPSHOT.jar",
+    "bytes": 30935617,
+    "sha256": "e4c1e4d63764ab783d59b6e898b5427b5909867b1389ea61df61995b49fff8cf"
+  },
+  "diagnostics": {
+    "mainJavaErrors": 0,
+    "testJavaErrors": 0
+  },
+  "secretMaterialIncluded": false,
+  "fullLog": ".omo/artifacts/m1-foundation-003/logs/full-postgres-verification.log"
+}

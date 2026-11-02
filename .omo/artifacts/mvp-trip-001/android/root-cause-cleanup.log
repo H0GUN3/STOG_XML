@@ -1,0 +1,141 @@
+before:
+
+cleanup:
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+after-package-reverse:
+
+/system/bin/sh: test: Files/Git/sdcard/Pictures/STOG-QA: unexpected operator/operand
+media_absent=2
+kill:
+OK: killing emulator, bye bye
+OK
+devices_after:
+List of devices attached
+
+verification_cleanup:
+rm: configured-success.png: Bad address
+rm: configured-logout.png: Bad address
+rm: configured-error.png: Bad address
+rm: configured-success (1).png: Bad address
+rm: configured-logout (1).png: Bad address
+rm: configured-error (1).png: Bad address
+rm: configured-success (2).png: Bad address
+rm: configured-logout (2).png: Bad address
+rm: configured-error (2).png: Bad address
+rm: configured-success (3).png: Bad address
+rm: configured-logout (3).png: Bad address
+rm: configured-error (3).png: Bad address
+rm: configured-success (4).png: Bad address
+rm: configured-logout (4).png: Bad address
+rm: configured-error (4).png: Bad address
+rm: configured-success (5).png: Bad address
+rm: configured-logout (5).png: Bad address
+rm: configured-error (5).png: Bad address
+rm: configured-success (6).png: Bad address
+rm: configured-logout (6).png: Bad address
+rm: configured-error (6).png: Bad address
+rm: configured-success (7).png: Bad address
+rm: configured-logout (7).png: Bad address
+rm: configured-error (7).png: Bad address
+rm: mvp-trip-detail-empty.png: Bad address
+rm: configured-success (8).png: Bad address
+rm: configured-logout (8).png: Bad address
+rm: configured-error (8).png: Bad address
+rm: mvp-trip-detail-empty (1).png: Bad address
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+reverse:
+
+packages:
+media:
+present
+OK: killing emulator, bye bye
+OK
+List of devices attached
+
+media-provider-cleanup:
+Error while accessing provider:media
+java.lang.IllegalArgumentException: Volume external_primary not found
+	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:207)
+	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:177)
+	at android.content.ContentProviderProxy.delete(ContentProviderNative.java:661)
+	at com.android.commands.content.Content$DeleteCommand.onExecute(Content.java:581)
+	at com.android.commands.content.Content$Command.execute(Content.java:522)
+	at com.android.commands.content.Content.main(Content.java:735)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:366)
+remaining-media-rows:
+Error while accessing provider:media
+java.lang.IllegalArgumentException: Invalid column display_name
+	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:207)
+	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:177)
+	at android.content.ContentProviderProxy.query(ContentProviderNative.java:495)
+	at com.android.commands.content.Content$QueryCommand.onExecute(Content.java:661)
+	at com.android.commands.content.Content$Command.execute(Content.java:522)
+	at com.android.commands.content.Content.main(Content.java:735)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:366)
+filesystem-list:
+total 3660
+-rwxrwx--- 1 u0_a209 media_rw 109019 2026-09-29 14:22 configured-error (1).png
+-rwxrwx--- 1 u0_a209 media_rw      0 2026-09-29 14:23 configured-error (2).png
+-rwxrwx--- 1 u0_a209 media_rw 109019 2026-10-01 09:01 configured-error (3).png
+-rwxrwx--- 1 u0_a209 media_rw 109019 2026-10-01 10:09 configured-error (4).png
+-rwxrwx--- 1 u0_a209 media_rw 109019 2026-10-01 10:14 configured-error (5).png
+-rwxrwx--- 1 u0_a209 media_rw 109019 2026-10-01 10:17 configured-error (6).png
+-rwxrwx--- 1 u0_a209 media_rw 109019 2026-10-01 10:22 configured-error (7).png
+-rwxrwx--- 1 u0_a209 media_rw 109019 2026-10-01 10:23 configured-error (8).png
+-rwxrwx--- 1 u0_a209 media_rw 109019 2026-09-29 14:03 configured-error.png
+-rwxrwx--- 1 u0_a209 media_rw 117043 2026-09-29 14:22 configured-logout (1).png
+-rwxrwx--- 1 u0_a209 media_rw      0 2026-09-29 14:23 configured-logout (2).png
+-rwxrwx--- 1 u0_a209 media_rw 117043 2026-10-01 09:01 configured-logout (3).png
+-rwxrwx--- 1 u0_a209 media_rw 117043 2026-10-01 10:09 configured-logout (4).png
+-rwxrwx--- 1 u0_a209 media_rw 117043 2026-10-01 10:14 configured-logout (5).png
+-rwxrwx--- 1 u0_a209 media_rw 117043 2026-10-01 10:17 configured-logout (6).png
+-rwxrwx--- 1 u0_a209 media_rw 117043 2026-10-01 10:22 configured-logout (7).png
+-rwxrwx--- 1 u0_a209 media_rw 117043 2026-10-01 10:23 configured-logout (8).png
+-rwxrwx--- 1 u0_a209 media_rw 117043 2026-09-29 14:03 configured-logout.png
+-rwxrwx--- 1 u0_a209 media_rw 164876 2026-09-29 14:22 configured-success (1).png
+-rwxrwx--- 1 u0_a209 media_rw      0 2026-09-29 14:23 configured-success (2).png
+-rwxrwx--- 1 u0_a209 media_rw 183126 2026-10-01 09:01 configured-success (3).png
+-rwxrwx--- 1 u0_a209 media_rw 181646 2026-10-01 10:09 configured-success (4).png
+-rwxrwx--- 1 u0_a209 media_rw 181646 2026-10-01 10:14 configured-success (5).png
+-rwxrwx--- 1 u0_a209 media_rw 183126 2026-10-01 10:17 configured-success (6).png
+-rwxrwx--- 1 u0_a209 media_rw 183126 2026-10-01 10:22 configured-success (7).png
+-rwxrwx--- 1 u0_a209 media_rw 183126 2026-10-01 10:23 configured-success (8).png
+-rwxrwx--- 1 u0_a209 media_rw 164876 2026-09-29 14:03 configured-success.png
+-rwxrwx--- 1 u0_a209 media_rw 172412 2026-10-01 10:23 mvp-trip-detail-empty (1).png
+-rwxrwx--- 1 u0_a209 media_rw 172412 2026-10-01 10:22 mvp-trip-detail-empty.png
+reverse:
+
+packages:
+kill:
+OK: killing emulator, bye bye
+OK
+List of devices attached
+
+final-cleanup:
+remaining-media:
+configured-error (1).png
+configured-error (2).png
+configured-error (3).png
+configured-error.png
+configured-logout (1).png
+configured-logout (2).png
+configured-logout (3).png
+configured-logout.png
+configured-success (1).png
+configured-success (2).png
+configured-success (3).png
+configured-success.png
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+Failure [DELETE_FAILED_INTERNAL_ERROR]
+reverse:
+
+packages:
+kill:
+OK: killing emulator, bye bye
+OK
+List of devices attached
+

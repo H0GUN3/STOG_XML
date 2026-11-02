@@ -1,0 +1,51 @@
+--- device ---
+api=36
+Physical size: 1080x2400
+Physical density: 420
+--- portrait launch ---
+Starting: Intent { cmp=com.stog.app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.stog.app/.MainActivity
+TotalTime: 891
+WaitTime: 894
+Complete
+--- landscape configuration recreation ---
+Starting: Intent { cmp=com.stog.app/.MainActivity }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Status: ok
+LaunchState: UNKNOWN (0)
+Activity: com.stog.app/.MainActivity
+TotalTime: 0
+WaitTime: 13
+Complete
+--- large font portrait recreation ---
+Starting: Intent { cmp=com.stog.app/.MainActivity }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Status: ok
+LaunchState: UNKNOWN (0)
+Activity: com.stog.app/.MainActivity
+TotalTime: 0
+WaitTime: 3
+Complete
+--- Back ---
+after_back=      topResumedActivity=ActivityRecord{193208938 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t5}
+--- relaunch ---
+Starting: Intent { cmp=com.stog.app/.MainActivity }
+Status: ok
+LaunchState: WARM
+Activity: com.stog.app/.MainActivity
+TotalTime: 106
+WaitTime: 112
+Complete
+--- restore settings ---
+font_scale=1.0
+accelerometer_rotation=1
+user_rotation=0
+--- screenshot metadata ---
+.omo\artifacts\android-bootstrap\screenshots\final-landscape-end.png (2400, 1080) RGBA PNG
+.omo\artifacts\android-bootstrap\screenshots\final-landscape-top.png (1080, 2400) RGBA PNG
+.omo\artifacts\android-bootstrap\screenshots\final-large-font.png (1080, 2400) RGBA PNG
+.omo\artifacts\android-bootstrap\screenshots\final-portrait.png (1080, 2400) RGBA PNG
+.omo\artifacts\android-bootstrap\screenshots\final-relaunch.png (1080, 2400) RGBA PNG
+--- app crash scan ---

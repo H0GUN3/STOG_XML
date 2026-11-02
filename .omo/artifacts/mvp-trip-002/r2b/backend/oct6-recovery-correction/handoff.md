@@ -1,0 +1,7 @@
+# R2b backend recovery correction handoff
+
+RESULT: PASS. The three reproduced recovery defects were minimally corrected in `TripCoverService` and `TripCoverStorage`. Overlapping startup/scheduled triggers now execute serially under one lock, each pass visits at most 100 total entries including invalid/unowned names, and persistent bounded cursors progress beyond retained early entries. Existing ownership, age, current/reference, unexpired-ledger, soft-delete, rollback and unknown-commit protections remain in place.
+
+EVIDENCE: `red-green.md` records behavioral RED (exit 1, three exact failures) and focused isolated GREEN (exit 0, 13/13). Five changed Java files have zero LSP diagnostics. `verification-summary.json` records the unfiltered canonical JDK 17 V1-V5 PostgreSQL plus bootJar gate: exit 0, 105/105, failures/errors/skips 0/0/0. `cleanup-receipt.json` records role/schema `0|0`, generated media-root removal, unchanged preexisting metadata/prefix counts, and no password output. Historical pre-fix evidence under `oct6-verification/` was not modified.
+
+REMAINING PROBLEMS: Backend recovery has no known remaining defect in this correction scope. `provenance.md` records the unresolved contract provenance: canonical TASK 6.1 says raw body/no persistable grant, while a later manager DAG implementation directive says multipart and grant-when-needed; no later direct-user or canonical amendment was found. Android and final real-surface integration remain independently owned and are not claimed here.

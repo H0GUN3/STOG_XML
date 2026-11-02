@@ -1,0 +1,11 @@
+{
+    "fixture":  "loopback HTTP fixture; not real Kakao",
+    "backend":  "dedicated local stog_backend_dev/stog_app via DPAPI launcher",
+    "exchangeStatus":  200,
+    "protectedMissingTripStatus":  404,
+    "logoutStatus":  204,
+    "protectedAfterLogoutStatus":  401,
+    "refreshAfterLogoutStatus":  401,
+    "tokenValuesRecorded":  false,
+    "realKakao":  "NOT_RUN"
+}

@@ -1,0 +1,30 @@
+{
+  "RESULT": "PASS",
+  "EVIDENCE": {
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File backend/src/test/scripts/Run-PostgresIntegration.ps1",
+    "workingDirectory": "C:/Users/GUN/AndroidStudioProjects/STOG_2",
+    "exitCode": 0,
+    "freshRun": true,
+    "runner": {"startedUtc":"2026-09-22T08:08:21.3350213Z","finishedUtc":"2026-09-22T08:08:46.4815983Z","rerunTasks":true,"gradleExit":0,"tasks":"test bootJar --rerun-tasks"},
+    "tests": {"total":27,"failures":0,"errors":0,"skipped":0,"suites":{"AuthenticationBoundaryTest":3,"BasketSaveControllerTest":5,"BasketSavePostgresIntegrationTest":19},"junit":"backend/build/test-results/test/TEST-*.xml"},
+    "coverageMatrix": {
+      "HTTP/auth": ["realServerRejectsForgedUserHeaderWithAuthenticationEnvelope","forgedUserHeaderCannotAuthenticate","anonymousBasketSaveGetsAuthenticationRequiredEnvelope","productionDisablesGeneratedDefaultUserConfiguration"],
+      "validation/response": ["rejectsFractionalStringAndOutOfRangePlanVersions","rejectsUnknownFieldsAndNoncanonicalUuid","acceptsFullNonnegativeInt64BoundaryWithoutCoercion"],
+      "create/replay/metadata": ["createsThenReturnsExistingWithoutChangingMetadataOrVersion","upcomingTripCanSaveAndExistingResultCanReplayExactly","concurrentIdenticalRequestReplaysExactWinner","validReplayDoesNotExtendExpiryAndDeletedTripIsNotDisclosed"],
+      "keys/concurrency/rollback": ["sameRequestDifferentTypedInputConflictsAndExpiredKeyIsReprocessed","globalRequestCollisionRollsBackLoserTripAndReadsWinnerOnce","concurrentSamePlaceHasOneCreationAndOneVersionConflict","lateDatabaseFailureRollsBackItemVersionResultAndNeverNotifies"],
+      "authorization/races": ["missingTripAndNonmemberAreIndistinguishableAndEndedTripCannotCreate","memberRemovalHoldingTripLockWinsBeforeFinalAuthorization","replaySurvivesNewerVersionEndedTripAndDeletedItemButNotLostMembership","lockWaitIsDatabaseBoundedAndReturnsNonSecretEnvelope"],
+      "callbacks": ["commitCallbackRunsOnlyAfterCommitAndSeesCommittedState","listenerFailureCannotUndoCommittedSuccess"],
+      "schema/safety": ["validatesPlaceAndStaleVersionBeforeLookingUpExistingBasket","placeReferenceIsRestrictedAndMaximumVersionNeverWraps","existingGlobalRequestConflictDoesNotMutateOrEmit","expiredReplaySamplesClockAfterRequestRowLockReturns"]
+    },
+    "postgres": {"database":"stog_backend_test","serverVersion":"PostgreSQL 18.6","serverVersionNumber":"180006","role":"stog_m1_002_49875100747c4170bdb3c81b7de28675","schema":"stog_m1_002_49875100747c4170bdb3c81b7de28675","generatedFixture":true,"authenticatedNonSuperuser":true,"ownSchemaAccessVerified":true,"passwordOutput":"none"},
+    "cleanup": {"succeeded":true,"invocationResourcesRemaining":"0|0","preexistingMetadataUnchanged":true,"prefixCountsBefore":"4|4","prefixCountsAfter":"4|4"},
+    "packaging": {"bootJar":"PASS","jar":"backend/build/libs/*.jar","productionOnly":true,"testIdentityOrProbeLeakage":false,"migrationPresent":true,"defaultUserExcluded":"PASS"},
+    "protectedFiles": {"algorithm":"SHA-256","gitignore":"4edb676b088f0058c73940c07512968e200a5e34002cbd06b1d715b593fe4649","manifest":".omo/artifacts/m1-foundation-002/protected-files.json","allListedHashes":"verified"},
+    "scope": {"authoredChanges":"backend source/config/migration/tests/runner plus ignored evidence only","docsOrOpenApiModified":false,"androidModified":false,"rootChanges":false,"credentialScan":"no emitted credentials; runtime-generated password placeholders excluded"},
+    "testIntegrity": {"realPostgresJDBC":true,"mockDatabaseReplacingContract":false,"sleepOrPollingLuck":false,"realSocket401":true,"positiveRequests":"MockMvc with real PostgreSQL context"},
+    "changedFiles": ["backend/build.gradle","backend/src/main/java/com/stog/backend/ApiErrorHandler.java","backend/src/main/java/com/stog/backend/AuthenticatedUser.java","backend/src/main/java/com/stog/backend/BasketSaveController.java","backend/src/main/java/com/stog/backend/BasketSaveException.java","backend/src/main/java/com/stog/backend/BasketSaveService.java","backend/src/main/java/com/stog/backend/SecurityConfig.java","backend/src/main/java/com/stog/backend/StogBackendApplication.java","backend/src/main/java/com/stog/backend/TripPlanChangedEvent.java","backend/src/main/java/com/stog/backend/TripPlanEventPublisher.java","backend/src/main/resources/application.properties","backend/src/main/resources/db/migration/V1__basket_save_foundation.sql","backend/src/test/java/com/stog/backend/AuthenticationBoundaryTest.java","backend/src/test/java/com/stog/backend/BasketSaveControllerTest.java","backend/src/test/java/com/stog/backend/BasketSavePostgresIntegrationTest.java","backend/src/test/java/com/stog/backend/RealJdbcProbe.java","backend/src/test/scripts/Run-PostgresIntegration.ps1"],
+    "sourceReview": "All listed backend authored source/config/migration/test/runner files and required prior artifacts inspected; assertions are represented by current JUnit XML and named tests above."
+  },
+  "REMAINING_PROBLEMS": ["Four stog_m1_002 role/schema pairs remain. Their creation origin is uncertain: prior resource-hygiene evidence cannot attribute them to this invocation or establish that they predate this goal, so they were preserved and not deleted."],
+  "verificationNote": "No unrun test is marked PASS. No production auth bypass/provider, SSE transport, new infrastructure, Android rebuild, documentation, or OpenAPI change was introduced."
+}

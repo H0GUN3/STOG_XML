@@ -1,0 +1,42 @@
+{
+  "scope": "Existing R2b backend full canonical PostgreSQL suite and bootJar; no implementation changes",
+  "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File backend/src/test/scripts/Run-PostgresIntegration.ps1 -ArtifactSubdirectory mvp-trip-002/r2b/backend/oct6-verification",
+  "commandExit": 0,
+  "jdk": "C:\\Program Files\\Java\\jdk-17 (runner-enforced process scope)",
+  "testFilter": "none",
+  "bootJarSkipped": false,
+  "gradleExit": 0,
+  "buildResult": "BUILD SUCCESSFUL",
+  "totals": {
+    "tests": 101,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {"name":"AuthPostgresIntegrationTest","tests":14,"failures":0,"errors":0,"skipped":0},
+    {"name":"AuthenticationBoundaryTest","tests":4,"failures":0,"errors":0,"skipped":0},
+    {"name":"BasketSaveControllerTest","tests":6,"failures":0,"errors":0,"skipped":0},
+    {"name":"BasketSavePostgresIntegrationTest","tests":24,"failures":0,"errors":0,"skipped":0},
+    {"name":"KakaoTokenVerifierTest","tests":5,"failures":0,"errors":0,"skipped":0},
+    {"name":"RestrictedOwnerAuthPostgresIntegrationTest","tests":5,"failures":0,"errors":0,"skipped":0},
+    {"name":"RestrictedOwnerConfigurationTest","tests":5,"failures":0,"errors":0,"skipped":0},
+    {"name":"TripCollaborationPostgresIntegrationTest","tests":11,"failures":0,"errors":0,"skipped":0},
+    {"name":"TripCoverPostgresIntegrationTest","tests":6,"failures":0,"errors":0,"skipped":0},
+    {"name":"TripCoverStorageTest","tests":3,"failures":0,"errors":0,"skipped":0},
+    {"name":"TripCursorCodecTest","tests":2,"failures":0,"errors":0,"skipped":0},
+    {"name":"TripProductControllerTest","tests":7,"failures":0,"errors":0,"skipped":0},
+    {"name":"TripProductPostgresIntegrationTest","tests":9,"failures":0,"errors":0,"skipped":0}
+  ],
+  "bootJar": {
+    "result": "PASS",
+    "path": "backend/build/libs/stog-backend-0.0.1-SNAPSHOT.jar",
+    "observedSizeBytes": 31127486
+  },
+  "lspBeforeGate": {
+    "backendDirectoryAttempt": "timed out without a diagnostic result",
+    "targetedFiles": 5,
+    "targetedDiagnostics": 0
+  },
+  "overall": "EXECUTION_PASS_SOURCE_REVIEW_BLOCKED"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "red": {
+    "redirect": "302 fixture reached the second server before redirects were disabled; 307/308 were included in the same receiver test",
+    "logoutWithoutUsableRefresh": "missing and corrupt refresh cases incorrectly returned confirmed=true",
+    "exchangeFailureCleanup": "provider cleanup was not invoked before ERROR",
+    "localPrecedence": "explicit blank local values incorrectly fell through to environment"
+  },
+  "green": {
+    "redirect": "302/307/308 are returned as non-success; redirect receiver observed zero requests, authorization headers, and bodies",
+    "logoutWithoutUsableRefresh": "missing/corrupt refresh returns unconfirmed, clears memory access/local storage, and makes no logout request",
+    "exchangeFailureCleanup": "ERROR is reached only after successful provider cleanup; failed cleanup blocks login until retry; stale cleanup is ignored and consumed token is not re-exchanged",
+    "localPrecedence": "absent uses environment, explicit blank disables environment, explicit local overrides environment"
+  },
+  "credentialsPrinted": false,
+  "realProviderCalled": false
+}

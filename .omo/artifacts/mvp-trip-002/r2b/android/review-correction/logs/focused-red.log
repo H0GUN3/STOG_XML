@@ -1,0 +1,145 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as configuration cache cannot be reused because Gradle property 'stogLocalInstrumentationFixture' has changed.
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugAndroidTestResources
+> Task :app:extractDeepLinksDebug
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResources
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:validateSigningDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:packageDebugAndroidTestResources
+> Task :app:desugarDebugFileDependencies
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:mergeDebugAssets
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:processDebugNavigationResources
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:compressDebugAssets
+> Task :app:javaPreCompileDebug
+> Task :app:compileDebugAndroidTestNavigationResources
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:compileDebugNavigationResources
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:checkDebugAarMetadata
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:mergeLibDexDebugAndroidTest
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:processDebugAndroidTestManifest
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:generateDebugAndroidTestBuildConfig
+> Task :app:processDebugMainManifest
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugAndroidTestResources
+> Task :app:mergeExtDexDebugAndroidTest
+> Task :app:generateDebugAndroidTestGlobalSynthetics
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:mergeExtDexDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :app:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+
+> Task :app:compileDebugAndroidTestJavaWithJavac FAILED
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\TripFlowUiTest.java:166: error: cannot find symbol
+            android.net.Uri generated = generatedJpeg(); clearPrivateCover(); CountDownLatch entered = new CountDownLatch(1); CountDownLatch release = new CountDownLatch(1); CountDownLatch discarded = new CountDownLatch(1);
+                                                         ^
+  symbol:   method clearPrivateCover()
+  location: class TripFlowUiTest
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\TripFlowUiTest.java:177: error: cannot find symbol
+                assertEquals(TripViewModel.CoverKind.AUTH_ENDED, model.cover().getValue().kind()); assertNull(model.selectedTripId()); assertNoPrivateCover();
+                                                                                                                                       ^
+  symbol:   method assertNoPrivateCover()
+  location: class TripFlowUiTest
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\TripFlowUiTest.java:407: error: cannot find symbol
+            android.net.Uri generated = generatedJpeg(); clearPrivateCover(); CountDownLatch entered = new CountDownLatch(1); CountDownLatch release = new CountDownLatch(1); CountDownLatch discarded = new CountDownLatch(1);
+                                                         ^
+  symbol:   method clearPrivateCover()
+  location: class TripFlowUiTest
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\TripFlowUiTest.java:414: error: cannot find symbol
+                invalidation.invalidate(scenario, model); release.countDown(); assertTrue("late prepared input was not disposed", discarded.await(10, TimeUnit.SECONDS)); assertNoPrivateCover();
+                                                                                                                                                                          ^
+  symbol:   method assertNoPrivateCover()
+  location: class TripFlowUiTest
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+4 errors
+
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugAndroidTestJavaWithJavac' (registered by plugin 'com.android.internal.application').
+> Compilation failed; see the compiler output below.
+  Note: Recompile with -Xlint:deprecation for details.
+  Note: Some input files use or override a deprecated API.
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\TripFlowUiTest.java:166: error: cannot find symbol
+              android.net.Uri generated = generatedJpeg(); clearPrivateCover(); CountDownLatch entered = new CountDownLatch(1); CountDownLatch release = new CountDownLatch(1); CountDownLatch discarded = new CountDownLatch(1);
+                                                           ^
+    symbol:   method clearPrivateCover()
+    location: class TripFlowUiTest
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\TripFlowUiTest.java:177: error: cannot find symbol
+                  assertEquals(TripViewModel.CoverKind.AUTH_ENDED, model.cover().getValue().kind()); assertNull(model.selectedTripId()); assertNoPrivateCover();
+                                                                                                                                         ^
+    symbol:   method assertNoPrivateCover()
+    location: class TripFlowUiTest
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\TripFlowUiTest.java:407: error: cannot find symbol
+              android.net.Uri generated = generatedJpeg(); clearPrivateCover(); CountDownLatch entered = new CountDownLatch(1); CountDownLatch release = new CountDownLatch(1); CountDownLatch discarded = new CountDownLatch(1);
+                                                           ^
+    symbol:   method clearPrivateCover()
+    location: class TripFlowUiTest
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\auth\TripFlowUiTest.java:414: error: cannot find symbol
+                  invalidation.invalidate(scenario, model); release.countDown(); assertTrue("late prepared input was not disposed", discarded.await(10, TimeUnit.SECONDS)); assertNoPrivateCover();
+                                                                                                                                                                            ^
+    symbol:   method assertNoPrivateCover()
+    location: class TripFlowUiTest
+  4 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 23s
+65 actionable tasks: 65 executed
+Configuration cache entry stored.

@@ -1,0 +1,113 @@
+{
+  "task": "MVP-TRIP-001",
+  "verifiedAt": "2026-10-01T09:03:00Z",
+  "overallStatus": "BLOCKED",
+  "stopReason": "The canonical Android gate fails reproducibly before integrated E2E, and the required real-backend instrumentation source does not exist.",
+  "sourceReview": {
+    "status": "FAIL",
+    "reviewedProducerHandoffs": [
+      ".omo/artifacts/mvp-trip-001/backend/handoff.md",
+      ".omo/artifacts/mvp-trip-001/android/handoff.md"
+    ],
+    "contractChecks": {
+      "backendDtoParsingAuthorizationIdempotencyCursorLegacyNullability": "PASS_BY_SOURCE_AND_POSTGRES_GATE",
+      "v3Checksum": {
+        "status": "PASS",
+        "sha256": "b6079d26454442b1373b65650e46a62218427c7c15f595edd7d784e60a2ab206"
+      },
+      "androidLegacyDetailNullability": {
+        "status": "FAIL",
+        "reason": "AuthApiClient.parseTripObject requires non-null name and region_label for detail responses although legacy detail permits both null."
+      },
+      "androidRecreationAndSmallSavedState": {
+        "status": "FAIL",
+        "reason": "TripViewModel and TripFlowState use only in-memory fields; there is no SavedStateHandle or equivalent process-recreation persistence for pages, anchor, selected trip, draft, or pending request ID."
+      },
+      "androidCursorPaginationRecovery": {
+        "status": "FAIL",
+        "reason": "The client parses next_cursor but exposes only fixed first-page requests and no continuation or invalid-cursor/version-conflict fresh-page recovery."
+      },
+      "releaseFixtureBoundary": {
+        "status": "PASS_BY_SOURCE",
+        "reason": "app/build.gradle rejects stogLocalInstrumentationFixture for release-requested tasks and fixture installation entry points retain the existing BuildConfig.DEBUG guard."
+      }
+    }
+  },
+  "behavioralRed": {
+    "backend": {
+      "status": "PASS",
+      "evidence": ".omo/artifacts/mvp-trip-001/backend/red-evidence.txt",
+      "reason": "Authenticated controller request failed on the missing handler rather than anonymous 401 or compile failure."
+    },
+    "android": {
+      "status": "FAIL",
+      "evidence": ".omo/artifacts/mvp-trip-001/android/red-trip-flow-state.log",
+      "reason": "Only pending request-ID replacement has a recorded behavioral RED. No pre-implementation behavioral RED is preserved for the new API parsing/refresh/error behavior or UI journey; this historical absence cannot be repaired retroactively."
+    }
+  },
+  "backendExactGate": {
+    "status": "PASS",
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File backend/src/test/scripts/Run-PostgresIntegration.ps1",
+    "javaHome": "C:/Program Files/Java/jdk-17",
+    "gradleExit": 0,
+    "tripProductTests": {"tests": 9, "failures": 0, "errors": 0, "skipped": 0},
+    "bootJar": "PASS",
+    "postgres": {
+      "version": "18.6",
+      "generatedNonSuperuserPrivateSchema": true,
+      "cleanupSucceeded": true,
+      "invocationResourcesRemaining": "0|0",
+      "preexistingMetadataUnchanged": true
+    },
+    "evidence": [
+      ".omo/artifacts/mvp-trip-001/logs/backend-exact-gate.log",
+      ".omo/artifacts/m1-foundation-002/test-runner-result.json",
+      "backend/build/test-results/test/TEST-com.stog.backend.TripProductPostgresIntegrationTest.xml"
+    ]
+  },
+  "androidExactGate": {
+    "status": "FAIL",
+    "device": "owned Pixel_8 AVD, API 36.1, emulator-5562",
+    "command": "./gradlew.bat --no-daemon -PstogLocalInstrumentationFixture=true :app:testDebugUnitTest :app:connectedDebugAndroidTest :app:lintDebug :app:assembleDebug '-Pandroid.testInstrumentationRunnerArguments.class=com.stog.app.MissingConfigurationUiTest,com.stog.app.auth.AuthApiClientSecurityTest,com.stog.app.auth.AuthApiClientTest,com.stog.app.auth.AuthApiClientTripItemTest,com.stog.app.auth.ConfiguredAuthUiTest,com.stog.app.auth.SecureRefreshStoreTest,com.stog.app.trip.TripApiClientTest,com.stog.app.trip.TripFlowUiTest'",
+    "failure": "ClassNotFoundException: com.stog.app.trip.TripFlowUiTest",
+    "observed": "19 instrumentation tests started; the named TripFlowUiTest initialization failed. JVM, lint, and assemble tasks completed in the same Gradle invocation, but the aggregate gate failed.",
+    "actualSource": "app/src/androidTest/java/com/stog/app/auth/TripFlowUiTest.java",
+    "evidence": ".omo/artifacts/mvp-trip-001/logs/android-exact-gate-settled.log"
+  },
+  "realLocalE2E": {
+    "status": "NOT_RUN_BLOCKED",
+    "requiredMissingClass": "app/src/androidTest/java/com/stog/app/trip/RealBackendTripProductUiTest.java",
+    "preflightRunner": ".omo/artifacts/mvp-trip-001/Run-Real-Local-E2E.ps1",
+    "preflightResult": ".omo/artifacts/mvp-trip-001/real-local-e2e-result.json",
+    "reason": "Starting a backend/provider/database fixture could not prove the required UI surface because the exact real-surface test is absent and the canonical Android gate already fails."
+  },
+  "visualEvidence": {
+    "status": "INSPECTED_BUT_INSUFFICIENT",
+    "producerScreenshot": ".omo/artifacts/mvp-trip-001/android/mvp-trip-detail-empty.png",
+    "inspection": "The image visibly shows signed-in trip detail and an explicit empty basket in dark portrait; no token or private UUID is visible.",
+    "acceptedForIntegratedE2E": false,
+    "reason": "It is a socket-fixture portrait image only; the required real backend, replay, member/nonmember, recreation, Back/scroll, 1.3 font, light/dark, keyboard/focus, ID-only basket, and crash matrix were not observed."
+  },
+  "cleanup": {
+    "status": "PASS",
+    "receipt": ".omo/artifacts/mvp-trip-001/cleanup-receipt.json",
+    "ownedEmulatorAbsent": true,
+    "ownedDeviceAbsent": true,
+    "adbReverseRemoved": true,
+    "settingsUnchanged": true,
+    "backend8080Absent": true,
+    "postgresFixtureResourcesRemaining": "0|0",
+    "preexistingPostgresListenerPreserved": true,
+    "realUserDpapiProviderPublicTlsUntouched": true
+  },
+  "notRun": [
+    "API 23 runtime",
+    "API 37 runtime",
+    "physical device",
+    "TalkBack",
+    "real Kakao provider combined with protected trip flow",
+    "public HTTPS/TLS",
+    "integrated Android -> actual backend -> PostgreSQL R1 flow"
+  ],
+  "productStatus": "R1 is not VERIFIED. The whole product MVP remains incomplete; R2-R9 remain tracked."
+}

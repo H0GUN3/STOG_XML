@@ -1,0 +1,161 @@
+{
+  "RESULT": "PASS",
+  "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File backend/src/test/scripts/Run-PostgresIntegration.ps1",
+  "workingDirectory": "C:/Users/GUN/AndroidStudioProjects/STOG_2",
+  "exitCode": 0,
+  "startedUtc": "2026-09-22T08:02:41.7047698Z",
+  "finishedUtc": "2026-09-22T08:03:06.3272171Z",
+  "build": {
+    "result": "BUILD SUCCESSFUL",
+    "duration": "23s",
+    "tasks": "6 actionable tasks: 6 executed",
+    "requestedTasks": ["test", "bootJar"],
+    "rerunTasks": true,
+    "jdk": 17,
+    "gradle": "root Gradle 9.5 wrapper"
+  },
+  "actualJUnitCounts": {
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "suites": [
+      {
+        "name": "com.stog.backend.AuthenticationBoundaryTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 2.797,
+        "scenarios": [
+          "forgedUserHeaderCannotAuthenticate()",
+          "anonymousBasketSaveGetsAuthenticationRequiredEnvelope()",
+          "productionDisablesGeneratedDefaultUserConfiguration()"
+        ]
+      },
+      {
+        "name": "com.stog.backend.BasketSaveControllerTest",
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 1.143,
+        "scenarios": [
+          "rejectsFractionalStringAndOutOfRangePlanVersions()",
+          "authenticatedInternalPrincipalGetsMinimalCreatedResponse()",
+          "rejectsUnknownFieldsAndNoncanonicalUuid()",
+          "authenticatedStringPrincipalIsNotTrustedAsInternalIdentity()",
+          "acceptsFullNonnegativeInt64BoundaryWithoutCoercion()"
+        ]
+      },
+      {
+        "name": "com.stog.backend.BasketSavePostgresIntegrationTest",
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 9.975,
+        "scenarios": [
+          "lockWaitIsDatabaseBoundedAndReturnsNonSecretEnvelope()",
+          "validReplayDoesNotExtendExpiryAndDeletedTripIsNotDisclosed()",
+          "memberRemovalHoldingTripLockWinsBeforeFinalAuthorization()",
+          "validatesPlaceAndStaleVersionBeforeLookingUpExistingBasket()",
+          "concurrentSamePlaceHasOneCreationAndOneVersionConflict()",
+          "globalRequestCollisionRollsBackLoserTripAndReadsWinnerOnce()",
+          "realServerRejectsForgedUserHeaderWithAuthenticationEnvelope()",
+          "existingGlobalRequestConflictDoesNotMutateOrEmit()",
+          "expiredReplaySamplesClockAfterRequestRowLockReturns()",
+          "replaySurvivesNewerVersionEndedTripAndDeletedItemButNotLostMembership()",
+          "lateDatabaseFailureRollsBackItemVersionResultAndNeverNotifies()",
+          "missingTripAndNonmemberAreIndistinguishableAndEndedTripCannotCreate()",
+          "createsThenReturnsExistingWithoutChangingMetadataOrVersion()",
+          "sameRequestDifferentTypedInputConflictsAndExpiredKeyIsReprocessed()",
+          "commitCallbackRunsOnlyAfterCommitAndSeesCommittedState()",
+          "placeReferenceIsRestrictedAndMaximumVersionNeverWraps()",
+          "upcomingTripCanSaveAndExistingResultCanReplayExactly()",
+          "concurrentIdenticalRequestReplaysExactWinner()",
+          "listenerFailureCannotUndoCommittedSuccess()"
+        ]
+      }
+    ]
+  },
+  "postgresIdentity": {
+    "jdbcServer": "localhost:5432",
+    "database": "stog_backend_test",
+    "serverVersion": "PostgreSQL 18.6",
+    "serverVersionNumber": "180006",
+    "role": "stog_m1_002_a3974bf91d41489eb39d3bfe77f57308",
+    "schema": "stog_m1_002_a3974bf91d41489eb39d3bfe77f57308",
+    "authenticatedNonSuperuser": true,
+    "ownSchemaAccessVerified": true,
+    "generatedFixture": true,
+    "passwordOutput": "none"
+  },
+  "migration": {
+    "freshOwnedSchema": true,
+    "initialVersion": "Empty Schema",
+    "validatedMigrations": 1,
+    "applied": "V1 - basket save foundation",
+    "finalVersion": "v1"
+  },
+  "proof": {
+    "database": "The integration suite used the runner-provided PostgreSQL JDBC URL and Flyway logged PostgreSQL 18.6 plus migration of the fresh generated schema.",
+    "transactions": "Passing integration scenarios exercised independent DriverManager connections/backend PIDs, held-lock overlaps, staged global-key insert collision, rollback, and independent post-commit visibility.",
+    "httpSocket401": "realServerRejectsForgedUserHeaderWithAuthenticationEnvelope passed against the random loopback Tomcat port using java.net.http.HttpClient and asserted HTTP 401/AUTHENTICATION_REQUIRED.",
+    "positiveRequests": "Positive endpoint cases used MockMvc with the real PostgreSQL application context; they are not claimed as real socket requests.",
+    "packaging": "bootJar completed; the jar contains production classes and V1 migration, contains neither BasketSavePostgresIntegrationTest nor RealJdbcProbe, and source inspection found one production endpoint: POST /api/trips/{tripId}/trip-items.",
+    "noH2": true,
+    "sqlTransactionsNotMockedInPostgresSuite": true,
+    "defaultRollbackOnlyNotUsedForAfterCommitProof": true
+  },
+  "cleanup": {
+    "succeeded": true,
+    "invocationResourcesRemaining": "0|0",
+    "preexistingMetadataUnchanged": true,
+    "prefixCountsBefore": "4|4",
+    "prefixCountsAfter": "4|4",
+    "note": "The four preexisting stog_m1_002_ roles/schemas were not modified or investigated; downstream resource-hygiene owns them."
+  },
+  "inScopeFixes": [
+    {
+      "file": "backend/build.gradle",
+      "change": "Use Spring Boot 4 Flyway starter for auto-configuration and retain the PostgreSQL Flyway database module."
+    },
+    {
+      "file": "backend/src/main/java/com/stog/backend/ApiErrorHandler.java",
+      "change": "Map PostgreSQL SQLSTATE 55P03 lock-not-available failures to the approved DATABASE_BUSY 503 envelope without exposing database details."
+    }
+  ],
+  "preservedFailures": [
+    {
+      "log": ".omo/artifacts/m1-foundation-002/logs/real-postgres-full-run-1.log",
+      "exitCode": 1,
+      "result": "27 tests, 18 failed because Flyway auto-configuration was absent and fixture tables did not exist."
+    },
+    {
+      "log": ".omo/artifacts/m1-foundation-002/logs/real-postgres-full-run-2.log",
+      "exitCode": 1,
+      "result": "27 tests, 19 failed because Flyway's PostgreSQL database module was absent."
+    },
+    {
+      "log": ".omo/artifacts/m1-foundation-002/logs/real-postgres-full-run-3.log",
+      "exitCode": 1,
+      "result": "27 tests, 1 failed because SQLSTATE 55P03 returned DATABASE_OPERATION_FAILED instead of DATABASE_BUSY."
+    }
+  ],
+  "evidenceFiles": {
+    "successfulRunnerLog": ".omo/artifacts/m1-foundation-002/logs/real-postgres-full-run-4.log",
+    "runnerResult": ".omo/artifacts/m1-foundation-002/test-runner-result.json",
+    "authoritativeJUnitDirectory": ".omo/artifacts/m1-foundation-002/logs/final-junit",
+    "firstFailureCopy": ".omo/artifacts/m1-foundation-002/logs/real-postgres-first-failure.log",
+    "successfulRunnerLogSha256": "511ee1c9739aa7378e45ee5ba361f657bed6814c0877daa84ec118f8716bdecf",
+    "postgresJUnitSha256": "4a3c7c5b56dde07786b67b316c411b62f94a2084a408009325c28d572c071332",
+    "bootJarSha256": "cf3480f1190fdfd89ab6890a9dd2c5cf46cacaf364200207c9c594c7ab510a97"
+  },
+  "limitations": [
+    "This run proves the implemented basket-save endpoint only; it does not claim social authentication or SSE delivery.",
+    "Only the forged-header authentication rejection used a real HTTP socket; positive endpoint behavior was MockMvc plus real PostgreSQL.",
+    "The four preexisting task-prefix resources are outside this task and remain for the resource-hygiene owner."
+  ],
+  "REMAINING_PROBLEMS": []
+}

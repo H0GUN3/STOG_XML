@@ -1,0 +1,96 @@
+Reusing configuration cache.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:extractDeepLinksDebug
+> Task :app:javaPreCompileDebug
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:generateDebugBuildConfig
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugAndroidTestResources
+> Task :app:processDebugNavigationResources
+> Task :app:checkDebugAarMetadata
+> Task :app:compileDebugNavigationResources
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:packageDebugAndroidTestResources
+> Task :app:processDebugAndroidTestManifest
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:generateDebugAndroidTestBuildConfig
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugSources
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+
+> Task :app:compileDebugAndroidTestJavaWithJavac FAILED
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\PlaceFlowUiTest.java:53: error: clearDebugFixture() is not public in AuthViewModel; cannot be accessed from outside package
+    @After public void cleanup() { AuthViewModel.clearDebugFixture(); }
+                                                ^
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\PlaceFlowUiTest.java:58: error: installDebugFixture(DebugFixture) is not public in AuthViewModel; cannot be accessed from outside package
+            AuthViewModel.installDebugFixture(context -> { AuthApiClient api = new AuthApiClient(fixture.baseUri(), new SecureRefreshStore(context)); AuthViewModel value = new AuthViewModel(api, new AuthStateMachine(true, null, new SignedIn(api))); auth.set(value); return value; });
+                         ^
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\PlaceFlowUiTest.java:58: error: constructor AuthViewModel in class AuthViewModel cannot be applied to given types;
+            AuthViewModel.installDebugFixture(context -> { AuthApiClient api = new AuthApiClient(fixture.baseUri(), new SecureRefreshStore(context)); AuthViewModel value = new AuthViewModel(api, new AuthStateMachine(true, null, new SignedIn(api))); auth.set(value); return value; });
+                                                                                                                                                                            ^
+  required: AuthApiClient,AuthStateMachine
+  found:    AuthApiClient,AuthStateMachine
+  reason: AuthViewModel(AuthApiClient,AuthStateMachine) is not public in AuthViewModel; cannot be accessed from outside package
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\PlaceFlowUiTest.java:58: error: DebugFixture is not public in AuthViewModel; cannot be accessed from outside package
+            AuthViewModel.installDebugFixture(context -> { AuthApiClient api = new AuthApiClient(fixture.baseUri(), new SecureRefreshStore(context)); AuthViewModel value = new AuthViewModel(api, new AuthStateMachine(true, null, new SignedIn(api))); auth.set(value); return value; });
+                                              ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugAndroidTestJavaWithJavac' (registered by plugin 'com.android.internal.application').
+> Compilation failed; see the compiler output below.
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\PlaceFlowUiTest.java:58: error: constructor AuthViewModel in class AuthViewModel cannot be applied to given types;
+              AuthViewModel.installDebugFixture(context -> { AuthApiClient api = new AuthApiClient(fixture.baseUri(), new SecureRefreshStore(context)); AuthViewModel value = new AuthViewModel(api, new AuthStateMachine(true, null, new SignedIn(api))); auth.set(value); return value; });
+                                                                                                                                                                              ^
+    required: AuthApiClient,AuthStateMachine
+    found:    AuthApiClient,AuthStateMachine
+    reason: AuthViewModel(AuthApiClient,AuthStateMachine) is not public in AuthViewModel; cannot be accessed from outside package
+  Note: Recompile with -Xlint:deprecation for details.
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\PlaceFlowUiTest.java:53: error: clearDebugFixture() is not public in AuthViewModel; cannot be accessed from outside package
+      @After public void cleanup() { AuthViewModel.clearDebugFixture(); }
+                                                  ^
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\PlaceFlowUiTest.java:58: error: installDebugFixture(DebugFixture) is not public in AuthViewModel; cannot be accessed from outside package
+              AuthViewModel.installDebugFixture(context -> { AuthApiClient api = new AuthApiClient(fixture.baseUri(), new SecureRefreshStore(context)); AuthViewModel value = new AuthViewModel(api, new AuthStateMachine(true, null, new SignedIn(api))); auth.set(value); return value; });
+                           ^
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\androidTest\java\com\stog\app\trip\PlaceFlowUiTest.java:58: error: DebugFixture is not public in AuthViewModel; cannot be accessed from outside package
+              AuthViewModel.installDebugFixture(context -> { AuthApiClient api = new AuthApiClient(fixture.baseUri(), new SecureRefreshStore(context)); AuthViewModel value = new AuthViewModel(api, new AuthStateMachine(true, null, new SignedIn(api))); auth.set(value); return value; });
+                                                ^
+  Note: Some input files use or override a deprecated API.
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  4 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 4s
+34 actionable tasks: 34 executed
+Configuration cache entry reused.

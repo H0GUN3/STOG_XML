@@ -1,0 +1,11 @@
+{
+  "result": "HISTORICAL_SCAFFOLD_COMPILE_FAILURE",
+  "command": "./gradlew.bat --no-daemon :app:testDebugUnitTest",
+  "exitCode": 1,
+  "classification": "NOT_BEHAVIORAL_RED",
+  "expectedAtExecution": "TripItemReadState did not exist before implementation",
+  "observed": "compileDebugUnitTestJavaWithJavac failed with 5 package TripItemReadState does not exist errors",
+  "behavioralFirstForOriginalGet": "NOT_VERIFIED",
+  "correction": "The preserved log proves only that a test referenced a missing production scaffold. It does not prove existing GET behavior failed an executable assertion and must not be described as behavioral-first TDD.",
+  "preservedLog": "logs/red-unit.log"
+}

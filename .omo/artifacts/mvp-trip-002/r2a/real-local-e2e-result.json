@@ -1,0 +1,58 @@
+﻿{
+    "result":  "PASS",
+    "surface":  "Android Pixel_8 UI -\u003e real local Spring backend -\u003e isolated PostgreSQL V1-V4",
+    "provider":  "literal-loopback synthetic Kakao fixture through normal exchange/security filter; real Kakao NOT_RUN",
+    "instrumentationTests":  1,
+    "twoDistinctAuthUsers":  true,
+    "collaborationLifecycle":  true,
+    "assertedFlow":  [
+                         "create",
+                         "ADMIN metadata edit",
+                         "issue/join",
+                         "same-trip shared visibility",
+                         "MEMBER metadata edit",
+                         "stale edit conflict and reload",
+                         "promote",
+                         "ADMIN leave denied",
+                         "self-demote then MEMBER leave",
+                         "last-ADMIN guard",
+                         "stale ADMIN command denied",
+                         "reissue old-link denial with membership retained",
+                         "stop denial",
+                         "new issue restart",
+                         "strict malformed invitation 400/404 matrix",
+                         "pending capability cleared on logout/recreation",
+                         "remove access revocation",
+                         "soft-delete replay/non-disclosure/deleted-link denial"
+                     ],
+    "actualUi":  [
+                     "ADMIN controls",
+                     "two actionable non-UUID member rows at font 1.30 portrait and landscape",
+                     "MEMBER leave visible and ADMIN delete hidden",
+                     "pending join confirmation",
+                     "logout/recreation clear",
+                     "portrait",
+                     "landscape",
+                     "dark"
+                 ],
+    "removedAccessAndDeleteReplay":  true,
+    "invitationCapabilitiesRecorded":  false,
+    "crashScanClean":  true,
+    "providerCalls":  {
+                          "owner_token_info":  3,
+                          "owner_user_info":  3,
+                          "member_token_info":  1,
+                          "member_user_info":  1
+                      },
+    "database":  {
+                     "identity_rows":  2,
+                     "trips":  1,
+                     "soft_deleted":  1,
+                     "members":  1,
+                     "invitations":  5,
+                     "command_executions":  15,
+                     "raw_token_columns":  0
+                 },
+    "databaseFixture":  "generated isolated non-superuser role/schema in stog_backend_test, migrated V1-V4",
+    "credentialsRecorded":  false
+}

@@ -1,0 +1,29 @@
+{
+    "startedUtc":  "2026-11-02T06:17:43.9996151Z",
+    "finishedUtc":  "2026-11-02T06:18:27.3699852Z",
+    "database":  "stog_backend_test",
+    "serverVersionNumber":  "180006",
+    "connectionOnly":  false,
+    "focusedTests":  [
+
+                     ],
+    "bootJarSkipped":  false,
+    "fixtureRole":  "stog_m1_002_9396b09478544145a924c83f5f86704c",
+    "generatedFixture":  true,
+    "provisionAcknowledgementRecovered":  false,
+    "authenticatedNonSuperuser":  true,
+    "ownSchemaAccessVerified":  true,
+    "windowsJdbcVerification":  "run-by-gradle",
+    "cleanupSucceeded":  true,
+    "invocationResourcesRemaining":  "0|0",
+    "preexistingMetadataUnchanged":  true,
+    "preexistingTaskPrefixCountsBefore":  "4|4",
+    "preexistingTaskPrefixCountsAfter":  "4|4",
+    "gradleExit":  0,
+    "error":  null,
+    "cleanupError":  null,
+    "passwordOutput":  "none",
+    "generatedMediaRoot":  true,
+    "mediaRootCleanupSucceeded":  true,
+    "sanitizedLog":  ".omo/artifacts/native-auth-ui-20261102/full-gate/logs/postgres-runner-connection-only.log"
+}

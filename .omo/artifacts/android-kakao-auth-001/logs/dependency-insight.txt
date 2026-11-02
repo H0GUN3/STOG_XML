@@ -1,0 +1,27 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: :app:dependencyInsight --dependency com.kakao.sdk:v2-user --configuration debugRuntimeClasspath
+
+> Task :app:dependencyInsight
+com.kakao.sdk:v2-user:2.25.0
+  Variant releaseVariantReleaseRuntimePublication:
+    | Attribute Name                                  | Provided     | Requested    |
+    |-------------------------------------------------|--------------|--------------|
+    | org.gradle.dependency.bundling                  | external     |              |
+    | org.gradle.libraryelements                      | aar          |              |
+    | org.gradle.status                               | release      |              |
+    | org.gradle.category                             | library      | library      |
+    | org.gradle.usage                                | java-runtime | java-runtime |
+    | com.android.build.api.attributes.AgpVersionAttr |              | 9.3.2        |
+    | com.android.build.api.attributes.BuildTypeAttr  |              | debug        |
+    | org.gradle.jvm.environment                      |              | android      |
+    | org.jetbrains.kotlin.platform.type              |              | androidJvm   |
+
+com.kakao.sdk:v2-user:2.25.0
+\--- debugRuntimeClasspath
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 8s
+1 actionable task: 1 executed
+Configuration cache entry stored.

@@ -1,0 +1,10 @@
+MVP-TRIP-001 backend behavioral RED
+UTC observation date: 2026-10-01
+Command:
+  JAVA_HOME='C:/Program Files/Java/jdk-17' ./gradlew.bat -p backend --no-daemon test --tests com.stog.backend.TripProductControllerTest --rerun-tasks
+Observed:
+  TripProductControllerTest.authenticatedPrincipalCreatesAndReplaysExactWire
+  authenticated AuthenticatedUser request reached the normal Spring MVC/security surface.
+  Expected HTTP 201, actual HTTP 404 because POST /api/trips had no handler.
+  Gradle exit: 1; 1 test, 1 failure.
+This was an HTTP behavioral absence failure, not a missing-class or compilation failure. The original command log is controller-red.log.

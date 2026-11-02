@@ -1,0 +1,16 @@
+{
+  "csvFiles": 16,
+  "identicalHeaders": true,
+  "columnCount": 39,
+  "firstRowSourceIdsNonblank": true,
+  "firstRowSourceIdsUnique": true,
+  "sourceIdPatternAll": true,
+  "sampleLongitudeRange": [
+    126.569908451853,
+    129.263536613542
+  ],
+  "sampleLatitudeRange": [
+    33.5116371028632,
+    37.8782755585983
+  ]
+}

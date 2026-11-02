@@ -1,0 +1,14 @@
+/sdcard/Pictures/STOG-Trip-Real-QA/./: 9 files pulled, 0 skipped. 11.2 MB/s (1157225 bytes in 0.098s)
+psql:<stdin>:1: NOTICE:  drop cascades to 12 other objects
+DETAIL:  drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.flyway_schema_history
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.stog_user
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.trip
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.trip_member
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.place
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.trip_item
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.request_execution
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.auth_identity
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.auth_login_exchange
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.auth_session
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.auth_refresh_token
+drop cascades to table stog_mvp_trip_97fbdf82fcdb4241a46d011237605489.trip_create_execution

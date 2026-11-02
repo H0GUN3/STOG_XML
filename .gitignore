@@ -14,11 +14,30 @@ local.properties
 .DS_Store
 Thumbs.db
 
-# Local verification evidence
-.omo/
+# Local agent state. Only reviewed evidence and the wiki are shared.
+.omo/*
+!.omo/wiki/
+!.omo/evidence/
+!.omo/artifacts/
+.omo/artifacts/**/gradle-home/
+.omo/artifacts/**/gradle-user-home/
+.omo/artifacts/**/source/
+.omo/artifacts/**/runtime/
+.omo/artifacts/**/*.apk
+.omo/artifacts/**/*.jar
+.omo/artifacts/**/*.zip
+.omo/artifacts/**/*.exe
+.omo/artifacts/**/*credential*
+.omo/artifacts/**/*secret-scan*
+.omo/artifacts/**/*emulator*.log
+.omo/artifacts/local-backend-001/
+.omo/artifacts/real-kakao-login-runtime/
+.omo/artifacts/restricted-owner-001/
+.omo/artifacts/direct-access-preparation/
+.omo/artifacts/connectivity-audit-20261102/
+.omo/artifacts/db-connectivity-20261102/
 
 # Local agent and tool output
 .ovis/
-graphify-out/
-generated-images/
+graphify-out/cache/
 NUL

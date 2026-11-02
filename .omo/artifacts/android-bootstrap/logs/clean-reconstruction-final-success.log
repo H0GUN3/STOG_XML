@@ -1,0 +1,74 @@
+Picked up JAVA_TOOL_OPTIONS: -Djava.net.preferIPv4Stack=true
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: assembleDebug lintDebug testDebugUnitTest
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:extractProguardFiles
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:extractDeepLinksDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugAssets
+> Task :app:checkDebugDuplicateClasses
+> Task :app:compressDebugAssets
+> Task :app:compileDebugNavigationResources
+> Task :app:validateSigningDebug
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:mergeLibDexDebug
+> Task :app:processDebugMainManifest
+> Task :app:desugarDebugFileDependencies
+> Task :app:packageDebugResources
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:mergeDebugJavaResource
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:mergeExtDexDebug
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:testDebugUnitTest NO-SOURCE
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:generateDebugLintReportModel
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/.omo/artifacts/android-bootstrap/reconstruction-final/source/app/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/.omo/artifacts/android-bootstrap/reconstruction-final/source/app/build/reports/lint-results-debug.sarif
+
+> Task :app:lintDebug
+
+BUILD SUCCESSFUL in 29s
+47 actionable tasks: 47 executed
+Configuration cache entry stored.

@@ -1,0 +1,18 @@
+psql:<stdin>:1: NOTICE:  drop cascades to 17 other objects
+DETAIL:  drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.flyway_schema_history
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.stog_user
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.trip
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.trip_member
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.place
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.trip_item
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.request_execution
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.auth_identity
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.auth_login_exchange
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.auth_session
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.auth_refresh_token
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.trip_create_execution
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.trip_invitation
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.trip_command_execution
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.trip_invitation_attempt
+drop cascades to table stog_r3b_276c80edead94ab98a8939de5a15d39e.trip_cover
+drop cascades to function stog_r3b_276c80edead94ab98a8939de5a15d39e.enforce_trip_cover_same_trip()

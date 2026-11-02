@@ -1,0 +1,20 @@
+psql:<stdin>:1: NOTICE:  drop cascades to 12 other objects
+DETAIL:  drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.flyway_schema_history
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.stog_user
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.trip
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.trip_member
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.place
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.trip_item
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.request_execution
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.auth_identity
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.auth_login_exchange
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.auth_session
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.auth_refresh_token
+drop cascades to table stog_mvp_trip_9306350e664d4a70bda29b6ed35c6e3a.trip_create_execution
+Owned E2E cleanup post-check failed; inspect cleanup-receipt.json.
+위치 C:\Users\GUN\AndroidStudioProjects\STOG_2\.omo\artifacts\mvp-trip-001\Run-Real-Local-E2E.ps1:360 문자:32
++ ... upPassed) { throw 'Owned E2E cleanup post-check failed; inspect clean ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Owned E2E clean...p-receipt.json.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Owned E2E cleanup post-check failed; inspect cleanup-receipt.json.
+ 

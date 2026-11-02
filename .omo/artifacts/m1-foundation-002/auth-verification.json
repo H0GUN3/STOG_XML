@@ -1,0 +1,21 @@
+{
+  "RESULT": "PASS",
+  "EVIDENCE": {
+    "command": "./gradlew.bat -p backend --no-daemon test --tests *AuthenticationBoundaryTest bootJar",
+    "exit_code": 0,
+    "test_count": 3,
+    "test_report": "backend/build/test-results/test/TEST-com.stog.backend.AuthenticationBoundaryTest.xml",
+    "build": "backend/build/libs/stog-backend-0.0.1-SNAPSHOT.jar",
+    "captured_output": ".omo/artifacts/m1-foundation-002/auth-green.log",
+    "security_filter_chain": "backend/src/main/java/com/stog/backend/SecurityConfig.java:16-26; all requests authenticated, stateless, form/basic/logout disabled",
+    "assertions": "backend/src/test/java/com/stog/backend/AuthenticationBoundaryTest.java:25-43; MockMvc through imported SecurityConfig; anonymous fabricated body user_id and X-User-Id both assert HTTP 401 and JSON error.code plus nonempty error.message; XML reports 3 tests",
+    "jar_boundary": "bootJar contains SecurityConfig.class and does not contain AuthenticationBoundaryTest.class or test sources",
+    "protected_hashes": "41/41 files in protected-files.json matched SHA-256, including project roots, app, docs, and reference",
+    "test_auth_main": "none found; test probe is under backend/src/test only",
+    "default_user_exclusion": "StogBackendApplication.java explicitly excludes UserDetailsServiceAutoConfiguration"
+  },
+  "REMAINING_PROBLEMS": [
+    "SQL/storage checks NOT_RUN: no PostgreSQL credentials available; result is not passing via database mocks.",
+    "No generated default login/password path observed in SecurityConfig; production authentication provider remains outside this focused boundary."
+  ]
+}

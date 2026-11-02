@@ -1,0 +1,561 @@
+Reusing configuration cache.
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:writeDebugAppMetadata
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:mapDebugSourceSetPaths
+> Task :app:extractDeepLinksDebug
+> Task :app:generateDebugAndroidTestResources
+> Task :app:generateDebugBuildConfig
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:javaPreCompileDebug
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:extractProguardFiles
+> Task :app:validateSigningDebug
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:compileDebugAndroidTestNavigationResources
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:mergeDebugAssets
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:mergeDebugJniLibFolders
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:packageDebugAndroidTestResources
+> Task :app:processDebugNavigationResources
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:compressDebugAssets
+> Task :app:compileDebugNavigationResources
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:mergeLibDexDebugAndroidTest
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:processDebugAndroidTestManifest
+> Task :app:generateDebugAndroidTestBuildConfig
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest
+> Task :app:packageDebugResources
+> Task :app:processDebugAndroidTestResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:mergeExtDexDebugAndroidTest
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:generateDebugAndroidTestGlobalSynthetics
+> Task :app:mergeDebugResources
+> Task :app:mergeExtDexDebug
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:mergeDebugJavaResource
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:generateDebugLintReportModel
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :app:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:compileDebugUnitTestJavaWithJavac
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:testDebugUnitTest
+
+> Task :app:compileDebugAndroidTestJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:dexBuilderDebugAndroidTest
+> Task :app:mergeProjectDexDebugAndroidTest
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/app/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/app/build/reports/lint-results-debug.sarif
+
+> Task :app:lintDebug
+Starting 49 tests on Pixel_8(AVD) - 16
+Pixel_8(AVD) - 16 Tests 16/49 completed. (0 skipped) (0 failed)
+> Task :app:connectedDebugAndroidTest
+
+Pixel_8(AVD) - 16 Tests 20/49 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 25/49 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 30/49 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 32/49 completed. (0 skipped) (0 failed)
+
+com.stog.app.auth.TripMembersRenderingUiTest > cReachesAndTapsEveryMemberControlAtLargeFontScalePortrait[Pixel_8(AVD) - 16] [31mFAILED [0m
+	java.lang.AssertionError: member fixture did not reach CONTENT(2)
+	at org.junit.Assert.fail(Assert.java:89)
+Pixel_8(AVD) - 16 Tests 33/49 completed. (0 skipped) (1 failed)
+
+com.stog.app.auth.TripMembersRenderingUiTest > dRemainsPortraitAndReachesEveryMemberControlUnderBothLandscapeDeviceRotations[Pixel_8(AVD) - 16] [31mFAILED [0m
+	androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624198> [trip_confirm_role_title] value: ¿ªÇÒÀ» º¯°æÇÒ±î¿ä?
+	
+
+com.stog.app.trip.TripApiClientTest > requiredNullableCoverMetadataIsAcceptedFromTheAuthenticatedTripDto[Pixel_8(AVD) - 16] [31mFAILED [0m
+	java.util.concurrent.RejectedExecutionException: Task com.stog.app.auth.AuthApiClient$$ExternalSyntheticLambda6@20578f4 rejected from java.util.concurrent.ThreadPoolExecutor@ef6ada[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2097)
+Pixel_8(AVD) - 16 Tests 41/49 completed. (0 skipped) (3 failed)
+Failed to retrieve logcat for some test cases. We retrieved logcat for 40 test cases out of 41 tests.
+Tests on Pixel_8(AVD) - 16 failed: There was 3 failure(s).
+Finished 41 tests on Pixel_8(AVD) - 16
+Execute com.stog.app.auth.TripMembersRenderingUiTest.cReachesAndTapsEveryMemberControlAtLargeFontScalePortrait: FAILED
+java.lang.AssertionError: java.lang.AssertionError: member fixture did not reach CONTENT(2)
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.stog.app.auth.TripMembersRenderingUiTest.exerciseEveryMemberControl(TripMembersRenderingUiTest.java:173)
+at com.stog.app.auth.TripMembersRenderingUiTest.cReachesAndTapsEveryMemberControlAtLargeFontScalePortrait(TripMembersRenderingUiTest.java:129)
+
+java.lang.AssertionError: member fixture did not reach CONTENT(2)
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.stog.app.auth.TripMembersRenderingUiTest.exerciseEveryMemberControl(TripMembersRenderingUiTest.java:173)
+at com.stog.app.auth.TripMembersRenderingUiTest.cReachesAndTapsEveryMemberControlAtLargeFontScalePortrait(TripMembersRenderingUiTest.java:129)
+Execute com.stog.app.auth.TripMembersRenderingUiTest.dRemainsPortraitAndReachesEveryMemberControlUnderBothLandscapeDeviceRotations: FAILED
+androidx.test.espresso.NoMatchingViewException: androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624198> [trip_confirm_role_title] value: ¿ªÇÒÀ» º¯°æÇÒ±î¿ä?
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) ty=BASE_APPLICATION wanim=0x103030d
+fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+pfl=NO_MOVE_ANIMATION EDGE_TO_EDGE_ENFORCED FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+bhv=DEFAULT
+fitSides=
+frameRateBoostOnTouch=true
+dvrrWindowFrameRateHint=true}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+
++-->ViewStub{id=16908777, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+
++-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++--->FitWindowsLinearLayout{id=2131230775, res-name=action_bar_root, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+
++---->ViewStubCompat{id=2131230786, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++----->FragmentContainerView{id=2131230933, res-name=fragment_container, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++------>ScrollView{id=2131230807, res-name=auth_scroll, visibility=VISIBLE, width=1080, height=2205, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=132.0, child-count=1}
+
++------->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=3887, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=6}
+
++-------->AppCompatImageView{id=-1, visibility=VISIBLE, width=294, height=294, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=393.0, y=84.0}
+
++-------->MaterialTextView{id=-1, visibility=VISIBLE, width=242, height=127, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=419.0, y=431.0, text=STOG, input-type=0, ime-target=false, has-links=false}
+
++-------->MaterialTextView{id=-1, visibility=VISIBLE, width=954, height=151, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=579.0, text=Travel planning, ready for the next verified step., input-type=0, ime-target=false, has-links=false}
+
++-------->MaterialCardView{id=-1, visibility=VISIBLE, width=954, height=513, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=814.0, is-checked=false, child-count=1}
+
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=954, height=513, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4}
+
++---------->MaterialTextView{id=2131230809, res-name=auth_status_title, visibility=VISIBLE, width=225, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=53.0, text=Signed in, input-type=0, ime-target=false, has-links=false}
+
++---------->MaterialTextView{id=2131230808, res-name=auth_status_body, visibility=VISIBLE, width=848, height=136, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=145.0, text=Your STOG session is ready on this device., input-type=0, ime-target=false, has-links=false}
+
++---------->CircularProgressIndicator{id=2131230806, res-name=auth_progress, desc=Authentication in progress, visibility=GONE, width=127, height=127, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=413.0, y=334.0}
+
++---------->MaterialButton{id=2131230805, res-name=auth_primary_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=334.0, text=Sign out, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++-------->FrameLayout{id=2131231301, res-name=trip_product_container, visibility=VISIBLE, width=954, height=1152, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=1380.0, child-count=1}
+
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=954, height=1152, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=6}
+
++---------->MaterialTextView{id=-1, visibility=VISIBLE, width=210, height=111, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=±¸¼º¿ø, input-type=0, ime-target=false, has-links=false}
+
++---------->MaterialTextView{id=-1, visibility=VISIBLE, width=954, height=155, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=132.0, text=¿ªÇÒ°ú ±¸¼º¿ø °ü¸®´Â °ü¸®ÀÚ¸¸ º¯°æÇÒ ¼ö ÀÖ½À´Ï´Ù., input-type=0, ime-target=false, has-links=false}
+
++---------->LinearProgressIndicator{id=2131231297, res-name=trip_members_progress, desc=±¸¼º¿øÀ» ºÒ·¯¿À´Â Áß, visibility=GONE, width=954, height=11, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=319.0}
+
++---------->RecyclerView{id=2131231296, res-name=trip_members_list, visibility=VISIBLE, width=954, height=735, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=319.0, child-count=2}
+
++----------->MaterialCardView{id=-1, visibility=VISIBLE, width=954, height=582, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.recyclerview.widget.RecyclerView$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=-391.0, is-checked=false, child-count=1}
+
++------------>LinearLayout{id=-1, visibility=VISIBLE, width=954, height=582, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4}
+
++------------->MaterialTextView{id=2131231292, res-name=trip_member_name, visibility=VISIBLE, width=848, height=78, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=53.0, text=³ª, input-type=0, ime-target=false, has-links=false}
+
++------------->MaterialTextView{id=2131231294, res-name=trip_member_role, visibility=VISIBLE, width=848, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=152.0, text=¿ªÇÒ: ADMIN, input-type=0, ime-target=false, has-links=false}
+
++------------->MaterialButton{id=2131231295, res-name=trip_member_role_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=256.0, text=¿ªÇÒ º¯°æ, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++------------->MaterialButton{id=2131231293, res-name=trip_member_remove_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=403.0, text=±¸¼º¿ø Á¦°Å, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++----------->MaterialCardView{id=-1, visibility=VISIBLE, width=954, height=582, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.recyclerview.widget.RecyclerView$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=212.0, is-checked=false, child-count=1}
+
++------------>LinearLayout{id=-1, visibility=VISIBLE, width=954, height=582, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4}
+
++------------->MaterialTextView{id=2131231292, res-name=trip_member_name, visibility=VISIBLE, width=848, height=78, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=53.0, text=¹ÎÁö, input-type=0, ime-target=false, has-links=false}
+
++------------->MaterialTextView{id=2131231294, res-name=trip_member_role, visibility=VISIBLE, width=848, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=152.0, text=¿ªÇÒ: MEMBER, input-type=0, ime-target=false, has-links=false}
+
++------------->MaterialButton{id=2131231295, res-name=trip_member_role_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=256.0, text=¿ªÇÒ º¯°æ, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++------------->MaterialButton{id=2131231293, res-name=trip_member_remove_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=403.0, text=±¸¼º¿ø Á¦°Å, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++---------->MaterialTextView{id=2131231299, res-name=trip_members_status, visibility=VISIBLE, width=954, height=66, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1086.0, text=, input-type=0, ime-target=false, has-links=false}
+
++---------->MaterialButton{id=2131231298, res-name=trip_members_retry, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=´Ù½Ã ½Ãµµ, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++-------->MaterialCardView{id=2131231278, res-name=trip_item_card, visibility=VISIBLE, width=954, height=1218, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=2585.0, is-checked=false, child-count=1}
+
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=954, height=1218, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7}
+
++---------->MaterialTextView{id=-1, visibility=VISIBLE, width=538, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=53.0, text=Read a saved trip item, input-type=0, ime-target=false, has-links=false}
+
++---------->MaterialTextView{id=-1, visibility=VISIBLE, width=848, height=206, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=145.0, text=Enter the trip and item UUIDs from your STOG data. This read does not change the trip., input-type=0, ime-target=false, has-links=false}
+
++---------->TextInputLayout{id=-1, visibility=VISIBLE, width=848, height=186, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=404.0, child-count=1}
+
++----------->FrameLayout{id=-1, visibility=VISIBLE, width=848, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=18.0, child-count=3}
+
++------------>TextInputEditText{id=2131231277, res-name=trip_id_input, visibility=VISIBLE, width=848, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x80001 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x0 hintText=Trip UUID label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=12, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true writingToolsEnabled=false contentMimeTypes=null ], x=0.0, y=0.0, text=, hint=Trip UUID, input-type=524289, ime-target=false, has-links=false}
+
++------------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+
++------------->CheckableImageButton{id=2131231221, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++------------->AppCompatTextView{id=2131231226, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+
++------------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+
++------------->AppCompatTextView{id=2131231227, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+
++------------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++-------------->CheckableImageButton{id=2131231219, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++------------->CheckableImageButton{id=2131231220, res-name=text_input_error_icon, desc=¿À·ù, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++---------->TextInputLayout{id=-1, visibility=VISIBLE, width=848, height=186, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=611.0, child-count=1}
+
++----------->FrameLayout{id=-1, visibility=VISIBLE, width=848, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=18.0, child-count=3}
+
++------------>TextInputEditText{id=2131231279, res-name=trip_item_id_input, visibility=VISIBLE, width=848, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x80001 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x0 hintText=Trip item UUID label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=12, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true writingToolsEnabled=false contentMimeTypes=null ], x=0.0, y=0.0, text=, hint=Trip item UUID, input-type=524289, ime-target=false, has-links=false}
+
++------------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+
++------------->CheckableImageButton{id=2131231221, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++------------->AppCompatTextView{id=2131231226, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+
++------------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+
++------------->AppCompatTextView{id=2131231227, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+
++------------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++-------------->CheckableImageButton{id=2131231219, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++------------->CheckableImageButton{id=2131231220, res-name=text_input_error_icon, desc=¿À·ù, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++---------->MaterialButton{id=2131231280, res-name=trip_item_load_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=850.0, text=Read trip item, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++---------->LinearProgressIndicator{id=2131231281, res-name=trip_item_progress, desc=Reading the current trip item, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+
++---------->MaterialTextView{id=2131231282, res-name=trip_item_status, visibility=VISIBLE, width=848, height=136, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=1029.0, text=Enter both UUIDs to read the current item., input-type=0, ime-target=false, has-links=false}
+The complete view hierarchy is available in artifact file 'view-hierarchy-19.txt'.
+at androidx.test.espresso.NoMatchingViewException$Builder.build(NoMatchingViewException.java:185)
+at androidx.test.espresso.base.DefaultFailureHandler.lambda$getNoMatchingViewExceptionTruncater$0(DefaultFailureHandler.java:93)
+at androidx.test.espresso.base.DefaultFailureHandler$$ExternalSyntheticLambda1.truncateExceptionMessage(D8$$SyntheticClass:0)
+at androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:72)
+at androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:38)
+at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:385)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)
+at com.stog.app.auth.TripMembersRenderingUiTest.exerciseControl(TripMembersRenderingUiTest.java:204)
+at com.stog.app.auth.TripMembersRenderingUiTest.exerciseRow(TripMembersRenderingUiTest.java:192)
+at com.stog.app.auth.TripMembersRenderingUiTest.exerciseEveryMemberControl(TripMembersRenderingUiTest.java:183)
+at com.stog.app.auth.TripMembersRenderingUiTest.dRemainsPortraitAndReachesEveryMemberControlUnderBothLandscapeDeviceRotations(TripMembersRenderingUiTest.java:133)
+
+androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624198> [trip_confirm_role_title] value: ¿ªÇÒÀ» º¯°æÇÒ±î¿ä?
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) ty=BASE_APPLICATION wanim=0x103030d
+fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+pfl=NO_MOVE_ANIMATION EDGE_TO_EDGE_ENFORCED FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+bhv=DEFAULT
+fitSides=
+frameRateBoostOnTouch=true
+dvrrWindowFrameRateHint=true}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+
++-->ViewStub{id=16908777, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+
++-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++--->FitWindowsLinearLayout{id=2131230775, res-name=action_bar_root, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+
++---->ViewStubCompat{id=2131230786, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++----->FragmentContainerView{id=2131230933, res-name=fragment_container, visibility=VISIBLE, width=1080, height=2400, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++------>ScrollView{id=2131230807, res-name=auth_scroll, visibility=VISIBLE, width=1080, height=2205, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=132.0, child-count=1}
+
++------->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=3887, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=6}
+
++-------->AppCompatImageView{id=-1, visibility=VISIBLE, width=294, height=294, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=393.0, y=84.0}
+
++-------->MaterialTextView{id=-1, visibility=VISIBLE, width=242, height=127, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=419.0, y=431.0, text=STOG, input-type=0, ime-target=false, has-links=false}
+
++-------->MaterialTextView{id=-1, visibility=VISIBLE, width=954, height=151, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=579.0, text=Travel planning, ready for the next verified step., input-type=0, ime-target=false, has-links=false}
+
++-------->MaterialCardView{id=-1, visibility=VISIBLE, width=954, height=513, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=814.0, is-checked=false, child-count=1}
+
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=954, height=513, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4}
+
++---------->MaterialTextView{id=2131230809, res-name=auth_status_title, visibility=VISIBLE, width=225, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=53.0, text=Signed in, input-type=0, ime-target=false, has-links=false}
+
++---------->MaterialTextView{id=2131230808, res-name=auth_status_body, visibility=VISIBLE, width=848, height=136, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=145.0, text=Your STOG session is ready on this device., input-type=0, ime-target=false, has-links=false}
+
++---------->CircularProgressIndicator{id=2131230806, res-name=auth_progress, desc=Authentication in progress, visibility=GONE, width=127, height=127, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=413.0, y=334.0}
+
++---------->MaterialButton{id=2131230805, res-name=auth_primary_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=334.0, text=Sign out, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++-------->FrameLayout{id=2131231301, res-name=trip_product_container, visibility=VISIBLE, width=954, height=1152, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=1380.0, child-count=1}
+
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=954, height=1152, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=6}
+
++---------->MaterialTextView{id=-1, visibility=VISIBLE, width=210, height=111, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=±¸¼º¿ø, input-type=0, ime-target=false, has-links=false}
+
++---------->MaterialTextView{id=-1, visibility=VISIBLE, width=954, height=155, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=132.0, text=¿ªÇÒ°ú ±¸¼º¿ø °ü¸®´Â °ü¸®ÀÚ¸¸ º¯°æÇÒ ¼ö ÀÖ½À´Ï´Ù., input-type=0, ime-target=false, has-links=false}
+
++---------->LinearProgressIndicator{id=2131231297, res-name=trip_members_progress, desc=±¸¼º¿øÀ» ºÒ·¯¿À´Â Áß, visibility=GONE, width=954, height=11, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=319.0}
+
++---------->RecyclerView{id=2131231296, res-name=trip_members_list, visibility=VISIBLE, width=954, height=735, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=319.0, child-count=2}
+
++----------->MaterialCardView{id=-1, visibility=VISIBLE, width=954, height=582, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.recyclerview.widget.RecyclerView$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=-391.0, is-checked=false, child-count=1}
+
++------------>LinearLayout{id=-1, visibility=VISIBLE, width=954, height=582, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4}
+
++------------->MaterialTextView{id=2131231292, res-name=trip_member_name, visibility=VISIBLE, width=848, height=78, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=53.0, text=³ª, input-type=0, ime-target=false, has-links=false}
+
++------------->MaterialTextView{id=2131231294, res-name=trip_member_role, visibility=VISIBLE, width=848, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=152.0, text=¿ªÇÒ: ADMIN, input-type=0, ime-target=false, has-links=false}
+
++------------->MaterialButton{id=2131231295, res-name=trip_member_role_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=256.0, text=¿ªÇÒ º¯°æ, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++------------->MaterialButton{id=2131231293, res-name=trip_member_remove_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=403.0, text=±¸¼º¿ø Á¦°Å, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++----------->MaterialCardView{id=-1, visibility=VISIBLE, width=954, height=582, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.recyclerview.widget.RecyclerView$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=212.0, is-checked=false, child-count=1}
+
++------------>LinearLayout{id=-1, visibility=VISIBLE, width=954, height=582, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4}
+
++------------->MaterialTextView{id=2131231292, res-name=trip_member_name, visibility=VISIBLE, width=848, height=78, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=53.0, text=¹ÎÁö, input-type=0, ime-target=false, has-links=false}
+
++------------->MaterialTextView{id=2131231294, res-name=trip_member_role, visibility=VISIBLE, width=848, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=152.0, text=¿ªÇÒ: MEMBER, input-type=0, ime-target=false, has-links=false}
+
++------------->MaterialButton{id=2131231295, res-name=trip_member_role_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=256.0, text=¿ªÇÒ º¯°æ, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++------------->MaterialButton{id=2131231293, res-name=trip_member_remove_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=403.0, text=±¸¼º¿ø Á¦°Å, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++---------->MaterialTextView{id=2131231299, res-name=trip_members_status, visibility=VISIBLE, width=954, height=66, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1086.0, text=, input-type=0, ime-target=false, has-links=false}
+
++---------->MaterialButton{id=2131231298, res-name=trip_members_retry, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=´Ù½Ã ½Ãµµ, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++-------->MaterialCardView{id=2131231278, res-name=trip_item_card, visibility=VISIBLE, width=954, height=1218, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=63.0, y=2585.0, is-checked=false, child-count=1}
+
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=954, height=1218, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7}
+
++---------->MaterialTextView{id=-1, visibility=VISIBLE, width=538, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=53.0, text=Read a saved trip item, input-type=0, ime-target=false, has-links=false}
+
++---------->MaterialTextView{id=-1, visibility=VISIBLE, width=848, height=206, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=145.0, text=Enter the trip and item UUIDs from your STOG data. This read does not change the trip., input-type=0, ime-target=false, has-links=false}
+
++---------->TextInputLayout{id=-1, visibility=VISIBLE, width=848, height=186, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=404.0, child-count=1}
+
++----------->FrameLayout{id=-1, visibility=VISIBLE, width=848, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=18.0, child-count=3}
+
++------------>TextInputEditText{id=2131231277, res-name=trip_id_input, visibility=VISIBLE, width=848, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x80001 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x0 hintText=Trip UUID label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=12, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true writingToolsEnabled=false contentMimeTypes=null ], x=0.0, y=0.0, text=, hint=Trip UUID, input-type=524289, ime-target=false, has-links=false}
+
++------------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+
++------------->CheckableImageButton{id=2131231221, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++------------->AppCompatTextView{id=2131231226, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+
++------------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+
++------------->AppCompatTextView{id=2131231227, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+
++------------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++-------------->CheckableImageButton{id=2131231219, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++------------->CheckableImageButton{id=2131231220, res-name=text_input_error_icon, desc=¿À·ù, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++---------->TextInputLayout{id=-1, visibility=VISIBLE, width=848, height=186, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=611.0, child-count=1}
+
++----------->FrameLayout{id=-1, visibility=VISIBLE, width=848, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=18.0, child-count=3}
+
++------------>TextInputEditText{id=2131231279, res-name=trip_item_id_input, visibility=VISIBLE, width=848, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x80001 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialToolType=0 initialCapsMode=0x0 hintText=Trip item UUID label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=12, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE isStylusHandwritingEnabled=true writingToolsEnabled=false contentMimeTypes=null ], x=0.0, y=0.0, text=, hint=Trip item UUID, input-type=524289, ime-target=false, has-links=false}
+
++------------>StartCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+
++------------->CheckableImageButton{id=2131231221, res-name=text_input_start_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++------------->AppCompatTextView{id=2131231226, res-name=textinput_prefix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+
++------------>EndCompoundLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+
++------------->AppCompatTextView{id=2131231227, res-name=textinput_suffix_text, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+
++------------->FrameLayout{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+
++-------------->CheckableImageButton{id=2131231219, res-name=text_input_end_icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++------------->CheckableImageButton{id=2131231220, res-name=text_input_error_icon, desc=¿À·ù, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, is-checked=false}
+
++---------->MaterialButton{id=2131231280, res-name=trip_item_load_action, visibility=VISIBLE, width=848, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=850.0, text=Read trip item, input-type=0, ime-target=false, has-links=false, is-checked=false}
+
++---------->LinearProgressIndicator{id=2131231281, res-name=trip_item_progress, desc=Reading the current trip item, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+
++---------->MaterialTextView{id=2131231282, res-name=trip_item_status, visibility=VISIBLE, width=848, height=136, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=1029.0, text=Enter both UUIDs to read the current item., input-type=0, ime-target=false, has-links=false}
+The complete view hierarchy is available in artifact file 'view-hierarchy-19.txt'.
+at androidx.test.espresso.NoMatchingViewException$Builder.build(NoMatchingViewException.java:185)
+at androidx.test.espresso.base.DefaultFailureHandler.lambda$getNoMatchingViewExceptionTruncater$0(DefaultFailureHandler.java:93)
+at androidx.test.espresso.base.DefaultFailureHandler$$ExternalSyntheticLambda1.truncateExceptionMessage(D8$$SyntheticClass:0)
+at androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:72)
+at androidx.test.espresso.base.ViewHierarchyExceptionHandler.handleSafely(ViewHierarchyExceptionHandler.java:38)
+at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:385)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)
+at com.stog.app.auth.TripMembersRenderingUiTest.exerciseControl(TripMembersRenderingUiTest.java:204)
+at com.stog.app.auth.TripMembersRenderingUiTest.exerciseRow(TripMembersRenderingUiTest.java:192)
+at com.stog.app.auth.TripMembersRenderingUiTest.exerciseEveryMemberControl(TripMembersRenderingUiTest.java:183)
+at com.stog.app.auth.TripMembersRenderingUiTest.dRemainsPortraitAndReachesEveryMemberControlUnderBothLandscapeDeviceRotations(TripMembersRenderingUiTest.java:133)
+Execute com.stog.app.trip.TripApiClientTest.requiredNullableCoverMetadataIsAcceptedFromTheAuthenticatedTripDto: FAILED
+java.util.concurrent.RejectedExecutionException: java.util.concurrent.RejectedExecutionException: Task com.stog.app.auth.AuthApiClient$$ExternalSyntheticLambda6@20578f4 rejected from java.util.concurrent.ThreadPoolExecutor@ef6ada[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9]
+at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2097)
+at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:851)
+at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1386)
+at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:711)
+at com.stog.app.auth.AuthApiClient.runTripRequest(AuthApiClient.java:323)
+at com.stog.app.auth.AuthApiClient.tripDetail(AuthApiClient.java:163)
+at com.stog.app.trip.TripViewModel.loadDetail(TripViewModel.java:471)
+at com.stog.app.trip.TripViewModel.lambda$saveSelectedPlace$5(TripViewModel.java:321)
+at com.stog.app.trip.TripViewModel.$r8$lambda$RhDBvAhvArxH2uQ5fiiUVcY8qQ0(Unknown Source:0)
+at com.stog.app.trip.TripViewModel$$ExternalSyntheticLambda2.completed(D8$$SyntheticClass:0)
+at com.stog.app.auth.AuthApiClient.lambda$savePlaceToBasket$14(AuthApiClient.java:283)
+at com.stog.app.auth.AuthApiClient.$r8$lambda$cn9TqsSV1hmjjYzJvk2m_9vZPyo(Unknown Source:0)
+at com.stog.app.auth.AuthApiClient$$ExternalSyntheticLambda28.run(D8$$SyntheticClass:0)
+at android.os.Handler.handleCallback(Handler.java:1070)
+at android.os.Handler.dispatchMessage(Handler.java:125)
+at android.os.Looper.dispatchMessage(Looper.java:333)
+at android.os.Looper.loopOnce(Looper.java:263)
+at android.os.Looper.loop(Looper.java:367)
+at android.app.ActivityThread.main(ActivityThread.java:9287)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+java.util.concurrent.RejectedExecutionException: Task com.stog.app.auth.AuthApiClient$$ExternalSyntheticLambda6@20578f4 rejected from java.util.concurrent.ThreadPoolExecutor@ef6ada[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9]
+at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2097)
+at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:851)
+at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1386)
+at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:711)
+at com.stog.app.auth.AuthApiClient.runTripRequest(AuthApiClient.java:323)
+at com.stog.app.auth.AuthApiClient.tripDetail(AuthApiClient.java:163)
+at com.stog.app.trip.TripViewModel.loadDetail(TripViewModel.java:471)
+at com.stog.app.trip.TripViewModel.lambda$saveSelectedPlace$5(TripViewModel.java:321)
+at com.stog.app.trip.TripViewModel.$r8$lambda$RhDBvAhvArxH2uQ5fiiUVcY8qQ0(Unknown Source:0)
+at com.stog.app.trip.TripViewModel$$ExternalSyntheticLambda2.completed(D8$$SyntheticClass:0)
+at com.stog.app.auth.AuthApiClient.lambda$savePlaceToBasket$14(AuthApiClient.java:283)
+at com.stog.app.auth.AuthApiClient.$r8$lambda$cn9TqsSV1hmjjYzJvk2m_9vZPyo(Unknown Source:0)
+at com.stog.app.auth.AuthApiClient$$ExternalSyntheticLambda28.run(D8$$SyntheticClass:0)
+at android.os.Handler.handleCallback(Handler.java:1070)
+at android.os.Handler.dispatchMessage(Handler.java:125)
+at android.os.Looper.dispatchMessage(Looper.java:333)
+at android.os.Looper.loopOnce(Looper.java:263)
+at android.os.Looper.loop(Looper.java:367)
+at android.app.ActivityThread.main(ActivityThread.java:9287)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+> Task :app:connectedDebugAndroidTest
+Test run failed to complete. Instrumentation run failed due to Process crashed.
+Logcat of last crash: 
+Process: com.stog.app, PID: 4177
+java.util.concurrent.RejectedExecutionException: Task com.stog.app.auth.AuthApiClient$$ExternalSyntheticLambda6@20578f4 rejected from java.util.concurrent.ThreadPoolExecutor@ef6ada[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2097)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:851)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1386)
+	at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:711)
+	at com.stog.app.auth.AuthApiClient.runTripRequest(AuthApiClient.java:323)
+	at com.stog.app.auth.AuthApiClient.tripDetail(AuthApiClient.java:163)
+	at com.stog.app.trip.TripViewModel.loadDetail(TripViewModel.java:471)
+	at com.stog.app.trip.TripViewModel.lambda$saveSelectedPlace$5(TripViewModel.java:321)
+	at com.stog.app.trip.TripViewModel.$r8$lambda$RhDBvAhvArxH2uQ5fiiUVcY8qQ0(Unknown Source:0)
+	at com.stog.app.trip.TripViewModel$$ExternalSyntheticLambda2.completed(D8$$SyntheticClass:0)
+	at com.stog.app.auth.AuthApiClient.lambda$savePlaceToBasket$14(AuthApiClient.java:283)
+	at com.stog.app.auth.AuthApiClient.$r8$lambda$cn9TqsSV1hmjjYzJvk2m_9vZPyo(Unknown Source:0)
+	at com.stog.app.auth.AuthApiClient$$ExternalSyntheticLambda28.run(D8$$SyntheticClass:0)
+	at android.os.Handler.handleCallback(Handler.java:1070)
+	at android.os.Handler.dispatchMessage(Handler.java:125)
+	at android.os.Looper.dispatchMessage(Looper.java:333)
+	at android.os.Looper.loopOnce(Looper.java:263)
+	at android.os.Looper.loop(Looper.java:367)
+	at android.app.ActivityThread.main(ActivityThread.java:9287)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+
+> Task :app:connectedDebugAndroidTest FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:connectedDebugAndroidTest' (registered by plugin 'com.android.internal.application').
+> There were failing tests. See the report at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/app/build/reports/androidTests/connected/debug/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 59s
+83 actionable tasks: 83 executed
+Configuration cache entry reused.

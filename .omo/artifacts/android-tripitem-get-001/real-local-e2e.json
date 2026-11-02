@@ -1,0 +1,29 @@
+﻿{
+    "result":  "PASS",
+    "surface":  "Android emulator UI -\u003e adb reverse -\u003e real local Spring backend -\u003e PostgreSQL",
+    "provider":  "literal-loopback synthetic Kakao fixture; real Kakao NOT_RUN",
+    "instrumentationTests":  1,
+    "successRead":  true,
+    "missingTrip404":  true,
+    "nonmemberTrip404":  true,
+    "missingItem404":  true,
+    "accessExpiryRefreshSingleRetry":  true,
+    "logoutNoStaleContent":  true,
+    "providerCalls":  {
+                          "tokenInfo":  1,
+                          "userInfo":  1
+                      },
+    "database":  {
+                     "identity_rows":  1,
+                     "session_rows":  1,
+                     "session_revoked":  1,
+                     "refresh_rows":  2,
+                     "used_refresh_rows":  1
+                 },
+    "generatedIds":  {
+                         "trip":  "31656551-f514-49d4-b559-b5233ef1cc88",
+                         "item":  "d30be139-3698-471a-878e-ae18e333f30f",
+                         "nonmemberTrip":  "5d64dee1-8eea-443b-87e2-8fb766af0fe9"
+                     },
+    "credentialsRecorded":  false
+}

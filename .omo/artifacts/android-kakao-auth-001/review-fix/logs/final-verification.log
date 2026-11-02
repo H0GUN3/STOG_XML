@@ -1,0 +1,6 @@
+ 
+ERROR: JAVA_HOME is set to an invalid directory: /c/Program Files/Java/jdk-17 
+ 
+Please set the JAVA_HOME variable in your environment to match the 
+location of your Java installation. 
+지정된 경로를 찾을 수 없습니다.

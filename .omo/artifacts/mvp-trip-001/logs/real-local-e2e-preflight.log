@@ -1,0 +1,1 @@
+Canonical Android gate/real-surface instrumentation sources are absent; integration execution is intentionally refused before side effects. Missing: app/src/androidTest/java/com/stog/app/trip/TripFlowUiTest.java, app/src/androidTest/java/com/stog/app/trip/RealBackendTripProductUiTest.java

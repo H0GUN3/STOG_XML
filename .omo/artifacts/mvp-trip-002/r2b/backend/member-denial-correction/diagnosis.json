@@ -1,0 +1,34 @@
+{
+  "result": "BACKEND_CONTENT_NEGOTIATION_ROOT_CAUSE",
+  "originalEvidence": ".omo/artifacts/mvp-trip-002/r2b/logs/member-file-denial-timeout-facts.json",
+  "proxyCodeTrace": {
+    "control": "POST /probe-denied-cover",
+    "backendTarget": "direct http.client.HTTPConnection to 127.0.0.1:8080",
+    "accept": "image/jpeg",
+    "stagesPreviouslyConflated": ["connect/request", "response headers", "response body completion"],
+    "lossProxyTraversedByControl": false,
+    "meaning": "denied_cover_probes=0 did not prove service/file locking or the LossProxy stalled"
+  },
+  "preFixDirectObservation": {
+    "entryPoint": "real embedded Tomcat GET /api/trips/{trip}/covers/{cover}/file",
+    "accept": "image/jpeg",
+    "expected": "404 JSON TRIP_NOT_FOUND_OR_NOT_ACCESSIBLE",
+    "observed": "secondary 401 after TripCoverException",
+    "serverFact": "Spring logged Failure in ApiErrorHandler.coverError caused by HttpMediaTypeNotAcceptableException: No acceptable representation",
+    "testExit": 1,
+    "evidence": "logs/direct-http-diagnosis.log and direct-http-diagnosis-exit-code.txt"
+  },
+  "rootCause": "TripCoverException denial was correct and immediate, but its Map error body had no explicit JSON content type. Android's Accept: image/jpeg made Spring reject JSON error serialization; the Python helper's single catch obscured this response-negotiation/framing failure.",
+  "fix": "ApiErrorHandler.coverError now explicitly sets Content-Type application/json while preserving status, privacy code, Cache-Control no-store and Pragma no-cache.",
+  "postFix": {
+    "acceptVariants": ["image/jpeg", "*/*", "application/json"],
+    "headerStatus": 404,
+    "contentType": "application/json",
+    "bodyCompleted": true,
+    "errorCode": "TRIP_NOT_FOUND_OR_NOT_ACCESSIBLE",
+    "normalSyntheticAuth": true,
+    "membershipRemovedBeforeRequest": true,
+    "focusedExit": 0
+  },
+  "secretsOrRealDataRecorded": false
+}

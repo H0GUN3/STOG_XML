@@ -1,0 +1,465 @@
+--------- beginning of main
+10-01 10:09:49.068  4266  4267 I com.stog.app: Thread[2,tid=4267,WaitingInMainSignalCatcherLoop,Thread*=0x7d6716622d10,peer=0x2003290,"Signal Catcher"]: reacting to signal 3
+10-01 10:09:49.068  4266  4267 I com.stog.app: 
+10-01 10:09:49.111  1674  1674 D WM-DelayedWorkTracker: Scheduling work 0a8e95fe-d1b8-4680-9ef4-aa524d890633
+10-01 10:09:49.111  1674  1674 D WM-GreedyScheduler: Starting work for 0a8e95fe-d1b8-4680-9ef4-aa524d890633
+10-01 10:09:49.112  1674  1888 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=0a8e95fe-d1b8-4680-9ef4-aa524d890633, generation=0)
+10-01 10:09:49.113  1674  1674 D WM-WorkerWrapper: Starting work for com.android.providers.media.MediaServiceV2
+10-01 10:09:49.113  1674  4422 I MediaServiceV2: Work initiated for action [ android.intent.action.MEDIA_MOUNTED ]
+10-01 10:09:49.113  1674  4422 I MediaProvider: Volume MediaVolume name: [0000-0000] id: [public:253,80] user: [UserHandle{0}] path: [/storage/0000-0000] externallyManaged: [false] mPublicVolume: [true] already attached
+10-01 10:09:49.113  1674  4422 I MediaServiceV2: Work ended for action [ android.intent.action.MEDIA_MOUNTED ]
+10-01 10:09:49.113  1674  1967 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=0a8e95fe-d1b8-4680-9ef4-aa524d890633, tags={ com.android.providers.media.MediaServiceV2 } ]
+10-01 10:09:49.114  1674  1674 D WM-Processor: Processor 0a8e95fe-d1b8-4680-9ef4-aa524d890633 executed; reschedule = false
+10-01 10:09:49.116  1674  1967 D WM-GreedyScheduler: Cancelling work ID 0a8e95fe-d1b8-4680-9ef4-aa524d890633
+10-01 10:09:49.118  1674  1967 D WM-GreedyScheduler: Ignoring {WorkSpec: 5cd38784-27dd-4465-983b-117be3eb1209}. Requires device idle.
+10-01 10:09:49.118  1674  1967 D WM-GreedyScheduler: Ignoring {WorkSpec: 32063026-d608-40f2-8397-6cdaaa03dd9b}. Requires device idle.
+10-01 10:09:49.118  1674  1967 D WM-GreedyScheduler: Ignoring {WorkSpec: 7d491227-b348-408c-b8de-08f0e4d9a0be}. Requires device idle.
+10-01 10:09:49.118  1674  1967 D WM-GreedyScheduler: Ignoring {WorkSpec: 1f227877-6fd0-46d7-803b-13eea6c0fe01}. Requires device idle.
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: enableTracing failed. You may need to upgrade your androidx.tracing:tracing version
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: java.lang.NoSuchMethodError: No static method forceEnableAppTracing()V in class Landroidx/tracing/Trace; or its super classes (declaration of 'androidx.tracing.Trace' appears in /data/app/~~xSRDuu0dc9if241IA9AWwQ==/com.stog.app-GaONelS0AYQb8IMVD5Dp9g==/base.apk)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.platform.tracing.AndroidXTracer.enableTracing(AndroidXTracer.java:57)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.platform.tracing.Tracing.<init>(Tracing.java:53)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.platform.tracing.Tracing.<clinit>(Tracing.java:49)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule.providesTracing(BaseLayerModule.java:190)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.providesTracing(BaseLayerModule_ProvidesTracingFactory.java:41)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.get(BaseLayerModule_ProvidesTracingFactory.java:33)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.base.BaseLayerModule_ProvidesTracingFactory.get(BaseLayerModule_ProvidesTracingFactory.java:11)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.core.internal.deps.dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.base.IdlingResourceRegistry_Factory.get(IdlingResourceRegistry_Factory.java:38)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.base.IdlingResourceRegistry_Factory.get(IdlingResourceRegistry_Factory.java:12)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.core.internal.deps.dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.DaggerBaseLayerComponent$BaseLayerComponentImpl.idlingResourceRegistry(DaggerBaseLayerComponent.java:279)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.espresso.Espresso.<clinit>(Espresso.java:64)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at com.stog.app.auth.ConfiguredAuthUiTest.configuredFixtureRendersSuccessLogoutAndErrorStates(ConfiguredAuthUiTest.java:45)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at java.lang.reflect.Method.invoke(Native Method)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.internal.runner.junit4.statement.RunAfters.evaluate(RunAfters.java:61)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:467)
+10-01 10:09:49.124  4266  4279 E AndroidXTracer: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2627)
+10-01 10:09:49.124  4266  4279 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+10-01 10:09:49.130  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131623967>}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.157  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131623993>}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.176   612  4368 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000004) and output flags (00000002)
+10-01 10:09:49.176   612  4368 I AF::PthrPatchRecord: creating track with enforcement level 0
+10-01 10:09:49.186  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131623979>}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.197   557  4426 W libprocessgroup: A JoinCgroup action in the SystemMemoryProcess profile is used for controller memory in the cgroup v2 hierarchy and will be ignored
+10-01 10:09:49.203  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131623977>}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.204   764  1925 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+10-01 10:09:49.210  4266  4266 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.activity.OnBackPressedDispatcher$Api34Impl$createOnBackAnimationCallback$1@69688cf
+--------- beginning of system
+10-01 10:09:49.210   764  1925 D CoreBackPreview: Window{973ef6 u0 com.stog.app/com.stog.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6890880, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}
+10-01 10:09:49.212   314   314 I tombstoned: received crash request for pid 4266
+10-01 10:09:49.216  4266  4267 I com.stog.app: Wrote stack traces to tombstoned
+10-01 10:09:49.216   314   314 E tombstoned: Traces for pid 4266 written to: trace_00
+10-01 10:09:49.243  4266  4266 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@b068d40
+10-01 10:09:49.243   764  1925 D CoreBackPreview: Window{973ef6 u0 com.stog.app/com.stog.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@befceb9, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+10-01 10:09:49.254  4266  4266 E RecyclerView: No layout manager attached; skipping layout
+10-01 10:09:49.287  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131623991>}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.289  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <100> percent of the view's area)}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.332  1674  4356 W MediaProvider: isAppCloneUserPair for user 0: false
+10-01 10:09:49.344  1674  1970 D WM-SystemJobScheduler: Scheduling work ID ac06a06f-cc78-4d03-a763-ca348de2e8c0Job ID 410
+10-01 10:09:49.345   764  1925 D OomAdjuster: Not killing cached processes
+10-01 10:09:49.345  1674  4356 I MediaProvider: Open with lower FS for /storage/emulated/0/Pictures/STOG-QA/configured-success (4).png. Uid: 10228
+10-01 10:09:49.347  1674  1970 D WM-GreedyScheduler: Ignoring {WorkSpec: 5cd38784-27dd-4465-983b-117be3eb1209}. Requires device idle.
+10-01 10:09:49.347  1674  1970 D WM-GreedyScheduler: Ignoring {WorkSpec: 32063026-d608-40f2-8397-6cdaaa03dd9b}. Requires device idle.
+10-01 10:09:49.347  1674  1970 D WM-GreedyScheduler: Ignoring {WorkSpec: 7d491227-b348-408c-b8de-08f0e4d9a0be}. Requires device idle.
+10-01 10:09:49.347  1674  1970 D WM-GreedyScheduler: Ignoring {WorkSpec: 1f227877-6fd0-46d7-803b-13eea6c0fe01}. Requires device idle.
+10-01 10:09:49.347  1312  4370 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+10-01 10:09:49.350  1312  4360 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+10-01 10:09:49.418   764  1957 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+10-01 10:09:49.434  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624166>}' assertion on view view.getId() is <2131231241/com.stog.app:id/trip_item_status>
+10-01 10:09:49.438   612  4169 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000004) and output flags (00000002)
+10-01 10:09:49.438   612  4169 I AF::PthrPatchRecord: creating track with enforcement level 0
+10-01 10:09:49.438   764  1957 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 16
+10-01 10:09:49.442   612   713 D AudioFlinger: mixer(0x758d7efdd790) throttle end: throttle time(36)
+10-01 10:09:49.471  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624174>}' assertion on view view.getId() is <2131231241/com.stog.app:id/trip_item_status>
+10-01 10:09:49.473   612  4368 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000004) and output flags (00000002)
+10-01 10:09:49.473   612  4368 I AF::PthrPatchRecord: creating track with enforcement level 0
+10-01 10:09:49.474   764  1947 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 17
+10-01 10:09:49.503  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131623981>}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.538  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131623993>}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.540  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <100> percent of the view's area)}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.563  1674  4356 W MediaProvider: isAppCloneUserPair for user 0: false
+10-01 10:09:49.566  1674  4356 I MediaProvider: Open with lower FS for /storage/emulated/0/Pictures/STOG-QA/configured-logout (4).png. Uid: 10228
+10-01 10:09:49.638   764  1947 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 17
+10-01 10:09:49.641  1312  3756 I UriTaskContentObserver: (REDACTED) Throttling content uri change event for %s
+10-01 10:09:49.670  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131623975>}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.672  4266  4266 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <100> percent of the view's area)}' assertion on view view.getId() is <2131230809/com.stog.app:id/auth_status_title>
+10-01 10:09:49.695  1674  4356 W MediaProvider: isAppCloneUserPair for user 0: false
+10-01 10:09:49.699  1674  1685 I MediaProvider: Open with lower FS for /storage/emulated/0/Pictures/STOG-QA/configured-error (4).png. Uid: 10228
+10-01 10:09:49.773   764  1947 V WindowManager: DesktopModeLaunchParamsModifier: phase= 0 task=null activity=null display-area-from-current-params=null display-area-source-process=DefaultTaskDisplayArea@35887956 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@35887956 task null, skipping
+10-01 10:09:49.773   764  1947 V WindowManager: TaskLaunchParamsModifier:phase=0 task=null activity=null display-area-from-current-params=null display-area-source-process=DefaultTaskDisplayArea@35887956 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@35887956
+10-01 10:09:49.774   764  1947 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@39f46b5b does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-01 10:09:49.774   764  1947 V WindowManager: DesktopModeLaunchParamsModifier: phase= 0 task=null activity=ActivityRecord{36218740 u0 com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity display-area-from-current-params=null display-area-for-launching-record=DefaultTaskDisplayArea@35887956 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@35887956 task null, skipping
+10-01 10:09:49.774   764  1947 V WindowManager: TaskLaunchParamsModifier:phase=0 task=null activity=ActivityRecord{36218740 u0 com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity t-1} display-area-from-current-params=null display-area-for-launching-record=DefaultTaskDisplayArea@35887956 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@35887956
+10-01 10:09:49.775   764  1947 V WindowManager: DesktopModeLaunchParamsModifier: phase= 3 task=null activity=ActivityRecord{36218740 u0 com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity t-1} display-area-from-current-params=null display-area-for-launching-record=DefaultTaskDisplayArea@35887956 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@35887956 task null, skipping
+10-01 10:09:49.775   764  1947 V WindowManager: TaskLaunchParamsModifier:phase=3 task=null activity=ActivityRecord{36218740 u0 com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity t-1} display-area-from-current-params=null display-area-for-launching-record=DefaultTaskDisplayArea@35887956 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@35887956 non-freeform-task-display-area display-area=DefaultTaskDisplayArea@35887956 skip-bounds-fullscreen
+10-01 10:09:49.776   764  1947 V WindowManager: DesktopModeLaunchParamsModifier: phase= 3 task=Task{60cd49d #205 type=standard A=10229:com.stog.app.test} activity=ActivityRecord{36218740 u0 com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@35887956 not entering desktop mode, skipping
+10-01 10:09:49.776   764  1947 V WindowManager: TaskLaunchParamsModifier:phase=3 task=Task{60cd49d #205 type=standard A=10229:com.stog.app.test} activity=ActivityRecord{36218740 u0 com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@35887956 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@35887956 skip-bounds-fullscreen
+10-01 10:09:49.777   619  1003 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+10-01 10:09:49.778   764  1947 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} with LAUNCH_MULTIPLE from uid 10228 (com.stog.app) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-01 10:09:49.778   764  1957 D CompatChangeReporter: Compat change id reported: 377864165; UID 10229; state: ENABLED
+10-01 10:09:49.778  1169  1169 D RecentsView: onTaskDisplayChanged: 205, new displayId = 0
+10-01 10:09:49.779  4266  4266 D LifecycleMonitor: Lifecycle status change: com.stog.app.MainActivity@986175d in: PAUSED
+10-01 10:09:49.779  4266  4266 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.stog.app.MainActivity@986175d
+10-01 10:09:49.779   764   786 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@39f46b5b does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-01 10:09:49.779   764  1957 I AppsFilter: interaction: PackageSetting{f89c2a2 com.android.microdroid.empty_payload/10218} -> PackageSetting{82fa55 com.stog.app.test/10229} BLOCKED
+10-01 10:09:49.780   764  1957 I AppsFilter: interaction: PackageSetting{f65ef0 com.genn.androidstudy/10227} -> PackageSetting{82fa55 com.stog.app.test/10229} BLOCKED
+10-01 10:09:49.780  1312  3756 I UriTaskContentObserver: (REDACTED) Throttling content uri change event for %s
+10-01 10:09:49.781  1018  1087 V WindowManagerShell: Transition requested (#11): android.os.BinderProxy@234eaf8 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=205 effectiveUid=10229 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity } baseActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} topActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} origActivity=null realActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} numActivities=1 lastActiveTime=203046 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@3efcbd1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{1d9a636 androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 11 }
+10-01 10:09:49.781  1018  1087 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+10-01 10:09:49.781  1018  1087 V ShellDesktopMode: DesktopTasksController: handleRequest request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=205 effectiveUid=10229 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity } baseActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} topActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} origActivity=null realActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} numActivities=1 lastActiveTime=203046 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@3efcbd1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{1d9a636 androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 11 }
+10-01 10:09:49.781  1018  1087 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+10-01 10:09:49.781   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:49.787   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:49.787   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:49.787   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:49.787   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:49.787  1169  1169 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-01 10:09:49.791   549   549 D Zygote  : Forked child process 4431
+10-01 10:09:49.794  4431  4431 I Zygote  : Process 4431 created for com.stog.app.test
+10-01 10:09:49.794  4431  4431 I m.stog.app.test: Late-enabling -Xcheck:jni
+10-01 10:09:49.795   764   794 I ActivityManager: Start proc 4431:com.stog.app.test/u0a229 for next-top-activity {com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}
+10-01 10:09:49.800  1018  1581 V WindowManagerShell: onTransitionReady(transaction=3281355015248)
+10-01 10:09:49.801  1018  1087 V WindowManagerShell: onTransitionReady (#11) android.os.BinderProxy@234eaf8: {id=11 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-01 10:09:49.801  1018  1087 V WindowManagerShell:         {m=OPEN f=NONE leash=Surface(name=Task=205#130)/@0x1443e3c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-01 10:09:49.801  1018  1087 V WindowManagerShell:         {m=TO_BACK f=NONE leash=Surface(name=Task=204#114)/@0x36cf7c5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-01 10:09:49.801  1018  1087 V WindowManagerShell:     ]}
+10-01 10:09:49.801  1018  1087 V WindowManagerShell: Playing animation for (#11) android.os.BinderProxy@234eaf8@0
+10-01 10:09:49.801  1018  1087 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+10-01 10:09:49.802  1018  1087 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+10-01 10:09:49.802  1018  1087 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=11 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=205#130)/@0x1443e3c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=NONE leash=Surface(name=Task=204#114)/@0x36cf7c5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-01 10:09:49.802  1018  1087 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@9ca593e windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@64d139f, appThread = android.app.IApplicationThread$Stub$Proxy@6c5fcec, debugName = overlayBackTransition }}
+10-01 10:09:49.802  1018  1087 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@fe4c8b5, appThread = android.app.IApplicationThread$Stub$Proxy@a8ecb4a, debugName = LauncherToDream }}
+10-01 10:09:49.802  1018  1087 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@5f94abb, appThread = android.app.IApplicationThread$Stub$Proxy@78bfbd8, debugName = QuickstepLaunchHome }}
+10-01 10:09:49.802  1018  1087 V WindowManagerShell:  Checking filter Pair{{types=[OPEN,TO_FRONT] flags=0x0] notFlags=0x0 checks=[{atype=standard independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=freeform isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@e663b31, appThread = null, debugName = DesktopWindowLimitUnminimize }}
+10-01 10:09:49.802  1018  1087 V WindowManagerShell:  Delegate animation for (#11) to null
+10-01 10:09:49.802  1018  1087 V WindowManagerShell: start default transition animation, info = {id=11 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=205#130)/@0x1443e3c sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=NONE leash=Surface(name=Task=204#114)/@0x36cf7c5 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-01 10:09:49.802  1018  1087 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@42a4b41 animAttr=0x9 type=OPEN isEntrance=false
+10-01 10:09:49.813  4431  4431 I m.stog.app.test: Using CollectorTypeCMC GC.
+10-01 10:09:49.813  4431  4431 W m.stog.app.test: Unexpected CPU variant for x86: x86_64.
+10-01 10:09:49.813  4431  4431 W m.stog.app.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-01 10:09:49.815   628   650 I adbd    : jdwp connection from 4431
+10-01 10:09:49.824  4431  4431 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-01 10:09:49.829   764   783 V WindowManager: Sent Transition (#11) createdAt=10-01 10:09:49.774 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=205 effectiveUid=10229 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity } baseActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} topActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} origActivity=null realActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} numActivities=1 lastActiveTime=203046 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{995e127 Task{60cd49d #205 type=standard A=10229:com.stog.app.test}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{a94efd4 androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 11 }
+10-01 10:09:49.830   764   783 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+10-01 10:09:49.831   764   783 V WindowManager:     info={id=11 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-01 10:09:49.831   764   783 V WindowManager:         {WCT{RemoteToken{995e127 Task{60cd49d #205 type=standard A=10229:com.stog.app.test}}} m=OPEN f=NONE leash=Surface(name=Task=205#130)/@0x42e6928 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-01 10:09:49.831   764   783 V WindowManager:         {WCT{RemoteToken{9f1fd70 Task{3ec8fd3 #204 type=standard A=10228:com.stog.app}}} m=TO_BACK f=NONE leash=Surface(name=Task=204#114)/@0xe139d22 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-01 10:09:49.831   764   783 V WindowManager:     ]}
+10-01 10:09:49.837  1018  1087 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@95bee40 animAttr=0x8 type=OPEN isEntrance=true
+10-01 10:09:49.837  1018  1087 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@3b76cb9
+10-01 10:09:49.838  1018  1087 V ShellTaskOrganizer: Task appeared taskId=205 listener=FullscreenTaskListener
+10-01 10:09:49.838  1018  1087 V ShellTaskOrganizer: Fullscreen Task Appeared: #205
+10-01 10:09:49.838   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:49.839  1169  1169 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-01 10:09:49.850   571   571 I RanchuHwc: logCompositionFallbackIfChanged: layer 24 CompositionType fallback from 3 to 1
+10-01 10:09:49.877  4431  4431 D nativeloader: Configuring clns-9 for other apk /data/app/~~SSWhnMlOe1XjZeONRQRa6A==/com.stog.app.test-5NbRbH9xDREKWD4huMs9Lw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~SSWhnMlOe1XjZeONRQRa6A==/com.stog.app.test-5NbRbH9xDREKWD4huMs9Lw==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.stog.app.test
+10-01 10:09:49.884  1169  1169 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-01 10:09:49.893  4431  4431 V GraphicsEnvironment: Currently set values for:
+10-01 10:09:49.893  4431  4431 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-01 10:09:49.893  4431  4431 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-01 10:09:49.893  4431  4431 V GraphicsEnvironment: com.stog.app.test is not listed in per-application setting
+10-01 10:09:49.893  4431  4431 V GraphicsEnvironment: ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+10-01 10:09:49.893  4431  4431 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+10-01 10:09:49.893  4431  4431 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-01 10:09:49.899   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:49.899   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:49.903  4431  4445 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-01 10:09:49.918  4431  4431 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-01 10:09:49.927  4431  4431 D CompatChangeReporter: Compat change id reported: 377864165; UID 10229; state: ENABLED
+10-01 10:09:49.928  4431  4431 D DesktopExperienceFlags: Toggle override initialized to: false
+10-01 10:09:49.928  4431  4431 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-01 10:09:49.939  4431  4445 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+10-01 10:09:49.940  4431  4445 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+10-01 10:09:49.946  4431  4431 W HWUI    : Unknown dataspace 0
+10-01 10:09:49.949  4431  4445 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-01 10:09:49.966  1018  1087 V WindowManagerShell: Transition requested (#12): android.os.BinderProxy@3887796 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=205 effectiveUid=10229 displayId=0 isRunning=false baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} numActivities=0 lastActiveTime=203166 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@3efcbd1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 12 }
+10-01 10:09:49.967  1018  1087 V ShellDesktopMode: DesktopTasksController: handleRequest request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=205 effectiveUid=10229 displayId=0 isRunning=false baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} numActivities=0 lastActiveTime=203166 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@3efcbd1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 12 }
+10-01 10:09:49.967  1018  1087 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+10-01 10:09:49.969   619   818 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+10-01 10:09:49.971  1169  1169 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-01 10:09:49.971  4431  4431 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@33ee1b3
+10-01 10:09:49.972   764  1930 D CoreBackPreview: Window{5be9bd2 u0 com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6c08b59, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+10-01 10:09:49.972  4431  4431 D VRI[InstrumentationActivityInvoker$EmptyActivity]: WindowInsets changed: 1080x2400 statusBars:[0,132,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,164,0,84] 
+10-01 10:09:49.975   619   818 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10229 pid=0
+10-01 10:09:49.975   619   818 D libbinder.PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10229 => denied (151 us)
+10-01 10:09:49.975   619   818 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10229 pid=0
+10-01 10:09:49.975   619   818 D libbinder.PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10229 => denied (85 us)
+10-01 10:09:49.975   619   818 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10229 pid=0
+10-01 10:09:49.975   619   818 D libbinder.PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10229 => denied (78 us)
+10-01 10:09:50.027   764  1930 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10229 pid=0
+10-01 10:09:50.027   764  1930 D libbinder.PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10229 => denied (93 us)
+10-01 10:09:50.027   764  1930 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10229 pid=0
+10-01 10:09:50.027   764  1930 D libbinder.PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10229 => denied (9 us)
+10-01 10:09:50.027   764  1930 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10229 pid=0
+10-01 10:09:50.027   764  1930 D libbinder.PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10229 => denied (6 us)
+10-01 10:09:50.031   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:50.033  1169  1169 D ViewRootImpl: Skipping stats log for color mode
+10-01 10:09:50.033  1169  1169 D BaseActivity: Launcher flags updated: [state_started] +[state_started]
+10-01 10:09:50.034   764  1930 V WindowManager: Defer transition id=12 for TaskFragmentTransaction=android.os.Binder@a46a31e
+10-01 10:09:50.034  1169  1169 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[state_resumed|state_user_active]
+10-01 10:09:50.034   764  1930 V WindowManager: deferTransitionReady deferReadyDepth=1 stack=com.android.server.wm.TransitionController.deferTransitionReady:1061 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.dispatchTransaction:517 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1259 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1228 com.android.server.wm.RootWindowContainer.performSurfacePlacement:777 
+10-01 10:09:50.035  1018  1087 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=true, height=495
+10-01 10:09:50.035  1169  1169 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=6}
+10-01 10:09:50.037   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:50.037   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:50.039  1169  1169 D SsBaseTemplateCard: Passed-in item info is null
+10-01 10:09:50.040  1169  1169 D SsBaseTemplateCard: Passed-in item info is null
+10-01 10:09:50.040  1169  1169 D SsBaseTemplateCard: Passed-in item info is null
+10-01 10:09:50.040  1169  1169 D SsBaseTemplateCard: Passed-in item info is null
+10-01 10:09:50.040  1169  1169 I SsBaseTemplateCard: Secondary card pane is null
+10-01 10:09:50.040  1169  1169 D BaseDepthController: setSurface:
+10-01 10:09:50.040  1169  1169 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+10-01 10:09:50.040  1169  1169 D BaseDepthController: 	mBaseSurface: Surface(name=com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#141)/@0x817c0b8
+10-01 10:09:50.040  1169  1169 V BaseDepthController: Applying blur: 0 to Surface(name=com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#141)/@0x817c0b8 applyImmediately: false
+10-01 10:09:50.040  1169  1169 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{53f42cd V.ED..... ......ID 0,0-1080,2400 #7f0a049d app:id/workspace}, com.android.launcher3.Hotseat{9d81782 V.ED..... .......D 0,1905-1080,2400 #7f0a01ee app:id/hotseat}]
+10-01 10:09:50.053  1169  1169 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_user_active] +[state_deferred_resumed]
+10-01 10:09:50.053  1169  1169 D StatsLog: LAUNCHER_ONRESUME
+10-01 10:09:50.054   764  1957 V WindowManager: Continue transition id=12 for TaskFragmentTransaction=android.os.Binder@a46a31e
+10-01 10:09:50.054   764  1957 V WindowManager: continueTransitionReady deferReadyDepth=0 stack=com.android.server.wm.TransitionController.continueTransitionReady:1071 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.onTransactionFinished:546 com.android.server.wm.TaskFragmentOrganizerController.onTransactionHandled:740 android.window.ITaskFragmentOrganizerController$Stub.onTransact:225 android.os.Binder.execTransactInternal:1473 
+10-01 10:09:50.056  1018  1526 D WallpaperService: onVisibilityChanged(true): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@f099603
+10-01 10:09:50.058  1169  1254 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+10-01 10:09:50.059  1018  1028 V WindowManagerShell: onTransitionReady(transaction=3281355015291)
+10-01 10:09:50.059  1018  1087 V WindowManagerShell: onTransitionReady (#12) android.os.BinderProxy@3887796: {id=12 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-01 10:09:50.059  1018  1087 V WindowManagerShell:         {m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1#42)/@0x98ecf17 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-01 10:09:50.059  1018  1087 V WindowManagerShell:         {m=CLOSE f=NONE leash=Surface(name=Task=205#130)/@0x7b15f04 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-01 10:09:50.059  1018  1087 V WindowManagerShell:         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{92c9b9c}#59)/@0x290dced sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+10-01 10:09:50.059  1018  1087 V WindowManagerShell:     ]}
+10-01 10:09:50.059  1018  1087 V WindowManagerShell: Transition (#12) android.os.BinderProxy@3887796@0 ready while (#11) android.os.BinderProxy@234eaf8@0 is still animating. Notify the animating transition in case they can be merged
+10-01 10:09:50.059  1714  2226 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-01 10:09:50.059  1714  2226 I AiAiEcho: EchoTargets: 
+10-01 10:09:50.059  1714  2226 I AiAiEcho: Filtered by AiAi flag check: 
+10-01 10:09:50.059  1714  2226 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-01 10:09:50.059  1714  2226 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-01 10:09:50.060  1018  1087 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#11) android.os.BinderProxy@234eaf8@0
+10-01 10:09:50.060  1714  2226 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-01 10:09:50.061   764   783 V WindowManager: Sent Transition (#12) createdAt=10-01 10:09:49.966 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=205 effectiveUid=10229 displayId=0 isRunning=false baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} numActivities=0 lastActiveTime=203166 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{995e127 Task{60cd49d #205 type=standard A=10229:com.stog.app.test}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 12 }
+10-01 10:09:50.061   764   783 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+10-01 10:09:50.062   764   783 V WindowManager:     info={id=12 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-01 10:09:50.062   764   783 V WindowManager:         {WCT{RemoteToken{b72696e Task{63290aa #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1#42)/@0x504daed sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-01 10:09:50.062   764   783 V WindowManager:         {WCT{RemoteToken{995e127 Task{60cd49d #205 type=standard A=10229:com.stog.app.test}}} m=CLOSE f=NONE leash=Surface(name=Task=205#130)/@0x42e6928 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-01 10:09:50.062   764   783 V WindowManager:         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{92c9b9c}#59)/@0x79e9504 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+10-01 10:09:50.062   764   783 V WindowManager:     ]}
+10-01 10:09:50.062   764   783 V WindowManager: Finish Transition (#11): created at 10-01 10:09:49.774 collect-started=0.012ms request-sent=2.923ms started=10.741ms ready=23.582ms sent=24.509ms commit=51.474ms finished=287.756ms
+10-01 10:09:50.063  4266  4266 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+10-01 10:09:50.064  1018  1087 V WindowManagerShell: Playing animation for (#12) android.os.BinderProxy@3887796@0
+10-01 10:09:50.065  1018  1087 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+10-01 10:09:50.065  1018  1087 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+10-01 10:09:50.065  1018  1087 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=12 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1#42)/@0x98ecf17 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=CLOSE f=NONE leash=Surface(name=Task=205#130)/@0x7b15f04 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{92c9b9c}#59)/@0x290dced sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}]}
+10-01 10:09:50.065  1018  1087 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@9ca593e windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@64d139f, appThread = android.app.IApplicationThread$Stub$Proxy@6c5fcec, debugName = overlayBackTransition }}
+10-01 10:09:50.065  1018  1087 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@fe4c8b5, appThread = android.app.IApplicationThread$Stub$Proxy@a8ecb4a, debugName = LauncherToDream }}
+10-01 10:09:50.065  1018  1087 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@5f94abb, appThread = android.app.IApplicationThread$Stub$Proxy@78bfbd8, debugName = QuickstepLaunchHome }}
+10-01 10:09:50.065  1018  1087 D RemoteTransitionHandler: Found filterPair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@5f94abb, appThread = android.app.IApplicationThread$Stub$Proxy@78bfbd8, debugName = QuickstepLaunchHome }}
+10-01 10:09:50.065  1018  1087 V WindowManagerShell:  Delegate animation for (#12) to RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@5f94abb, appThread = android.app.IApplicationThread$Stub$Proxy@78bfbd8, debugName = QuickstepLaunchHome }
+10-01 10:09:50.066  1018  1087 V WindowManagerShell:  animated by com.android.wm.shell.transition.RemoteTransitionHandler@ec68a0f
+10-01 10:09:50.067  1169  1169 D SsBaseTemplateCard: Passed-in item info is null
+10-01 10:09:50.067  1169  1169 D SsBaseTemplateCard: Passed-in item info is null
+10-01 10:09:50.067  1169  1169 D SsBaseTemplateCard: Passed-in item info is null
+10-01 10:09:50.067  1169  1169 D SsBaseTemplateCard: Passed-in item info is null
+10-01 10:09:50.067  1169  1169 I SsBaseTemplateCard: Secondary card pane is null
+10-01 10:09:50.076  4266  4266 D LifecycleMonitor: Lifecycle status change: com.stog.app.MainActivity@986175d in: STOPPED
+10-01 10:09:50.076  4266  4266 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.stog.app.MainActivity@986175d
+10-01 10:09:50.077  4266  4266 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+10-01 10:09:50.078   764  1947 D CoreBackPreview: Window{973ef6 u0 com.stog.app/com.stog.app.MainActivity}: Setting back callback null
+10-01 10:09:50.079  1169  1169 D LauncherStateManager: StateManager.cancelAnimation: animation ongoing: false, partial trace:
+10-01 10:09:50.079  1169  1169 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.setCurrentAnimation(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:18)
+10-01 10:09:50.079  1169  1169 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:646)
+10-01 10:09:50.079  1169  1169 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager$WallpaperOpenLauncherAnimationRunner.onAnimationStart(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:96)
+10-01 10:09:50.079  1169  1169 D LauncherStateManager: StateManager.createAtomicAnimation: fromState: Normal, toState: Normal, partial trace:
+10-01 10:09:50.079  1169  1169 D LauncherStateManager: 	at com.android.quickstep.util.WorkspaceRevealAnim.prepareToAnimate(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:20)
+10-01 10:09:50.079  1169  1169 D LauncherStateManager: 	at com.android.quickstep.util.WorkspaceRevealAnim.<init>(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:11)
+10-01 10:09:50.079  1169  1169 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:683)
+10-01 10:09:50.079  1169  1169 D AllAppsTransitionController: shouldProtectHeader: false skipScrim: true state: Normal stateManager.getState(): Normal
+10-01 10:09:50.079  1169  1169 D KeyboardInsetsHandler: removePendingImeController: pendingImeController=null
+10-01 10:09:50.079  1169  1169 D b/311077782: LauncherAnimationRunner.setAnimation
+10-01 10:09:50.079  1169  1254 I PluginActionManager[com.android.launcher3.action.PLUGIN_DYNAMIC_RESOURCE]: Found 0 plugins
+10-01 10:09:50.081  4266  4266 D LifecycleMonitor: Lifecycle status change: com.stog.app.MainActivity@986175d in: DESTROYED
+10-01 10:09:50.081  4266  4266 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-01 10:09:50.081  4266  4279 I TestRunner: finished: configuredFixtureRendersSuccessLogoutAndErrorStates(com.stog.app.auth.ConfiguredAuthUiTest)
+10-01 10:09:50.081  4266  4266 D ViewRootImpl: Skipping stats log for color mode
+10-01 10:09:50.082  4266  4279 E libbinder.IPCThreadState: Binder transaction failure. id: 236697, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+10-01 10:09:50.083   764  1930 W ActivityManager: pid 4266 com.stog.app sent binder code 1 with flags 2 and got error -32
+10-01 10:09:50.083   764  1947 I ImeTracker: system_server:64299ee6: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false
+10-01 10:09:50.084   764   786 I ImeTracker: system_server:64299ee6: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-01 10:09:50.086  1169  1169 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] +[state_window_focused]
+10-01 10:09:50.092   764   882 I ImeTracker: com.google.android.apps.nexuslauncher:b6c14015: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-01 10:09:50.093  4266  4279 I TestRunner: run finished: 1 tests, 0 failed, 0 ignored
+10-01 10:09:50.096   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:50.096  1169  1169 D InsetsController: hide(ime())
+10-01 10:09:50.096  1169  1169 I ImeTracker: com.google.android.apps.nexuslauncher:b6c14015: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-01 10:09:50.096  1593  1593 I SubtypeOperator: SubtypeOperator$1.onUnbindInput():43 
+10-01 10:09:50.096  1593  1593 I SubtypeOperator: SubtypeOperator$1.onBindInput():33 
+10-01 10:09:50.098  1593  1593 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2404 
+10-01 10:09:50.099  1593  1593 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1552 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-01 10:09:50.099  1593  1593 W LatinInputMethodServiceBase: LatinInputMethodServiceBase.updateInputViewCoverNavigation():362 Null input view, cannot update padding!
+10-01 10:09:50.100   764  1957 I ImeTracker: system_server:7ec53be7: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false
+10-01 10:09:50.102  1593  4454 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+10-01 10:09:50.102   764   786 I ImeTracker: system_server:7ec53be7: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-01 10:09:50.103   764  1947 I ActivityManager: Force stopping com.stog.app appid=10228 user=0: finished inst
+10-01 10:09:50.106   764  1947 E ActivityManager: Unable to freeze binder for 4266: -11
+10-01 10:09:50.106  1018  1087 V ShellTaskOrganizer: Task vanished taskId=204
+10-01 10:09:50.106  1018  1087 V ShellTaskOrganizer: Fullscreen Task Vanished: #204
+10-01 10:09:50.106  1593  4454 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+10-01 10:09:50.106  1018  1087 V ShellDesktopMode: Task Vanished: #204 closed=true
+10-01 10:09:50.106   764  4458 E libbinder.IPCThreadState: Binder transaction failure. id: 236796, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+10-01 10:09:50.106   764  4458 W ActivityManager: pid 764 system sent binder code 2 with flags 2 and got error -32
+10-01 10:09:50.106   764  4458 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+10-01 10:09:50.106   764  4458 I ActivityManager: Failure reporting to instrumentation watcher: comp=ComponentInfo{com.stog.app.test/androidx.test.runner.AndroidJUnitRunner} results=Bundle[mParcelledData.dataSize=96]
+10-01 10:09:50.106   764  1947 I ActivityManager: Killing 4266:com.stog.app/u0a228 (adj 0): stop com.stog.app due to finished inst
+10-01 10:09:50.111   764   793 E libbinder.IPCThreadState: Binder transaction failure. id: 236795, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+10-01 10:09:50.111   764   793 W ActivityManager: pid 764 system sent binder code 18 with flags 1 and got error -32
+10-01 10:09:50.111   764   793 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+10-01 10:09:50.111   764   793 W ActivityManager: Error shutting down UiAutomationConnection
+10-01 10:09:50.116   764  1957 W PackageConfigPersister: App-specific configuration not found for packageName: com.google.android.apps.nexuslauncher and userId: 0
+10-01 10:09:50.116   764   924 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-01 10:09:50.117   764   924 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-01 10:09:50.117   764   924 D InetDiagMessage: Destroyed live tcp sockets for uids={10228} in 1ms
+10-01 10:09:50.120   764   924 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-01 10:09:50.121   764   924 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-01 10:09:50.121   764   924 D InetDiagMessage: Destroyed live tcp sockets for uids={20228} in 0ms
+10-01 10:09:50.123  1018  1087 D ShellDesktopMode: AppToWebRepository: Task 204 is vanishing. Removing task data from repository
+10-01 10:09:50.126  1018  1087 V AppCompat: SingleSurfaceLetterboxController: []
+10-01 10:09:50.126  1018  1087 V AppCompat: MultiSurfaceLetterboxController: []
+10-01 10:09:50.126  1018  1087 V AppCompat: LetterboxInputController: []
+10-01 10:09:50.126  1018  1087 V AppCompat: RoundedCornersLetterboxController: {}
+10-01 10:09:50.136  1169  1169 D RecentsView: onTaskRemoved: 204, not handling task stack changes
+10-01 10:09:50.136  1169  1169 D RecentsView: onTaskRemoved: 204, not handling task stack changes
+10-01 10:09:50.148   764   786 W ActivityManager: setHasOverlayUi called on unknown pid: 4266
+10-01 10:09:50.149   628   628 I adbd    : Remote process closed the socket (on MSG_PEEK)
+10-01 10:09:50.149   764  1832 V ActivityManager: Got obituary of 4266:com.stog.app
+10-01 10:09:50.150   764   795 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10228/pid_4266
+10-01 10:09:50.150   571   571 I RanchuHwc: logCompositionFallbackIfChanged: layer 27 CompositionType fallback from 2 to 1
+10-01 10:09:50.150   571   571 I RanchuHwc: logCompositionFallbackIfChanged: layer 28 CompositionType fallback from 2 to 1
+10-01 10:09:50.150   549   549 I Zygote  : Process 4266 exited due to signal 9 (Killed)
+10-01 10:09:50.158  1169  1169 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-01 10:09:50.159  1169  1169 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-01 10:09:50.346  4431  4435 I m.stog.app.test: Compiler allocated 5087KB to compile void android.view.ViewRootImpl.performTraversals()
+10-01 10:09:50.417  1169  1169 D WorkspaceRevealAnim: onAnimationEnd: workspace alpha = 1.0
+10-01 10:09:50.419  1018  1581 V WindowManagerShell: Received remote transition finished callback for (#12)
+10-01 10:09:50.419  1018  1087 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#12) android.os.BinderProxy@3887796@0
+10-01 10:09:50.421   764   783 V WindowManager: Finish Transition (#12): created at 10-01 10:09:49.966 collect-started=0.01ms request-sent=0.04ms started=1.83ms ready=88.241ms sent=91.02ms commit=26.555ms finished=454.384ms
+10-01 10:09:50.422  1018  1087 V WindowManagerShell: Track 0 became idle
+10-01 10:09:50.422  1018  1087 V WindowManagerShell: All active transition animations finished
+10-01 10:09:50.424  4431  4431 D VRI[InstrumentationActivityInvoker$EmptyActivity]: visibilityChanged oldVisibility=true newVisibility=false
+10-01 10:09:50.425  4431  4431 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+10-01 10:09:50.426   764   835 D CoreBackPreview: Window{5be9bd2 u0 com.stog.app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}: Setting back callback null
+10-01 10:09:50.428  4431  4431 D ViewRootImpl: Skipping stats log for color mode
+10-01 10:09:50.431   764   975 D BackgroundInstallControlService: Package event received: 0
+10-01 10:09:50.431   764   994 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-01 10:09:50.441  1018  1087 V ShellTaskOrganizer: Task vanished taskId=205
+10-01 10:09:50.441  1169  1169 D RecentsView: onTaskRemoved: 205, not handling task stack changes
+10-01 10:09:50.441  1169  1169 D RecentsView: onTaskRemoved: 205, not handling task stack changes
+10-01 10:09:50.442  1018  1087 V ShellTaskOrganizer: Fullscreen Task Vanished: #205
+10-01 10:09:50.442  1018  1087 V ShellDesktopMode: Task Vanished: #205 closed=true
+10-01 10:09:50.443  1018  1087 D ShellDesktopMode: AppToWebRepository: Task 205 is vanishing. Removing task data from repository
+10-01 10:09:50.443  1169  1169 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+10-01 10:09:50.443  1018  1087 V AppCompat: SingleSurfaceLetterboxController: []
+10-01 10:09:50.443  1018  1087 V AppCompat: MultiSurfaceLetterboxController: []
+10-01 10:09:50.443  1018  1087 V AppCompat: LetterboxInputController: []
+10-01 10:09:50.443  1018  1087 V AppCompat: RoundedCornersLetterboxController: {}
+10-01 10:09:50.445   764   906 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+10-01 10:09:50.446   764  4460 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+10-01 10:09:50.447   764  4460 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+10-01 10:09:50.453  1018  1025 W System  : A resource failed to call release. 
+10-01 10:09:50.453   764  4460 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-01 10:09:50.496   764  1239 W WindowManager: takeTaskSnapshot: taskId=205 not found or not visible
+10-01 10:09:50.603   764   994 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-01 10:09:50.843  1674  1674 D WM-DelayedWorkTracker: Scheduling work ac06a06f-cc78-4d03-a763-ca348de2e8c0
+10-01 10:09:50.844  1674  1674 D WM-GreedyScheduler: Starting tracking for ac06a06f-cc78-4d03-a763-ca348de2e8c0
+10-01 10:09:50.845  1674  1970 D WM-ConstraintTracker: BatteryNotLowTracker: initial state = true
+10-01 10:09:50.845  1674  1970 D WM-BrdcstRcvrCnstrntTrc: BatteryNotLowTracker: registering receiver
+10-01 10:09:50.846  1674  1970 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=ac06a06f-cc78-4d03-a763-ca348de2e8c0, generation=0)
+10-01 10:09:50.846  1674  1674 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=ac06a06f-cc78-4d03-a763-ca348de2e8c0, generation=0)
+10-01 10:09:50.846  1674  1970 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=ac06a06f-cc78-4d03-a763-ca348de2e8c0, generation=0)
+10-01 10:09:50.847  1674  1970 D WM-Processor: Work WorkGenerationalId(workSpecId=ac06a06f-cc78-4d03-a763-ca348de2e8c0, generation=0) is already enqueued for processing
+10-01 10:09:50.848  1674  1674 D WM-WorkerWrapper: Starting work for com.android.providers.media.photopicker.sync.ProactiveSyncWorker
+10-01 10:09:50.848  1674  4461 I PSyncWorker: Starting proactive picker sync from sync source: 1
+10-01 10:09:50.850  1674  4461 I PickerSyncTracker: Created new sync future java.util.concurrent.CompletableFuture@789e5b2[Not completed, 1 dependents]. Future map: {ac06a06f-cc78-4d03-a763-ca348de2e8c0=java.util.concurrent.CompletableFuture@789e5b2[Not completed, 1 dependents]}
+10-01 10:09:50.851  1674  4461 D PickerSyncController: syncAllMediaFromProvider() LOCAL, auth=com.android.providers.media.photopicker, retry=true
+10-01 10:09:50.851  1674  4461 D PickerSyncController: getSyncRequestParams() LOCAL, auth=com.android.providers.media.photopicker
+10-01 10:09:50.852   764  1239 D CompatChangeReporter: Compat change id reported: 343977174; UID 10209; state: ENABLED
+10-01 10:09:50.853  1674  4461 D PickerSyncController:    Latest ID/Gen=85226b2aef188935:0000-0000:external_primary/1858
+10-01 10:09:50.853  1674  4461 D PickerSyncController:    Cached ID/Gen=85226b2aef188935:0000-0000:external_primary/1828
+10-01 10:09:50.853  1674  4461 D PickerSyncController:    RESULT=SyncRequestParams{type=MEDIA_INCREMENTAL, gen=1828, latest=Bundle[{last_media_sync_generation=1858, media_collection_id=85226b2aef188935:0000-0000:external_primary}], pageSize=1000}
+10-01 10:09:50.853  1674  4461 I PickerSyncController: Executing SyncAdd. isLocal: true. authority: com.android.providers.media.photopicker
+10-01 10:09:50.853  1674  4461 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+10-01 10:09:50.853  1674  4461 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Locked by thread pool-4-thread-7]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.853  1674  4461 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.853  1674  4461 D ExternalDbFacade: Token received for queryMedia = null
+10-01 10:09:50.859  1674  4461 V PickerDatabaseHelper: onConfigure() for picker.db
+10-01 10:09:50.859  1674  4461 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+10-01 10:09:50.859  1674  4461 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Locked by thread pool-4-thread-7]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.859  1674  4461 D PickerSyncController: Saving next page token: 1790849389000|204 for key: local_provider:media_add:resume
+10-01 10:09:50.860  1674  4461 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.860  1674  4461 D PickerNotificationSender: Sending a notification for media update
+10-01 10:09:50.860  1674  4461 D PickerNotificationSender: Sending a notification for merged album media update Favorites
+10-01 10:09:50.860  1674  4461 D PickerNotificationSender: Sending a notification for album media update Favorites
+10-01 10:09:50.860  1674  4461 D PickerNotificationSender: Sending a notification for merged album media update Videos
+10-01 10:09:50.860  1674  4461 D PickerNotificationSender: Sending a notification for album media update Videos
+10-01 10:09:50.861  1674  4461 D ExternalDbFacade: Token received for queryMedia = 1790849389000|204
+10-01 10:09:50.861  1674  4461 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+10-01 10:09:50.861  1674  4461 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Locked by thread pool-4-thread-7]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.861  1674  4461 D PickerSyncController: Clearing next page token for key: local_provider:media_add:resume
+10-01 10:09:50.861  1674  4461 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.861  1674  4461 D PickerNotificationSender: Sending a notification for media update
+10-01 10:09:50.861  1674  4461 D PickerNotificationSender: Sending a notification for merged album media update Favorites
+10-01 10:09:50.861  1674  4461 D PickerNotificationSender: Sending a notification for album media update Favorites
+10-01 10:09:50.861  1674  4461 D PickerNotificationSender: Sending a notification for merged album media update Videos
+10-01 10:09:50.861  1674  4461 D PickerNotificationSender: Sending a notification for album media update Videos
+10-01 10:09:50.861  1674  4461 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.PAGE_TOKEN=1790849389000|204, android.provider.extra.SYNC_GENERATION=1828, android.provider.extra.PAGE_SIZE=1000}] Total Rows: 3
+10-01 10:09:50.861  1674  4461 I PickerSyncController: Executing SyncRemove. isLocal: true. authority: com.android.providers.media.photopicker
+10-01 10:09:50.861  1674  4461 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+10-01 10:09:50.861  1674  4461 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Locked by thread pool-4-thread-7]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.861  1674  4461 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.862  1674  4461 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [] with timeout.
+10-01 10:09:50.862  1674  4461 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Locked by thread pool-4-thread-7]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.862  1674  4461 D PickerSyncController: Clearing next page token for key: local_provider:media_remove:resume
+10-01 10:09:50.862  1674  4461 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@59b3c5[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-01 10:09:50.862  1674  4461 D PickerNotificationSender: Sending a notification for media update
+10-01 10:09:50.862  1674  4461 D PickerNotificationSender: Sending a notification for merged album media update Favorites
+10-01 10:09:50.862  1674  4461 D PickerNotificationSender: Sending a notification for album media update Favorites
+10-01 10:09:50.862  1674  4461 D PickerNotificationSender: Sending a notification for merged album media update Videos
+10-01 10:09:50.862  1674  4461 D PickerNotificationSender: Sending a notification for album media update Videos
+10-01 10:09:50.862  1674  4461 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.PAGE_TOKEN=1790849389000|204, android.provider.extra.SYNC_GENERATION=1828, android.provider.extra.PAGE_SIZE=1000}] Total Rows: 0
+10-01 10:09:50.862  1674  4461 I PickerSyncTracker: Marked sync future complete for work id: ac06a06f-cc78-4d03-a763-ca348de2e8c0. Future map: {}
+10-01 10:09:50.862  1674  4461 I PSyncWorker: Completed picker proactive sync complete from local provider.
+10-01 10:09:50.863  1674  1967 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=ac06a06f-cc78-4d03-a763-ca348de2e8c0, tags={ com.android.providers.media.photopicker.sync.ProactiveSyncWorker } ]
+10-01 10:09:50.863  1674  1674 D WM-Processor: Processor ac06a06f-cc78-4d03-a763-ca348de2e8c0 executed; reschedule = false
+10-01 10:09:50.863  1674  1674 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=ac06a06f-cc78-4d03-a763-ca348de2e8c0, generation=0)
+10-01 10:09:50.863  1674  1674 D WM-SystemJobService: ac06a06f-cc78-4d03-a763-ca348de2e8c0 executed on JobScheduler
+10-01 10:09:50.864  1674  1967 D WM-GreedyScheduler: Cancelling work ID ac06a06f-cc78-4d03-a763-ca348de2e8c0
+10-01 10:09:50.865  1674  1967 D WM-GreedyScheduler: Ignoring {WorkSpec: 5cd38784-27dd-4465-983b-117be3eb1209}. Requires device idle.
+10-01 10:09:50.865  1674  1967 D WM-GreedyScheduler: Ignoring {WorkSpec: 32063026-d608-40f2-8397-6cdaaa03dd9b}. Requires device idle.
+10-01 10:09:50.865  1674  1967 D WM-GreedyScheduler: Ignoring {WorkSpec: 7d491227-b348-408c-b8de-08f0e4d9a0be}. Requires device idle.
+10-01 10:09:50.865  1674  1967 D WM-GreedyScheduler: Ignoring {WorkSpec: 1f227877-6fd0-46d7-803b-13eea6c0fe01}. Requires device idle.
+10-01 10:09:50.865  1674  1967 D WM-BrdcstRcvrCnstrntTrc: BatteryNotLowTracker: unregistering receiver

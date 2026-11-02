@@ -1,0 +1,6 @@
+sdk_gphone64_x86_64
+36
+Physical size: 1080x2400
+Physical density: 420
+1.0
+ko-KR

@@ -1,0 +1,70 @@
+{
+  "scope": "MVP-TRIP-001 backend focused producer verification",
+  "behavioralRed": {
+    "test": "TripProductControllerTest.authenticatedPrincipalCreatesAndReplaysExactWire",
+    "expectedStatus": 201,
+    "actualStatus": 404,
+    "compileFailure": false,
+    "evidence": "red-evidence.txt"
+  },
+  "focusedGreen": [
+    {
+      "classes": [
+        "TripProductControllerTest",
+        "TripCursorCodecTest"
+      ],
+      "exit": 0,
+      "evidence": "unit-green.log"
+    },
+    {
+      "classes": [
+        "TripProductControllerTest",
+        "TripCursorCodecTest",
+        "BasketSaveControllerTest",
+        "AuthenticationBoundaryTest"
+      ],
+      "exit": 0,
+      "evidence": "controller-regression.log"
+    },
+    {
+      "classes": [
+        "TripProductPostgresIntegrationTest",
+        "BasketSavePostgresIntegrationTest"
+      ],
+      "tests": 33,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "exit": 0,
+      "evidence": [
+        "postgres-regression.log",
+        "test-runner-result.json"
+      ]
+    }
+  ],
+  "postgresFixture": {
+    "generatedNonSuperuser": true,
+    "privateSchema": true,
+    "cleanupSucceeded": true,
+    "invocationResourcesRemaining": "0|0",
+    "preexistingMetadataUnchanged": true,
+    "secretsInEvidence": false
+  },
+  "diagnostics": {
+    "changedJavaFiles": "clean",
+    "sqlLsp": "not-available"
+  },
+  "migration": {
+    "name": "V3__trip_product.sql",
+    "sha256": "b6079d26454442b1373b65650e46a62218427c7c15f595edd7d784e60a2ab206",
+    "legacyRowMutation": false
+  },
+  "notRunByProducer": [
+    "full backend suite",
+    "bootJar",
+    "durable development database migration",
+    "real provider",
+    "public/TLS runtime",
+    "integrated Android real surface"
+  ]
+}

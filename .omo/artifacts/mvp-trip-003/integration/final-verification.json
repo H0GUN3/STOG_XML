@@ -1,0 +1,68 @@
+{
+  "result": "R3A_LOCAL_VERIFIED",
+  "production_fix": {
+    "files": [
+      "app/src/main/res/layout/fragment_place_search.xml",
+      "app/src/main/res/values/dimens.xml"
+    ],
+    "mechanism": "The Place RecyclerView now has a 420dp bounded native viewport, matching the existing R2 fixed-height nested-list pattern, so its own onScrolled listener receives page-end gestures.",
+    "dependencies_added": 0
+  },
+  "behavioral_red": {
+    "result": "PRESERVED",
+    "evidence": "blocker.json",
+    "observation": "A real 21-row V1-V6 catalog rendered 20 rows but native outer-screen swipes issued no cursor continuation."
+  },
+  "focused_regression": {
+    "test": "PlaceFlowUiTest.nativeResultGesturesLoadOneContinuationWithoutDuplicateRequest",
+    "surface": "21 fixture rows, 128dp center-bounded native RecyclerView gestures",
+    "result": "PASS",
+    "requests": 2,
+    "duplicate_continuations": 0,
+    "log": "logs/focused-pagination-2.log"
+  },
+  "real_local": {
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .omo/artifacts/mvp-trip-003/Run-Real-R3a-E2E.ps1",
+    "exit": 0,
+    "result": "real-local-e2e-result.json",
+    "screenshots": 7,
+    "observed": [
+      "portrait font-1.30 keyboard search",
+      "Unicode query with region/category filters",
+      "exactly one cursor continuation and 21 rendered rows using the original 64dp center-bounded real-run gestures",
+      "90%-visible common Place row tap and exact detail identity",
+      "explicit basket save with dropped committed 201",
+      "same request/version/place replay",
+      "exactly one TripItem, request_execution and version increment",
+      "basket reload, recreation, Back query/scroll recovery and logout cleanup"
+    ]
+  },
+  "changed_code_gate": {
+    "jvm": {"tests": 16, "failures": 0, "errors": 0, "skipped": 0},
+    "instrumentation": {"tests": 49, "failures": 0, "errors": 0, "skipped": 0},
+    "lint_errors": 0,
+    "assemble_debug": "PASS",
+    "log": "logs/final-android-gate-pass-2.log",
+    "backend_gate_reused": "backend/verification-summary.json: 116/116 plus bootJar; backend source unchanged"
+  },
+  "evidence_history": {
+    "compile_scaffold_red": "android/logs/red-android-compile.log; not behavioral",
+    "preimplementation_behavioral_red": "NOT_VERIFIED",
+    "native_continuation_behavioral_red": "integration/blocker.json"
+  },
+  "cleanup": {
+    "real_local_role_schema": "0|0",
+    "preexisting_metadata_restored": true,
+    "private_media_root_removed": true,
+    "backend_fixture_port_absent": true,
+    "reverse_and_settings_restored": true,
+    "final_gate_apps_removed": true,
+    "owned_emulators_absent": true,
+    "adb_devices": 0
+  },
+  "full_r3_remaining": [
+    "production ingest, normalization, deduplication and refresh",
+    "pg_trgm partial/similarity and PostGIS spatial behavior",
+    "representative imagery and shared map/detail"
+  ]
+}

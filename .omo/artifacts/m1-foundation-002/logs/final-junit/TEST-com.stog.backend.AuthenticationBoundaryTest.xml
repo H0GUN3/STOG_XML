@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stog.backend.AuthenticationBoundaryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-22T08:02:51.702Z" hostname="DESKTOP-BMSO7MJ" time="2.797">
+  <properties/>
+  <testcase name="forgedUserHeaderCannotAuthenticate()" classname="com.stog.backend.AuthenticationBoundaryTest" time="0.256"/>
+  <testcase name="anonymousBasketSaveGetsAuthenticationRequiredEnvelope()" classname="com.stog.backend.AuthenticationBoundaryTest" time="0.012"/>
+  <testcase name="productionDisablesGeneratedDefaultUserConfiguration()" classname="com.stog.backend.AuthenticationBoundaryTest" time="0.03"/>
+  <system-out><![CDATA[17:02:51.838 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.stog.backend.AuthenticationBoundaryTest]: AuthenticationBoundaryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:02:51.902 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.stog.backend.StogBackendApplication for test class com.stog.backend.AuthenticationBoundaryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-09-22T17:02:52.172+09:00  INFO 10084 --- [    Test worker] c.s.backend.AuthenticationBoundaryTest   : Starting AuthenticationBoundaryTest using Java 17.0.11 with PID 10084 (started by GUN in C:\Users\GUN\AndroidStudioProjects\STOG_2\backend)
+2026-09-22T17:02:52.173+09:00  INFO 10084 --- [    Test worker] c.s.backend.AuthenticationBoundaryTest   : No active profile set, falling back to 1 default profile: "default"
+2026-09-22T17:02:54.076+09:00  INFO 10084 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-09-22T17:02:54.076+09:00  INFO 10084 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-22T17:02:54.079+09:00  INFO 10084 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-09-22T17:02:54.167+09:00  INFO 10084 --- [    Test worker] c.s.backend.AuthenticationBoundaryTest   : Started AuthenticationBoundaryTest in 2.204 seconds (process running for 3.064)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

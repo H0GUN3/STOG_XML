@@ -1,0 +1,20 @@
+﻿{
+    "result":  "PASS",
+    "datasetId":  "15083033",
+    "snapshot":  "20260630",
+    "archiveSize":  352699739,
+    "archiveSha256":  "57aa361544108ff4fc73334f87d2ced61e41fe8638dd70bcd842930f865d2386",
+    "entry":  "Jeju regional CSV",
+    "maximumRows":  25,
+    "firstCardinality":  "25|25|25",
+    "repeatCardinality":  "25|25|25",
+    "stableIdentity":  true,
+    "authenticatedSearchFoundExactId":  true,
+    "authenticatedDetailSameId":  true,
+    "externalCalls":  0,
+    "retainedDatabaseChanged":  false,
+    "availableExtensions":  [
+                                "pg_trgm|1.6|1.6",
+                                "postgis|3.6.2|"
+                            ]
+}

@@ -1,0 +1,39 @@
+{
+  "result": "PASS_RERUN_READY",
+  "scope": "R2b backend multipart servlet boundary correction",
+  "changedProduction": ["backend/src/main/java/com/stog/backend/TripCoverController.java"],
+  "changedTests": [
+    "backend/src/test/java/com/stog/backend/TripCoverMultipartHttpIntegrationTest.java",
+    "backend/src/test/java/com/stog/backend/TripCoverPostgresIntegrationTest.java",
+    "backend/src/test/java/com/stog/backend/TripProductControllerTest.java"
+  ],
+  "lspDiagnostics": 0,
+  "behavioralRed": {"exit":1,"tests":4,"failures":1,"failedBehavior":"valid Android-shaped multipart returned 400 instead of 201"},
+  "focusedGreen": {
+    "exit":0,"tests":18,"failures":0,"errors":0,"skipped":0,
+    "suites":{"TripCoverMultipartHttpIntegrationTest":4,"TripCoverPostgresIntegrationTest":7,"TripProductControllerTest":7}
+  },
+  "fullGate": {
+    "command":"powershell.exe -NoProfile -ExecutionPolicy Bypass -File backend/src/test/scripts/Run-PostgresIntegration.ps1 -ArtifactSubdirectory mvp-trip-002/r2b/backend/multipart-boundary-correction/full-gate",
+    "exit":0,"gradleExit":0,"bootJarSkipped":false,
+    "tests":109,"failures":0,"errors":0,"skipped":0,
+    "suites":[
+      {"name":"AuthPostgresIntegrationTest","tests":14},
+      {"name":"AuthenticationBoundaryTest","tests":4},
+      {"name":"BasketSaveControllerTest","tests":6},
+      {"name":"BasketSavePostgresIntegrationTest","tests":24},
+      {"name":"KakaoTokenVerifierTest","tests":5},
+      {"name":"RestrictedOwnerAuthPostgresIntegrationTest","tests":5},
+      {"name":"RestrictedOwnerConfigurationTest","tests":5},
+      {"name":"TripCollaborationPostgresIntegrationTest","tests":11},
+      {"name":"TripCoverMultipartHttpIntegrationTest","tests":4},
+      {"name":"TripCoverPostgresIntegrationTest","tests":7},
+      {"name":"TripCoverRecoveryTest","tests":1},
+      {"name":"TripCoverStorageTest","tests":5},
+      {"name":"TripCursorCodecTest","tests":2},
+      {"name":"TripProductControllerTest","tests":7},
+      {"name":"TripProductPostgresIntegrationTest","tests":9}
+    ],
+    "bootJar":{"path":"backend/build/libs/stog-backend-0.0.1-SNAPSHOT.jar","observedSizeBytes":31131287}
+  }
+}

@@ -1,0 +1,4 @@
+d9f6d8eb2b2bbe248668af12d7c26e29ec1134c1e007dd89ad011fe6fcfbbf55 *.omo/artifacts/android-kakao-auth-001/screenshots/missing-config-landscape-light.png
+63f24ae876c611a3994d4c7ff31178821933d7dafa291c6725c0461782110db9 *.omo/artifacts/android-kakao-auth-001/screenshots/missing-config-large-font-light.png
+3dc2962e252dbdab533e267046491327fe0234e43444b0e28ae9159e2a34d3d9 *.omo/artifacts/android-kakao-auth-001/screenshots/missing-config-portrait-dark.png
+2a2fe97e465d14d9a6dbfb947e8dd12a8b43512da094235430e14a90cf9c5f89 *.omo/artifacts/android-kakao-auth-001/screenshots/missing-config-portrait-light.png

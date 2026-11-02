@@ -1,0 +1,38 @@
+﻿{
+    "provider":  {
+                     "member_token_info":  2,
+                     "member_user_info":  2,
+                     "nonmember_token_info":  1,
+                     "nonmember_user_info":  1,
+                     "create_requests":  1,
+                     "create_responses_dropped":  0,
+                     "refresh_expirations":  0,
+                     "id_only_insertions":  0,
+                     "backend_responses_framed":  22,
+                     "backend_content_length_responses":  4,
+                     "backend_chunked_responses":  18,
+                     "cover_statuses":  [
+                                            201
+                                        ],
+                     "cover_error_codes":  [
+
+                                           ],
+                     "drop_next_cover_response":  false,
+                     "dropped_cover_statuses":  [
+
+                                                ],
+                     "denied_cover_probes":  0,
+                     "denied_cover_probe_errors":  [
+                                                       "TimeoutError:timed out"
+                                                   ]
+                 },
+    "database":  {
+                     "identities":  2,
+                     "sessions":  3,
+                     "trips":  1,
+                     "members":  1,
+                     "covers":  1,
+                     "cover_executions":  1,
+                     "current_cover_pointers":  1
+                 }
+}

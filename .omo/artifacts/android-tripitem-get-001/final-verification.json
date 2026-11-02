@@ -1,0 +1,56 @@
+{
+  "result": "PASS_WITH_HISTORICAL_RED_LIMITATION",
+  "historicalRed": {
+    "originalBehavioralFirst": "NOT_VERIFIED",
+    "preservedEvidence": ["red-proof.json", "logs/red-unit.log"],
+    "classification": "TripItemReadState scaffold compile failure, not behavioral RED"
+  },
+  "reviewFixRedGreen": "review-fix/red-green.json",
+  "lsp": {"changedJavaFiles": 5, "errors": 0},
+  "finalAndroidGate": {
+    "unitTests": {"total": 13, "failures": 0, "errors": 0, "skipped": 0},
+    "instrumentationTests": {"total": 17, "failures": 0, "errors": 0, "skipped": 0},
+    "tripItemClientTests": {"total": 8, "malformedPayloadsRejected": 6},
+    "lint": {"errors": 0, "warnings": 2, "warningsPreExisting": ["newer Gradle available", "missing application icon"]},
+    "assembleDebug": "PASS",
+    "log": "review-fix/logs/final-android-gate-pass.log",
+    "failedPriorGatePreserved": "review-fix/logs/final-android-gate.log"
+  },
+  "releaseBoundary": {
+    "fixtureFlagAssembleRelease": "EXPECTED FAIL_CLOSED",
+    "normalAssembleRelease": "PASS",
+    "releaseFixtureMutationMethods": "unconditionally throw before state mutation",
+    "evidence": ["review-fix/logs/green-release-fixture-rejected-final.log", "review-fix/logs/green-release-build-final.log", "review-fix/logs/release-bytecode-guard-final.txt"],
+    "realKeyPrintedOrProviderCalled": false
+  },
+  "realLocalE2E": {
+    "tests": 1,
+    "failures": 0,
+    "surface": "owned Pixel_8 API 36 emulator UI -> adb reverse -> real local Spring backend -> PostgreSQL",
+    "identity": "synthetic provider credential through literal-loopback fixture and normal auth exchange; no principal bypass",
+    "covered": ["content", "missing trip 404", "nonmember trip 404", "missing item 404", "forced access expiry", "one refresh and GET retry", "logout hides stale content", "rotation", "1.30 font scale"],
+    "evidence": ["real-local-e2e.json", "logs/e2e-instrumentation.log", "screenshots/"]
+  },
+  "cleanup": {
+    "ownedRowsRemaining": "0|0|0|0",
+    "aggregateCountsRestored": true,
+    "backendLauncherAbsent": true,
+    "backendListenerPidAbsent": true,
+    "port8080ListenerAbsent": true,
+    "providerFixtureProcessAbsent": true,
+    "ownedEmulatorProcessAbsent": true,
+    "ownedEmulatorConnectedDeviceAbsent": true,
+    "reverseRestored": true,
+    "fontScaleRestored": true,
+    "rotationRestored": true,
+    "preexistingEmulatorTouched": false,
+    "durableDatabaseRetained": true,
+    "dpapiCredentialRetained": true,
+    "evidence": "cleanup.json"
+  },
+  "failedRuntimeAttemptsPreserved": "review-fix/runtime-failures.json",
+  "backendSuite": "NOT_RUN; backend production source and schema unchanged",
+  "realKakaoProviderPublicNetwork": "NOT_RUN",
+  "cancelledFooter": "NOT_APPLIED",
+  "credentialsRecorded": false
+}

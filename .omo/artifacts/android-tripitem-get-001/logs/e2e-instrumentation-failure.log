@@ -1,0 +1,134 @@
+﻿INSTRUMENTATION_STATUS: class=com.stog.app.auth.RealBackendTripItemUiTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.stog.app.auth.RealBackendTripItemUiTest:
+INSTRUMENTATION_STATUS: test=syntheticExchangeReadsRealFixtureRefreshesAndLogoutClearsContent
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.stog.app.auth.RealBackendTripItemUiTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: 'an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160>' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160> [trip_item_trip_not_found] value: This trip was not found or is not available to your account.
+     Got: view.getText() was "Reading the current trip item"
+View Details: MaterialTextView{id=2131231230, res-name=trip_item_status, visibility=VISIBLE, width=848, height=66, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=1093.0, text=Reading the current trip item, input-type=0, ime-target=false, has-links=false}
+
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+	at java.lang.Thread.getStackTrace(Thread.java:2842)
+	at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:35)
+	at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:26)
+	at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:387)
+	at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)
+	at com.stog.app.auth.RealBackendTripItemUiTest.syntheticExchangeReadsRealFixtureRefreshesAndLogoutClearsContent(RealBackendTripItemUiTest.java:90)
+	... 33 trimmed
+Caused by: junit.framework.AssertionFailedError: 'an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160>' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160> [trip_item_trip_not_found] value: This trip was not found or is not available to your account.
+     Got: view.getText() was "Reading the current trip item"
+View Details: MaterialTextView{id=2131231230, res-name=trip_item_status, visibility=VISIBLE, width=848, height=66, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=1093.0, text=Reading the current trip item, input-type=0, ime-target=false, has-links=false}
+
+	at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:620)
+	at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:97)
+	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:488)
+	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:346)
+	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:319)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at android.os.Handler.handleCallback(Handler.java:1070)
+	at android.os.Handler.dispatchMessage(Handler.java:125)
+	at android.os.Looper.dispatchMessage(Looper.java:333)
+	at android.os.Looper.loopOnce(Looper.java:263)
+	at android.os.Looper.loop(Looper.java:367)
+	at android.app.ActivityThread.main(ActivityThread.java:9287)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+INSTRUMENTATION_STATUS: stream=
+Error in syntheticExchangeReadsRealFixtureRefreshesAndLogoutClearsContent(com.stog.app.auth.RealBackendTripItemUiTest):
+androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: 'an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160>' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160> [trip_item_trip_not_found] value: This trip was not found or is not available to your account.
+     Got: view.getText() was "Reading the current trip item"
+View Details: MaterialTextView{id=2131231230, res-name=trip_item_status, visibility=VISIBLE, width=848, height=66, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=1093.0, text=Reading the current trip item, input-type=0, ime-target=false, has-links=false}
+
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+	at java.lang.Thread.getStackTrace(Thread.java:2842)
+	at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:35)
+	at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:26)
+	at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:387)
+	at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)
+	at com.stog.app.auth.RealBackendTripItemUiTest.syntheticExchangeReadsRealFixtureRefreshesAndLogoutClearsContent(RealBackendTripItemUiTest.java:90)
+	... 33 trimmed
+Caused by: junit.framework.AssertionFailedError: 'an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160>' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160> [trip_item_trip_not_found] value: This trip was not found or is not available to your account.
+     Got: view.getText() was "Reading the current trip item"
+View Details: MaterialTextView{id=2131231230, res-name=trip_item_status, visibility=VISIBLE, width=848, height=66, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=1093.0, text=Reading the current trip item, input-type=0, ime-target=false, has-links=false}
+
+	at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:620)
+	at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:97)
+	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:488)
+	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:346)
+	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:319)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at android.os.Handler.handleCallback(Handler.java:1070)
+	at android.os.Handler.dispatchMessage(Handler.java:125)
+	at android.os.Looper.dispatchMessage(Looper.java:333)
+	at android.os.Looper.loopOnce(Looper.java:263)
+	at android.os.Looper.loop(Looper.java:367)
+	at android.app.ActivityThread.main(ActivityThread.java:9287)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+INSTRUMENTATION_STATUS: test=syntheticExchangeReadsRealFixtureRefreshesAndLogoutClearsContent
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 8.004
+There was 1 failure:
+1) syntheticExchangeReadsRealFixtureRefreshesAndLogoutClearsContent(com.stog.app.auth.RealBackendTripItemUiTest)
+androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: 'an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160>' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160> [trip_item_trip_not_found] value: This trip was not found or is not available to your account.
+     Got: view.getText() was "Reading the current trip item"
+View Details: MaterialTextView{id=2131231230, res-name=trip_item_status, visibility=VISIBLE, width=848, height=66, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=1093.0, text=Reading the current trip item, input-type=0, ime-target=false, has-links=false}
+
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+	at java.lang.Thread.getStackTrace(Thread.java:2842)
+	at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:35)
+	at androidx.test.espresso.base.AssertionErrorHandler.handleSafely(AssertionErrorHandler.java:26)
+	at androidx.test.espresso.base.DefaultFailureHandler$TypedFailureHandler.handle(DefaultFailureHandler.java:158)
+	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:120)
+	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:387)
+	at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:366)
+	at com.stog.app.auth.RealBackendTripItemUiTest.syntheticExchangeReadsRealFixtureRefreshesAndLogoutClearsContent(RealBackendTripItemUiTest.java:90)
+	... 33 trimmed
+Caused by: junit.framework.AssertionFailedError: 'an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160>' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() equals string from resource id: <2131624160> [trip_item_trip_not_found] value: This trip was not found or is not available to your account.
+     Got: view.getText() was "Reading the current trip item"
+View Details: MaterialTextView{id=2131231230, res-name=trip_item_status, visibility=VISIBLE, width=848, height=66, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=53.0, y=1093.0, text=Reading the current trip item, input-type=0, ime-target=false, has-links=false}
+
+	at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:620)
+	at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:97)
+	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:488)
+	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:346)
+	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:319)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at android.os.Handler.handleCallback(Handler.java:1070)
+	at android.os.Handler.dispatchMessage(Handler.java:125)
+	at android.os.Looper.dispatchMessage(Looper.java:333)
+	at android.os.Looper.loopOnce(Looper.java:263)
+	at android.os.Looper.loop(Looper.java:367)
+	at android.app.ActivityThread.main(ActivityThread.java:9287)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,169 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :compileJava FAILED
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:24: error: cannot find symbol
+    private final TripPlanEventPublisher eventPublisher;
+                  ^
+  symbol:   class TripPlanEventPublisher
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:27: error: cannot find symbol
+            TripPlanEventPublisher eventPublisher) {
+            ^
+  symbol:   class TripPlanEventPublisher
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:169: error: cannot find symbol
+    private static BasketSaveException inaccessible() {
+                   ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveController.java:32: error: cannot find symbol
+        if (authentication == null || !(authentication.getPrincipal() instanceof AuthenticatedUser user)) {
+                                                                                 ^
+  symbol:   class AuthenticatedUser
+  location: class BasketSaveController
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveController.java:33: error: cannot find symbol
+            throw new BasketSaveException(401, "AUTHENTICATION_REQUIRED", "Authentication is required");
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveController
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveController.java:46: error: cannot find symbol
+            throw new BasketSaveException(400, "INVALID_REQUEST", "The request is invalid");
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveController
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveController.java:55: error: cannot find symbol
+            throw new BasketSaveException(400, "INVALID_REQUEST", "The request is invalid");
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveController
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:70: error: cannot find symbol
+            throw new BasketSaveException(409, "TRIP_NOT_ELIGIBLE", "The trip can no longer be changed");
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:73: error: cannot find symbol
+            throw new BasketSaveException(404, "PLACE_NOT_FOUND", "The place was not found");
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:76: error: cannot find symbol
+            throw new BasketSaveException(409, "PLAN_VERSION_CONFLICT", "The trip plan has changed",
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:89: error: cannot find symbol
+            throw new BasketSaveException(409, "PLAN_VERSION_LIMIT_REACHED", "The trip plan version cannot be incremented");
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:97: error: cannot find symbol
+            throw new BasketSaveException(409, "PLAN_VERSION_CONFLICT", "The trip plan has changed", current);
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:107: error: cannot find symbol
+                eventPublisher.publishAfterCommit(new TripPlanChangedEvent(input.tripId(), nextVersion));
+                                                      ^
+  symbol: class TripPlanChangedEvent
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:145: error: cannot find symbol
+            throw new BasketSaveException(409, "REQUEST_ID_REUSED", "The request id was already used");
+                      ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveService
+C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:170: error: cannot find symbol
+        return new BasketSaveException(404, "TRIP_NOT_FOUND_OR_NOT_ACCESSIBLE", "The trip was not found or is not accessible");
+                   ^
+  symbol:   class BasketSaveException
+  location: class BasketSaveService
+15 errors
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/backend/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava' (registered by plugin class 'org.gradle.api.plugins.JavaBasePlugin').
+> Compilation failed; see the compiler output below.
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:24: error: cannot find symbol
+      private final TripPlanEventPublisher eventPublisher;
+                    ^
+    symbol:   class TripPlanEventPublisher
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:27: error: cannot find symbol
+              TripPlanEventPublisher eventPublisher) {
+              ^
+    symbol:   class TripPlanEventPublisher
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:169: error: cannot find symbol
+      private static BasketSaveException inaccessible() {
+                     ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveController.java:32: error: cannot find symbol
+          if (authentication == null || !(authentication.getPrincipal() instanceof AuthenticatedUser user)) {
+                                                                                   ^
+    symbol:   class AuthenticatedUser
+    location: class BasketSaveController
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveController.java:33: error: cannot find symbol
+              throw new BasketSaveException(401, "AUTHENTICATION_REQUIRED", "Authentication is required");
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveController
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveController.java:46: error: cannot find symbol
+              throw new BasketSaveException(400, "INVALID_REQUEST", "The request is invalid");
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveController
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveController.java:55: error: cannot find symbol
+              throw new BasketSaveException(400, "INVALID_REQUEST", "The request is invalid");
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveController
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:70: error: cannot find symbol
+              throw new BasketSaveException(409, "TRIP_NOT_ELIGIBLE", "The trip can no longer be changed");
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:73: error: cannot find symbol
+              throw new BasketSaveException(404, "PLACE_NOT_FOUND", "The place was not found");
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:76: error: cannot find symbol
+              throw new BasketSaveException(409, "PLAN_VERSION_CONFLICT", "The trip plan has changed",
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:89: error: cannot find symbol
+              throw new BasketSaveException(409, "PLAN_VERSION_LIMIT_REACHED", "The trip plan version cannot be incremented");
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:97: error: cannot find symbol
+              throw new BasketSaveException(409, "PLAN_VERSION_CONFLICT", "The trip plan has changed", current);
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:145: error: cannot find symbol
+              throw new BasketSaveException(409, "REQUEST_ID_REUSED", "The request id was already used");
+                        ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:170: error: cannot find symbol
+          return new BasketSaveException(404, "TRIP_NOT_FOUND_OR_NOT_ACCESSIBLE", "The trip was not found or is not accessible");
+                     ^
+    symbol:   class BasketSaveException
+    location: class BasketSaveService
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\backend\src\main\java\com\stog\backend\BasketSaveService.java:107: error: cannot find symbol
+                  eventPublisher.publishAfterCommit(new TripPlanChangedEvent(input.tripId(), nextVersion));
+                                                        ^
+    symbol: class TripPlanChangedEvent
+  15 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 6s
+1 actionable task: 1 executed

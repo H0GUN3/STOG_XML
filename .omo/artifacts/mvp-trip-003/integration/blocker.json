@@ -1,0 +1,56 @@
+{
+  "result": "BLOCKED_PRODUCT_DEFECT",
+  "stage": "native Place search continuation before detail/save",
+  "reproduction": {
+    "surface": "Pixel_8 API 36 portrait, font scale 1.30 -> synthetic normal auth -> response-loss proxy -> real Spring bootJar -> isolated PostgreSQL V1-V6",
+    "fixture": "one selected member trip and 21 generated catalog Places matching Unicode query plus exact region/category filters",
+    "steps": [
+      "Open generated selected trip and tap 장소 추가.",
+      "Enter raw query with edge whitespace and NBSP, plus region/category filters.",
+      "Submit and observe 20 real backend rows.",
+      "Subscribe for 21-row CONTENT, then perform 12 real upward swipes on the rendered outer screen."
+    ],
+    "observed": "The continuation event never arrived within the bounded 20-second timeout; the UI remained at 20 rows.",
+    "expected": "Reaching the rendered page end requests the cursor-bound second page and renders 21 rows."
+  },
+  "source_cause": {
+    "layout": "app/src/main/res/layout/fragment_place_search.xml sets place_search_results RecyclerView height to wrap_content inside fragment_main.xml auth_scroll ScrollView.",
+    "listener": "PlaceSearchFragment requests continuation only from RecyclerView.onScrolled when dy > 0 and !canScrollVertically(1).",
+    "mechanism": "The RecyclerView expands inside the parent ScrollView; user swipes scroll the outer ScrollView, so the RecyclerView callback does not observe page-end movement."
+  },
+  "runtime_facts": {
+    "provider_token_info": 1,
+    "provider_user_info": 1,
+    "first_page_rendered_rows": 20,
+    "save_requests": 0,
+    "trip_items": 0,
+    "request_executions": 0,
+    "trip_plan_version": 0,
+    "backend_responses_framed": 7
+  },
+  "evidence": [
+    "integration/logs/instrumentation.log",
+    "integration/failure-facts.json",
+    "integration/logs/backend.log",
+    "integration/cleanup-receipt.json",
+    "integration/runner-console-3.log"
+  ],
+  "cleanup": {
+    "owned_role_schema": "0|0",
+    "preexisting_metadata_restored": true,
+    "private_media_root_removed": true,
+    "backend_and_fixture_absent": true,
+    "port_8080_absent": true,
+    "device_absent": true,
+    "reverse_restored": true,
+    "settings_restored": true
+  },
+  "production_changes_after_reproduction": false,
+  "resolution": {
+    "status": "RESOLVED_AND_VERIFIED_LATER",
+    "change": "Bounded native RecyclerView viewport and center-bounded gestures reused from the R2 member-list pattern.",
+    "evidence": "integration/real-local-e2e-result.json",
+    "postcondition": "search_requests=2 and the full detail/save/replay/basket/Back/recreation/logout flow passed"
+  },
+  "screenshot_limitation": "The test created real-surface screenshots before the defect, but the reused runner only pulled screenshots on success and removed owned device media during failure cleanup; no real-integration PNG is retained. Existing fixture visual screenshots are not relabeled as real integration evidence."
+}

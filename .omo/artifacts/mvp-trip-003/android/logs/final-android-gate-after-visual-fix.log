@@ -1,0 +1,128 @@
+Reusing configuration cache.
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:javaPreCompileDebug
+> Task :app:processDebugAndroidTestNavigationResources
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:writeDebugAppMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugAssets
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
+> Task :app:validateSigningDebug
+> Task :app:generateDebugResources
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:compressDebugAssets
+> Task :app:extractProguardFiles
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:generateDebugAndroidTestResources
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:checkDebugAarMetadata
+> Task :app:compileDebugAndroidTestNavigationResources
+> Task :app:generateDebugBuildConfig
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:processDebugNavigationResources
+> Task :app:compileDebugNavigationResources
+> Task :app:processDebugAndroidTestManifest
+> Task :app:mergeLibDexDebugAndroidTest
+> Task :app:checkDebugDuplicateClasses
+> Task :app:generateDebugAndroidTestBuildConfig
+> Task :app:mergeLibDexDebug
+> Task :app:processDebugMainManifest
+> Task :app:packageDebugAndroidTestResources
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:parseDebugAndroidTestLocalResources
+> Task :app:generateDebugAndroidTestRFile
+> Task :app:mergeExtDexDebugAndroidTest
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:generateDebugAndroidTestGlobalSynthetics
+> Task :app:packageDebugResources
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest
+> Task :app:processDebugAndroidTestResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:mergeExtDexDebug
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:mergeDebugJavaResource
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:generateDebugLintReportModel
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:compileDebugUnitTestJavaWithJavac
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:testDebugUnitTest
+> Task :app:lintAnalyzeDebugUnitTest
+
+> Task :app:compileDebugAndroidTestJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderDebugAndroidTest
+> Task :app:mergeProjectDexDebugAndroidTest
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/app/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/app/build/reports/lint-results-debug.sarif
+
+> Task :app:lintDebug
+Starting 48 tests on Pixel_8(AVD) - 16
+Pixel_8(AVD) - 16 Tests 15/48 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 16/48 completed. (0 skipped) (0 failed)
+> Task :app:connectedDebugAndroidTest
+
+Pixel_8(AVD) - 16 Tests 21/48 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 23/48 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 26/48 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 28/48 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 30/48 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 31/48 completed. (0 skipped) (0 failed)
+Pixel_8(AVD) - 16 Tests 32/48 completed. (0 skipped) (0 failed)
+Finished 48 tests on Pixel_8(AVD) - 16
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 2m 18s
+83 actionable tasks: 83 executed
+Configuration cache entry reused.

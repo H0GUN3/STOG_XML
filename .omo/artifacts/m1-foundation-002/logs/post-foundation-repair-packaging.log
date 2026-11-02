@@ -1,0 +1,12 @@
+application annotation:
+5:import org.springframework.boot.security.autoconfigure.UserDetailsServiceAutoConfiguration;
+7:@SpringBootApplication(exclude = UserDetailsServiceAutoConfiguration.class)
+Jackson libraries:
+  1688822  1980-02-01 00:00   BOOT-INF/lib/jackson-databind-2.20.2.jar
+  1860608  1980-02-01 00:00   BOOT-INF/lib/jackson-databind-3.0.4.jar
+migration:
+     2563  1980-02-01 00:00   BOOT-INF/classes/db/migration/V1__basket_save_foundation.sql
+test classes:
+0
+binding:
+server.address=127.0.0.1

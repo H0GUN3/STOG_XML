@@ -1,0 +1,29 @@
+{
+  "RESULT": "PASS_WITH_PRESERVED_UNCERTAINTY",
+  "EVIDENCE": {
+    "scope": "Read-only final attribution check; no Gradle or application tests rerun.",
+    "database": "stog_backend_test|PostgreSQL 18.6|180006",
+    "catalogQuery": "wsl.exe -u postgres -- psql -X -d stog_backend_test -At ... WHERE rolname LIKE 'stog_m1_002_%'",
+    "catalogExit": 0,
+    "residualCandidates": [
+      "stog_m1_002_1f927d8310153eeec78f7f0170bb473a",
+      "stog_m1_002_8413da55897cb8d056e9875c6753b4bd",
+      "stog_m1_002_cbab93f4f9b33b7838fce031746b49df",
+      "stog_m1_002_e3df9da86d53f30585e86da2d5cfa018"
+    ],
+    "catalogFindings": "All four role/schema pairs are present; each role is LOGIN and NOSUPERUSER, each schema is owned by the same role, and each has CONNECT. No candidate is absent.",
+    "provenance": {
+      "exactCandidateCreationMatches": 0,
+      "capturedOwnedResources": "The cited runner provenance records successful cleanup and 0|0 remaining for other suffixes, including the final passing fixture 49875100747c4170bdb3c81b7de28675.",
+      "ownerChecks": "No exact creation event or ownership-asserted cleanup event exists for any residual candidate; deletion was not authorized or attempted.",
+      "source": ["resource-hygiene.json", "logs/postgres-runner-connection-only.log", "test-runner-result.json"]
+    },
+    "protectedHashes": "protected-hash-verification.log and post-foundation-repair-protected-hashes.log each report checked 41, mismatches 0.",
+    "retainedRuntimeEvidence": "final-verification.json records the independent fresh suite as 27/0/0/0, Gradle exit 0, packaging PASS, and the final fixture cleanup as 0|0; this verification did not rerun it.",
+    "backendSource": "No source changes were made in this verification phase; retained final-verification evidence remains applicable."
+  },
+  "REMAINING_PROBLEMS": [
+    "Four exact-prefix role/schema pairs remain. Their creation origin is unknown from captured task provenance; they must be preserved rather than called pre-existing or deleted.",
+    "No exact task-owned residual resource was available for safe deletion."
+  ]
+}

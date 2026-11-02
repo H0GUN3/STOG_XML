@@ -1,0 +1,134 @@
+{
+  "result": "PASS",
+  "task": "MVP-TRIP-002 R2a verifier",
+  "updatedUtc": "2026-10-04T13:45:57Z",
+  "scope": "R2a collaboration/lifecycle only; R2b/V5 remains NOT_STARTED/NOT_RUN",
+  "contract": {
+    "verification": "PASS",
+    "evidence": ".omo/artifacts/mvp-trip-002/contract-verification.md",
+    "archiveRestore": "NOT_PRESENT_BY_CONTRACT",
+    "invitationRestart": "stop followed by a new issue; no restore endpoint"
+  },
+  "backendGate": {
+    "result": "PASS_REUSED_UNCHANGED",
+    "tests": 91,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "bootJar": "PASS",
+    "database": "generated isolated non-superuser V1-V4 role/schema",
+    "cleanup": "role/schema 0|0; pre-existing metadata unchanged",
+    "reasonNotRerun": "The final delta is Android layout plus instrumentation synchronization only; backend source, migration, wire and protocol harness did not change.",
+    "evidence": [
+      "logs/backend-full-gate.log",
+      "backend-final/test-runner-result.json"
+    ]
+  },
+  "realLocalE2E": {
+    "result": "PASS_REUSED_UNCHANGED",
+    "surface": "Pixel_8 -> normal synthetic-provider exchange/security filter -> Spring -> generated isolated PostgreSQL V1-V4",
+    "twoDistinctAuthenticatedUsers": true,
+    "scenarios": [
+      "create -> ADMIN metadata edit -> issue -> join -> same-trip shared visibility",
+      "MEMBER metadata edit and stale ADMIN conflict/reload",
+      "promote; ADMIN direct leave returns ADMIN_CANNOT_LEAVE; self-demote then leave",
+      "last-ADMIN guard and stale role denial",
+      "reissue denies old link without removing membership",
+      "stop then new issue restart",
+      "missing/duplicate/null/number/object invitation fields return 400; malformed 42/44/padding/alphabet and canonical unknown return non-disclosing 404",
+      "pending capability clears on logout/recreation",
+      "removed/left principals lose access",
+      "soft delete is non-disclosing and replay-safe; deleted link is denied"
+    ],
+    "reasonNotRerun": "The final delta changes only member-list viewport measurement and its focused UI proof; the unchanged protocol E2E remains authoritative.",
+    "evidence": "real-local-e2e-result.json"
+  },
+  "nativeMemberControlProof": {
+    "result": "PASS",
+    "device": "owned Pixel_8 API 36 emulator",
+    "fontScale": 1.30,
+    "orientations": ["portrait", "landscape"],
+    "members": ["나 / ADMIN", "민지 / MEMBER"],
+    "actionsPerMember": ["역할 변경", "구성원 제거"],
+    "method": "bounded 64dp real swipe gestures only; each target asserted at least 90 percent globally visible; Espresso tap opened the exact dialog; dialog was canceled",
+    "forbiddenBypassesAbsent": ["scrollToPosition", "direct listener invocation", "performClick", "relaxed visibility threshold", "fixed sleep", "polling delay"],
+    "targetedClass": "com.stog.app.auth.TripMembersRenderingUiTest",
+    "targetedTests": 4,
+    "targetedFailures": 0,
+    "screenshots": 16,
+    "contactSheetInspected": true,
+    "secretFreeInspection": true,
+    "logs": "logs/member-control-targeted.log",
+    "screenshotsDirectory": "screenshots/member-control-proof",
+    "hashManifest": "screenshots/member-control-proof/SHA256SUMS.txt"
+  },
+  "acceptanceNotReachedAfterBlocker": {
+    "currentResult": "ALL_REACHED",
+    "items": [
+      {"criterion": "portrait owner role and removal controls/dialogs", "result": "PASS"},
+      {"criterion": "portrait second-member role and removal controls/dialogs", "result": "PASS"},
+      {"criterion": "landscape owner role and removal controls/dialogs", "result": "PASS"},
+      {"criterion": "landscape second-member role and removal controls/dialogs", "result": "PASS"},
+      {"criterion": "secret-free screenshot inspection with label, role, action and matching dialog", "result": "PASS"},
+      {"criterion": "R2a final PASS status", "result": "PASS"}
+    ]
+  },
+  "androidFinalGate": {
+    "result": "PASS",
+    "jvm": {"tests": 16, "failures": 0, "errors": 0, "skipped": 0},
+    "instrumentation": {"tests": 33, "failures": 0, "errors": 0, "skipped": 0},
+    "includes": ["com.stog.app.auth.TripMembersRenderingUiTest", "com.stog.app.trip.CollaborationApiClientTest"],
+    "lintDebug": "PASS",
+    "assembleDebug": "PASS",
+    "log": "logs/android-full-gate.log"
+  },
+  "diagnostics": {
+    "TripMembersRenderingUiTest.java": "0 findings",
+    "TripMembersFragment.java": "0 findings",
+    "SecureRefreshStore.java": "0 findings",
+    "xmlLsp": "NOT_AVAILABLE; Android compile, instrumentation and lint passed"
+  },
+  "cleanup": {
+    "targetedProof": "PASS",
+    "androidGate": "PASS",
+    "appsUninstalled": true,
+    "deviceScreenshotDirectoriesRemovedAfterTargetedPull": true,
+    "reverseAbsent": true,
+    "fontRotationAnimationSettingsRestored": true,
+    "ownedEmulatorDeviceAbsent": true,
+    "ownedEmulatorProcessAbsent": true,
+    "crashScanClean": true,
+    "backendOrDatabaseStartedForDelta": false,
+    "realE2EGeneratedRoleSchemaRemaining": "0|0",
+    "durableDatabaseRetained": true,
+    "dpapiCredentialRetained": true,
+    "receipts": ["member-control-proof-cleanup.json", "android-gate-cleanup.json", "cleanup-receipt.json"]
+  },
+  "security": {
+    "rawInvitationTokenInLogsOrScreenshots": false,
+    "providerCredentialsInLogsOrScreenshots": false,
+    "rawMemberUuidInScreenshots": false,
+    "realUserDataMutated": false,
+    "publicNetworkUsed": false,
+    "realKakaoUsed": false,
+    "newExternalDependency": false
+  },
+  "historicalFailuresPreserved": [
+    "original R1 behavioral RED limitation",
+    "original R2a member rows0 production blocker",
+    "strict runner and provider credential reuse failures",
+    "three original member-control reachability proof failures",
+    "clean-start AUTH_ENDED/requests=[] fixture lifetime failures",
+    "font configuration propagation failure before event synchronization"
+  ],
+  "historicalFailureEvidence": [
+    "logs/member-control-proof-failed-attempts.md",
+    "logs/member-control-landscape-final.log",
+    "logs/member-control-baseline-diagnostic.log",
+    "logs/member-control-targeted-font-propagation-failure.log",
+    "member-control-proof-cleanup-font-propagation-failure.json"
+  ],
+  "r2aVerified": true,
+  "r2Complete": false,
+  "next": "R2b private cover/V5"
+}

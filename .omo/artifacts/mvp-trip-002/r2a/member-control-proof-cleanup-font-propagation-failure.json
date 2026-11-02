@@ -1,0 +1,13 @@
+﻿{
+    "result":  "INCOMPLETE",
+    "targetedClass":  "com.stog.app.auth.TripMembersRenderingUiTest",
+    "screenshotsPulled":  0,
+    "settingsRestored":  false,
+    "appsUninstalled":  true,
+    "deviceScreenshotDirectoriesRemoved":  true,
+    "reverseAbsent":  true,
+    "emulatorDeviceAbsent":  true,
+    "emulatorProcessAbsent":  true,
+    "crashScanClean":  false,
+    "backendOrDatabaseStarted":  false
+}

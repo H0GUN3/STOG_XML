@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="44" failures="0" errors="0" skipped="0" time="206.315" timestamp="2026-10-06T02:57:15" hostname="localhost">
+  <testsuite name="com.stog.app.MissingConfigurationUiTest" tests="1" failures="0" errors="0" skipped="0" time="4.01" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="missingConfigurationIsActionableDisabledAndSurvivesRecreation" classname="com.stog.app.MissingConfigurationUiTest" time="4.01" />
+  </testsuite>
+  <testsuite name="com.stog.app.auth.AuthApiClientSecurityTest" tests="4" failures="0" errors="0" skipped="0" time="0.939" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="missingRefreshMakesLogoutUnconfirmedAndClearsMemoryAccess" classname="com.stog.app.auth.AuthApiClientSecurityTest" time="0.307" />
+    <testcase name="errorStatusesAndMalformedSuccessNeverCreateSession" classname="com.stog.app.auth.AuthApiClientSecurityTest" time="0.164" />
+    <testcase name="redirectsNeverForwardCredentialBodyOrAuthorization" classname="com.stog.app.auth.AuthApiClientSecurityTest" time="0.15" />
+    <testcase name="corruptRefreshMakesLogoutUnconfirmedAndClearsMemoryAccess" classname="com.stog.app.auth.AuthApiClientSecurityTest" time="0.318" />
+  </testsuite>
+  <testsuite name="com.stog.app.auth.AuthApiClientTest" tests="1" failures="0" errors="0" skipped="0" time="0.243" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="loopbackFixtureExchangesCoalescesRestoreAndLogsOut" classname="com.stog.app.auth.AuthApiClientTest" time="0.243" />
+  </testsuite>
+  <testsuite name="com.stog.app.auth.AuthApiClientTripItemTest" tests="8" failures="0" errors="0" skipped="0" time="0.596" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="logoutInvalidatesBlockedReadBeforeItCanPublishOrReviveSession" classname="com.stog.app.auth.AuthApiClientTripItemTest" time="0.119" />
+    <testcase name="malformedSuccessIdentifiersDatesAndStateCombinationsAreNeverContent" classname="com.stog.app.auth.AuthApiClientTripItemTest" time="0.09" />
+    <testcase name="malformedOversizeAndRedirectResponsesAreRetryableWithoutFollowing" classname="com.stog.app.auth.AuthApiClientTripItemTest" time="0.031" />
+    <testcase name="protectedGetMapsExactContentAndNotFoundEnvelopes" classname="com.stog.app.auth.AuthApiClientTripItemTest" time="0.09" />
+    <testcase name="scheduledContentPreservesExactValidatedFields" classname="com.stog.app.auth.AuthApiClientTripItemTest" time="0.059" />
+    <testcase name="failedRefreshEndsAuthAndClearsBothCredentials" classname="com.stog.app.auth.AuthApiClientTripItemTest" time="0.059" />
+    <testcase name="one401RefreshesOnceAndQueuedReadUsesRotatedAccess" classname="com.stog.app.auth.AuthApiClientTripItemTest" time="0.089" />
+    <testcase name="second401EndsAuthWithoutAnotherRefreshOrReadRetry" classname="com.stog.app.auth.AuthApiClientTripItemTest" time="0.059" />
+  </testsuite>
+  <testsuite name="com.stog.app.auth.ConfiguredAuthUiTest" tests="2" failures="0" errors="0" skipped="0" time="8.696" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="configuredFixtureRendersSuccessLogoutAndErrorStates" classname="com.stog.app.auth.ConfiguredAuthUiTest" time="4.406" />
+    <testcase name="restoredTripStateSurvivesAuthRestoringHiddenAndClearsOnLogout" classname="com.stog.app.auth.ConfiguredAuthUiTest" time="4.29" />
+  </testsuite>
+  <testsuite name="com.stog.app.auth.SecureRefreshStoreTest" tests="2" failures="0" errors="0" skipped="0" time="0.194" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="refreshTokenIsEncryptedAndRoundTrips" classname="com.stog.app.auth.SecureRefreshStoreTest" time="0.059" />
+    <testcase name="malformedCiphertextIsClearedAndKeystoreCanRecover" classname="com.stog.app.auth.SecureRefreshStoreTest" time="0.135" />
+  </testsuite>
+  <testsuite name="com.stog.app.auth.TripFlowUiTest" tests="10" failures="0" errors="0" skipped="0" time="50.305" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="createDetailRecreationSystemBackReturnsOneTripThenRootBackFinishes" classname="com.stog.app.auth.TripFlowUiTest" time="5.108" />
+    <testcase name="delayedPickerPreparationAfterTripChangeDisposesPrivateInput" classname="com.stog.app.auth.TripFlowUiTest" time="4.244" />
+    <testcase name="authEndedAfterRenderedContentClearsAnchorAndDestroysListWithoutCrash" classname="com.stog.app.auth.TripFlowUiTest" time="2.938" />
+    <testcase name="nativeCoverPickerCancellationReturnsToThePrivateDetailSurface" classname="com.stog.app.auth.TripFlowUiTest" time="6.109" />
+    <testcase name="delayedPickerPreparationAfterViewDestructionDisposesPrivateInput" classname="com.stog.app.auth.TripFlowUiTest" time="4.293" />
+    <testcase name="loadedPagesAndScrollAnchorAreWiredThroughTheRenderedList" classname="com.stog.app.auth.TripFlowUiTest" time="4.434" />
+    <testcase name="delayedPickerPreparationAfterAuthEndDisposesPrivateInputWithoutRestoringCoverState" classname="com.stog.app.auth.TripFlowUiTest" time="4.154" />
+    <testcase name="authEndAfterRenderedCoverClearsPrivateBitmapImmediately" classname="com.stog.app.auth.TripFlowUiTest" time="4.27" />
+    <testcase name="membershipDenialAfterRenderedCoverClearsPrivateBitmap" classname="com.stog.app.auth.TripFlowUiTest" time="4.126" />
+    <testcase name="generatedPickerPreviewUploadAndRemoveDialogRenderAcrossConfiguredSurface" classname="com.stog.app.auth.TripFlowUiTest" time="10.629" />
+  </testsuite>
+  <testsuite name="com.stog.app.auth.TripMembersRenderingUiTest" tests="4" failures="0" errors="0" skipped="0" time="130.306" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="aRendersTwoActionableMemberRowsAtDefaultFontScale" classname="com.stog.app.auth.TripMembersRenderingUiTest" time="6.515" />
+    <testcase name="bRendersTwoActionableMemberRowsAtLargeFontScale" classname="com.stog.app.auth.TripMembersRenderingUiTest" time="6.021" />
+    <testcase name="cReachesAndTapsEveryMemberControlAtLargeFontScalePortrait" classname="com.stog.app.auth.TripMembersRenderingUiTest" time="79.963" />
+    <testcase name="dRemainsPortraitAndReachesEveryMemberControlUnderBothLandscapeDeviceRotations" classname="com.stog.app.auth.TripMembersRenderingUiTest" time="37.807" />
+  </testsuite>
+  <testsuite name="com.stog.app.trip.CollaborationApiClientTest" tests="1" failures="0" errors="0" skipped="0" time="1.303" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="mapsVersionAndInvitationErrorsWithoutExposingCapabilitiesToUiText" classname="com.stog.app.trip.CollaborationApiClientTest" time="1.303" />
+  </testsuite>
+  <testsuite name="com.stog.app.trip.CoverInputTest" tests="2" failures="0" errors="0" skipped="0" time="0.059" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="exifReadFailureDeletesCopiedPrivateFileAndBitmap" classname="com.stog.app.trip.CoverInputTest" time="0.027" />
+    <testcase name="mirroredExifOrientationsMoveAsymmetricPixelsToExactCorners" classname="com.stog.app.trip.CoverInputTest" time="0.032" />
+  </testsuite>
+  <testsuite name="com.stog.app.trip.TripApiClientTest" tests="5" failures="0" errors="0" skipped="0" time="0.782" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="requiredNullableCoverMetadataIsAcceptedFromTheAuthenticatedTripDto" classname="com.stog.app.trip.TripApiClientTest" time="0.303" />
+    <testcase name="basket200WithMissingRequiredItemKeysIsNeverContent" classname="com.stog.app.trip.TripApiClientTest" time="0.089" />
+    <testcase name="multipartCoverUploadUsesSharedBearerAndMapsSetResponse" classname="com.stog.app.trip.TripApiClientTest" time="0.029" />
+    <testcase name="exactCreateListDetailAndEmptyBasketUseSharedBearerTransport" classname="com.stog.app.trip.TripApiClientTest" time="0.302" />
+    <testcase name="legacyDetailAllowsNullMetadataButCreateStillUsesTheSameExactWire" classname="com.stog.app.trip.TripApiClientTest" time="0.059" />
+  </testsuite>
+  <testsuite name="com.stog.app.trip.TripViewModelRecoveryTest" tests="4" failures="0" errors="0" skipped="0" time="0.421" timestamp="2026-10-06T02:57:15" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_8(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="processRestorationReloadsSavedPageDepthUntilTheStableAnchorIsPresent" classname="com.stog.app.trip.TripViewModelRecoveryTest" time="0.119" />
+    <testcase name="invalidContinuationCursorReloadsTheFirstPageInsteadOfRetainingItForRetry" classname="com.stog.app.trip.TripViewModelRecoveryTest" time="0.151" />
+    <testcase name="basketVersionConflictRetriesOneFreshDetailRead" classname="com.stog.app.trip.TripViewModelRecoveryTest" time="0.06" />
+    <testcase name="basketInvalidCursorRetriesOneFreshDetailRead" classname="com.stog.app.trip.TripViewModelRecoveryTest" time="0.091" />
+  </testsuite>
+</testsuites>

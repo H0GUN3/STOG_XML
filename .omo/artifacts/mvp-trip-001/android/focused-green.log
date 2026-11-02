@@ -1,0 +1,169 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: :app:testDebugUnitTest --tests com.stog.app.trip.TripFlowStateTest :app:lintDebug :app:assembleDebug
+> Task :app:preBuild UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:generateDebugGlobalSynthetics UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:extractProguardFiles
+> Task :app:generateDebugBuildConfig
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:processDebugNavigationResources
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:generateDebugLintReportModel
+> Task :app:compileDebugUnitTestJavaWithJavac
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:testDebugUnitTest
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/app/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/app/build/reports/lint-results-debug.sarif
+Lint found 1 error and 3 warnings. First failure:
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\main\java\com\stog\app\trip\TripListFragment.java:79: Error: Call requires API level 24, or core library desugaring (current min is 23): java.util.function.Consumer#accept [NewApi]
+            binding.tripRow.setOnClickListener(view -> selected.accept(trip));
+                                                                ~~~~~~
+
+
+> Task :app:lintDebug FAILED
+Lint found 1 error, 3 warnings. First failure:
+
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\main\java\com\stog\app\trip\TripListFragment.java:79: Error: Call requires API level 24, or core library desugaring (current min is 23): java.util.function.Consumer#accept [NewApi]
+            binding.tripRow.setOnClickListener(view -> selected.accept(trip));
+                                                                ~~~~~~
+
+   Explanation for issues of type "NewApi":
+   This check scans through all the Android API calls in the application and
+   warns about any calls that are not available on all versions targeted by
+   this application (according to its minimum SDK attribute in the manifest).
+
+   If you really want to use this API and don't need to support older devices
+   just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+   files.
+
+   If your code is deliberately accessing newer APIs, and you have ensured
+   (e.g. with conditional execution) that this code will only ever be called
+   on a supported platform, then you can annotate your class or method with
+   the @TargetApi annotation specifying the local minimum SDK to apply, such
+   as @TargetApi(11), such that this check considers 11 rather than your
+   manifest file's minimum SDK as the required API level.
+
+   If you are deliberately setting android: attributes in style definitions,
+   make sure you place this in a values-vNN folder in order to avoid running
+   into runtime conflicts on certain devices where manufacturers have added
+   custom attributes whose ids conflict with the new ones on later platforms.
+
+   Similarly, you can use tools:targetApi="11" in an XML file to indicate that
+   the element will only be inflated in an adequate context.
+
+
+The full lint text report is located at:
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\build\intermediates\lint_intermediate_text_report\debug\lintReportDebug\lint-results-debug.txt
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lintDebug' (registered by plugin 'com.android.internal.application').
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or create a baseline to see only new errors.
+  To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+  ```
+  android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
+  ```
+  For more details, see https://developer.android.com/studio/write/lint#snapshot
+  
+  Lint found 1 error, 3 warnings. First failure:
+  
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\main\java\com\stog\app\trip\TripListFragment.java:79: Error: Call requires API level 24, or core library desugaring (current min is 23): java.util.function.Consumer#accept [NewApi]
+              binding.tripRow.setOnClickListener(view -> selected.accept(trip));
+                                                                  ~~~~~~
+  
+     Explanation for issues of type "NewApi":
+     This check scans through all the Android API calls in the application and
+     warns about any calls that are not available on all versions targeted by
+     this application (according to its minimum SDK attribute in the manifest).
+  
+     If you really want to use this API and don't need to support older devices
+     just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+     files.
+  
+     If your code is deliberately accessing newer APIs, and you have ensured
+     (e.g. with conditional execution) that this code will only ever be called
+     on a supported platform, then you can annotate your class or method with
+     the @TargetApi annotation specifying the local minimum SDK to apply, such
+     as @TargetApi(11), such that this check considers 11 rather than your
+     manifest file's minimum SDK as the required API level.
+  
+     If you are deliberately setting android: attributes in style definitions,
+     make sure you place this in a values-vNN folder in order to avoid running
+     into runtime conflicts on certain devices where manufacturers have added
+     custom attributes whose ids conflict with the new ones on later platforms.
+  
+     Similarly, you can use tools:targetApi="11" in an XML file to indicate that
+     the element will only be inflated in an adequate context.
+  
+  
+  The full lint text report is located at:
+    C:\Users\GUN\AndroidStudioProjects\STOG_2\app\build\intermediates\lint_intermediate_text_report\debug\lintReportDebug\lint-results-debug.txt
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 21s
+50 actionable tasks: 24 executed, 26 up-to-date
+Configuration cache entry stored.

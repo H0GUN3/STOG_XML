@@ -1,0 +1,79 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: assembleDebug
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:writeDebugAppMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:extractDeepLinksDebug
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:packageDebugResources
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeLibDexDebug
+> Task :app:processDebugNavigationResources
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:checkDebugAarMetadata
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:compileDebugNavigationResources
+> Task :app:processDebugMainManifest
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:desugarDebugFileDependencies
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:mergeDebugResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:mergeDebugJavaResource
+
+> Task :app:compileDebugJavaWithJavac
+C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\main\java\com\stog\app\MainActivity.java:17: error: cannot find symbol
+        WindowCompat.enableEdgeToEdge(getWindow());
+                    ^
+  symbol:   method enableEdgeToEdge(Window)
+  location: class WindowCompat
+1 error
+
+> Task :app:compileDebugJavaWithJavac FAILED
+> Task :app:mergeExtDexDebug
+
+[Incubating] Problems report is available at: file:///C:/Users/GUN/AndroidStudioProjects/STOG_2/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac' (registered by plugin 'com.android.internal.application').
+> Compilation failed; see the compiler output below.
+  C:\Users\GUN\AndroidStudioProjects\STOG_2\app\src\main\java\com\stog\app\MainActivity.java:17: error: cannot find symbol
+          WindowCompat.enableEdgeToEdge(getWindow());
+                      ^
+    symbol:   method enableEdgeToEdge(Window)
+    location: class WindowCompat
+  1 error
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 29s
+31 actionable tasks: 31 executed
+Configuration cache entry stored.
