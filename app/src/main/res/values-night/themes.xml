@@ -1,0 +1,44 @@
+<resources>
+    <style name="Base.Theme.STOG" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/stog_seed_dark</item>
+        <item name="colorSecondary">@color/stog_seed_dark</item>
+        <item name="colorTertiary">@color/stog_seed_dark</item>
+        <item name="colorOnPrimary">@color/stog_dark_surface</item>
+        <item name="colorOnSecondary">@color/stog_dark_surface</item>
+        <item name="colorOnTertiary">@color/stog_dark_surface</item>
+        <item name="colorTertiaryContainer">@color/stog_dark_container</item>
+        <item name="colorOnTertiaryContainer">@color/stog_dark_on_container</item>
+        <item name="colorError">@color/stog_seed_dark</item>
+        <item name="colorOnError">@color/stog_dark_surface</item>
+        <item name="colorErrorContainer">@color/stog_dark_container</item>
+        <item name="colorOnErrorContainer">@color/stog_dark_on_container</item>
+        <item name="colorPrimaryContainer">@color/stog_dark_container</item>
+        <item name="colorOnPrimaryContainer">@color/stog_dark_on_container</item>
+        <item name="colorSecondaryContainer">@color/stog_dark_container</item>
+        <item name="colorOnSecondaryContainer">@color/stog_dark_on_container</item>
+        <item name="colorSurface">@color/stog_dark_surface</item>
+        <item name="android:colorBackground">@color/stog_dark_surface</item>
+        <item name="android:windowBackground">@color/stog_dark_surface</item>
+        <item name="colorSurfaceContainer">@color/stog_dark_surface_container</item>
+        <item name="colorSurfaceContainerLow">@color/stog_dark_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/stog_dark_container</item>
+        <item name="colorSurfaceContainerHighest">@color/stog_dark_container</item>
+        <item name="colorSurfaceContainerLowest">@color/stog_dark_surface</item>
+        <item name="colorSurfaceBright">@color/stog_dark_container</item>
+        <item name="colorSurfaceDim">@color/stog_dark_surface</item>
+        <item name="colorSurfaceVariant">@color/stog_dark_surface_container</item>
+        <item name="colorOutline">@color/stog_dark_on_surface_variant</item>
+        <item name="colorOnSurface">@color/stog_dark_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/stog_dark_on_surface_variant</item>
+        <item name="colorOutlineVariant">@color/stog_dark_outline_variant</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="fontFamily">@font/pretendard</item>
+        <item name="android:fontFamily">@font/pretendard</item>
+        <item name="android:textColorPrimary">@color/stog_dark_on_surface</item>
+        <item name="android:textColorSecondary">@color/stog_dark_on_surface_variant</item>
+        <item name="materialButtonStyle">@style/Widget.STOG.Button</item>
+        <item name="textInputStyle">@style/Widget.STOG.TextInput</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.STOG.AlertDialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.STOG.BottomSheetDialog</item>
+    </style>
+</resources>

@@ -1,0 +1,97 @@
+<resources>
+    <style name="Base.Theme.STOG" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/stog_seed</item>
+        <item name="colorSecondary">@color/stog_seed</item>
+        <item name="colorTertiary">@color/stog_seed</item>
+        <item name="colorOnPrimary">@color/stog_surface</item>
+        <item name="colorOnSecondary">@color/stog_surface</item>
+        <item name="colorOnTertiary">@color/stog_surface</item>
+        <item name="colorTertiaryContainer">@color/stog_primary_container</item>
+        <item name="colorOnTertiaryContainer">@color/stog_on_primary_container</item>
+        <item name="colorError">@color/stog_seed</item>
+        <item name="colorOnError">@color/stog_surface</item>
+        <item name="colorErrorContainer">@color/stog_primary_container</item>
+        <item name="colorOnErrorContainer">@color/stog_on_primary_container</item>
+        <item name="colorPrimaryContainer">@color/stog_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/stog_on_primary_container</item>
+        <item name="colorSecondaryContainer">@color/stog_primary_container</item>
+        <item name="colorOnSecondaryContainer">@color/stog_on_primary_container</item>
+        <item name="colorSurface">@color/stog_surface</item>
+        <item name="android:colorBackground">@color/stog_surface</item>
+        <item name="android:windowBackground">@color/stog_surface</item>
+        <item name="colorSurfaceContainer">@color/stog_surface_container</item>
+        <item name="colorSurfaceContainerLow">@color/stog_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/stog_surface_container</item>
+        <item name="colorSurfaceContainerHighest">@color/stog_primary_container</item>
+        <item name="colorSurfaceContainerLowest">@color/stog_surface</item>
+        <item name="colorSurfaceBright">@color/stog_surface</item>
+        <item name="colorSurfaceDim">@color/stog_primary_container</item>
+        <item name="colorSurfaceVariant">@color/stog_surface_container</item>
+        <item name="colorOutline">@color/stog_on_surface_variant</item>
+        <item name="colorOnSurface">@color/stog_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/stog_on_surface_variant</item>
+        <item name="colorOutlineVariant">@color/stog_outline_variant</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="fontFamily">@font/pretendard</item>
+        <item name="android:fontFamily">@font/pretendard</item>
+        <item name="android:textColorPrimary">@color/stog_on_surface</item>
+        <item name="android:textColorSecondary">@color/stog_on_surface_variant</item>
+        <item name="materialButtonStyle">@style/Widget.STOG.Button</item>
+        <item name="textInputStyle">@style/Widget.STOG.TextInput</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.STOG.AlertDialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.STOG.BottomSheetDialog</item>
+    </style>
+
+    <style name="Theme.STOG" parent="Base.Theme.STOG" />
+    <style name="ShapeAppearance.STOG" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/corner_radius</item>
+    </style>
+    <style name="Widget.STOG.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">@dimen/corner_radius</item>
+    </style>
+    <style name="Widget.STOG.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/corner_radius</item>
+    </style>
+    <style name="Widget.STOG.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="cornerRadius">@dimen/corner_radius</item>
+    </style>
+    <style name="Widget.STOG.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.STOG</item>
+    </style>
+    <style name="Widget.STOG.AlertDialog" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.STOG</item>
+    </style>
+    <style name="ThemeOverlay.STOG.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/Widget.STOG.AlertDialog</item>
+    </style>
+    <style name="Widget.STOG.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:minHeight">@dimen/nav_min_height</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="backgroundTint">?attr/colorSurface</item>
+        <item name="elevation">0dp</item>
+        <item name="itemPaddingTop">@dimen/nav_item_padding</item>
+        <item name="itemPaddingBottom">@dimen/nav_item_padding</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+        <item name="itemIconTint">@color/nav_item_tint</item>
+        <item name="itemTextColor">@color/nav_item_tint</item>
+    </style>
+    <style name="Widget.STOG.Card.Raised" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.STOG.FlatSurface</item>
+    </style>
+
+    <style name="ThemeOverlay.STOG.FlatSurface" parent="">
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+    <style name="Widget.STOG.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/ShapeAppearance.STOG</item>
+    </style>
+    <style name="ThemeOverlay.STOG.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.STOG.BottomSheet</item>
+    </style>
+</resources>

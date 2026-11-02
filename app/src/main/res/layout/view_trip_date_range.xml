@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/calendar_prev"
+            android:layout_width="@dimen/trip_calendar_nav_size"
+            android:layout_height="@dimen/trip_calendar_nav_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/trip_dates_prev_month"
+            android:src="@drawable/ic_chevron_left_24" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/calendar_month"
+            style="@style/TextAppearance.Material3.TitleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center"
+            android:textColor="?attr/colorOnSurface" />
+        <ImageButton
+            android:id="@+id/calendar_next"
+            android:layout_width="@dimen/trip_calendar_nav_size"
+            android:layout_height="@dimen/trip_calendar_nav_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/trip_dates_next_month"
+            android:src="@drawable/ic_chevron_right_24" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_small"
+        android:orientation="vertical" />
+</merge>

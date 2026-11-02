@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.STOG" parent="Base.Theme.STOG">
+        <item name="android:windowSplashScreenBackground">@color/stog_dark_surface</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/stog_mark_tinted</item>
+    </style>
+</resources>

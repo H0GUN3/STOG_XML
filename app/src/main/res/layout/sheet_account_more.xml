@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/screen_padding_horizontal"
+    android:paddingBottom="@dimen/space_large">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_edit_profile"
+        style="@style/Widget.STOG.Button.Text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_min_height"
+        android:gravity="start|center_vertical"
+        android:text="@string/profile_edit" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_logout"
+        style="@style/Widget.STOG.Button.Text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_min_height"
+        android:gravity="start|center_vertical"
+        android:text="@string/auth_logout_action" />
+</LinearLayout>

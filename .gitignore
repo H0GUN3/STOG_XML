@@ -1,0 +1,24 @@
+# Gradle and Android build outputs
+.gradle/
+build/
+**/build/
+
+# Local machine configuration
+local.properties
+
+# IDE-local files
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local verification evidence
+.omo/
+
+# Local agent and tool output
+.ovis/
+graphify-out/
+generated-images/
+NUL

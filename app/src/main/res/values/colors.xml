@@ -1,0 +1,20 @@
+<resources>
+    <color name="stog_seed">#000000</color>
+    <color name="stog_seed_dark">#FFFFFF</color>
+    <color name="stog_primary_container">#E5E5E5</color>
+    <color name="stog_on_primary_container">#111111</color>
+    <color name="stog_surface">#FFFFFF</color>
+    <color name="stog_surface_container">#F3F3F3</color>
+    <color name="stog_on_surface">#111111</color>
+    <color name="stog_on_surface_variant">#444444</color>
+    <color name="stog_outline_variant">#C4C4C4</color>
+    <color name="stog_dark_container">#303030</color>
+    <color name="stog_dark_on_container">#F0F0F0</color>
+    <color name="stog_dark_surface">#121212</color>
+    <color name="stog_dark_surface_container">#242424</color>
+    <color name="stog_dark_on_surface">#F0F0F0</color>
+    <color name="stog_dark_on_surface_variant">#C4C4C4</color>
+    <color name="stog_dark_outline_variant">#666666</color>
+    <color name="stog_banner_scrim">#99000000</color>
+    <color name="stog_on_banner">#FFFFFF</color>
+</resources>

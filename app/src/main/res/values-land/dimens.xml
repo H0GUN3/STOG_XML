@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="screen_padding_vertical">16dp</dimen>
+    <dimen name="logo_size">120dp</dimen>
+    <dimen name="space_medium">8dp</dimen>
+    <dimen name="space_large">12dp</dimen>
+    <dimen name="space_extra_large">16dp</dimen>
+    <dimen name="banner_height">120dp</dimen>
+</resources>

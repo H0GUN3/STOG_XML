@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trip_dates_card"
+    style="@style/Widget.Material3.CardView.Outlined"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/trip_date_card_corner"
+    app:strokeColor="?attr/colorOutline">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/card_padding">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/trip_date_icon_size"
+                android:layout_height="@dimen/trip_date_icon_size"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_calendar_24" />
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_small"
+                android:layout_weight="1"
+                android:text="@string/trip_dates_label"
+                android:textColor="?attr/colorOnSurface" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/trip_dates_duration"
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.Material3.BodySmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trip_start_date_label"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/trip_start_display"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnSurface" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/trip_date_icon_size"
+                android:layout_height="@dimen/trip_date_icon_size"
+                android:layout_marginHorizontal="@dimen/space_small"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_arrow_forward_24" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.Material3.BodySmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trip_end_date_label"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/trip_end_display"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnSurface" />
+            </LinearLayout>
+        </LinearLayout>
+    <com.stog.app.trip.TripDateRangeView
+            android:id="@+id/trip_date_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

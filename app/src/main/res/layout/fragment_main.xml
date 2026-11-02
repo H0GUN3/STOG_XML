@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/auth_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/screen_padding_horizontal"
+            android:paddingVertical="@dimen/screen_padding_vertical">
+
+            <ImageView
+                android:id="@+id/auth_logo"
+                android:layout_width="@dimen/logo_size"
+                android:layout_height="@dimen/logo_size"
+                android:contentDescription="@null"
+                android:importantForAccessibility="no"
+                android:forceDarkAllowed="false"
+                android:src="@drawable/stog_mark_tinted"
+                android:visibility="visible" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.HeadlineSmall"
+                android:id="@+id/auth_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_medium"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/auth_display_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_extra_large"
+                android:hint="@string/auth_display_name_label"
+                android:visibility="gone">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/auth_display_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="name"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="yes"
+                    android:maxLength="40" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/auth_username_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_extra_large"
+                android:hint="@string/auth_username_label">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/auth_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="username"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="yes"
+                    android:inputType="text"
+                    android:maxLength="32" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/auth_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_medium"
+                app:endIconMode="password_toggle"
+                android:hint="@string/auth_password_label">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/auth_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="password"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="yes"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/auth_password_confirm_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_medium"
+                app:endIconMode="password_toggle"
+                android:hint="@string/auth_password_confirm_label"
+                android:visibility="gone">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/auth_password_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="password"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:saveEnabled="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:id="@+id/auth_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_medium"
+                android:accessibilityLiveRegion="polite"
+                android:textColor="?attr/colorError"
+                android:visibility="gone" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/auth_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_medium"
+                android:contentDescription="@string/auth_progress_description"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/auth_primary_action"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_min_height"
+                android:layout_marginTop="@dimen/space_large" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/auth_switch_mode"
+                style="@style/Widget.STOG.Button.Text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_min_height"
+                android:layout_marginTop="@dimen/space_small" />
+
+            <!-- Focused legacy diagnostic seam; it is never rendered in the normal product flow. -->
+            <LinearLayout
+                android:id="@+id/trip_item_card"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView android:id="@+id/auth_status_title" android:layout_width="1dp" android:layout_height="1dp" />
+                <TextView android:id="@+id/auth_status_body" android:layout_width="1dp" android:layout_height="1dp" />
+                <EditText android:id="@+id/trip_id_input" android:layout_width="1dp" android:layout_height="1dp" />
+                <EditText android:id="@+id/trip_item_id_input" android:layout_width="1dp" android:layout_height="1dp" />
+                <TextView android:id="@+id/trip_item_status" android:layout_width="1dp" android:layout_height="1dp" />
+                <Button android:id="@+id/trip_item_load_action" android:layout_width="1dp" android:layout_height="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/signed_in_shell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/product_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetStartWithNavigation="0dp"
+            app:contentInsetStart="@dimen/screen_padding_horizontal"
+            app:menu="@menu/menu_product_actions">
+
+            <ImageView
+                android:id="@+id/product_toolbar_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/toolbar_logo_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/stog_wordmark_tinted" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <FrameLayout
+            android:id="@+id/trip_product_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_thickness"
+            android:background="?attr/colorOutlineVariant"
+            android:importantForAccessibility="no" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/product_navigation"
+            style="@style/Widget.STOG.BottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu_product_navigation" />
+    </LinearLayout>
+</FrameLayout>
