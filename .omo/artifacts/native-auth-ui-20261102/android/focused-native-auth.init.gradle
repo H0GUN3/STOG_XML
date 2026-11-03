@@ -1,4 +1,0 @@
-gradle.projectsEvaluated {
-    gradle.rootProject.project(':app').android.sourceSets.androidTest.java.setIncludes(
-            ['**/NativeAuthFailureTest.java'])
-}

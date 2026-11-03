@@ -1,7 +1,0 @@
-Starting: Intent { cmp=com.stog.app/.MainActivity }
-Status: ok
-LaunchState: COLD
-Activity: com.stog.app/.MainActivity
-TotalTime: 1729
-WaitTime: 1731
-Complete

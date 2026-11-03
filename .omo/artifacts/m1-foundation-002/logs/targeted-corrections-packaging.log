@@ -1,4 +1,0 @@
-migration entry:
-     2563  1980-02-01 00:00   BOOT-INF/classes/db/migration/V1__basket_save_foundation.sql
-binding: server.address=127.0.0.1
-test class count: 0

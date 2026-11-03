@@ -1,9 +1,0 @@
-inspectedScreenshots:
-- mvp-trip-detail-empty.png: 1080x2400 sha256=ef37fc664f944d7a68e770513b9e4b2293f931de2557b3805dc33f1d8cc7d431
-- r2b-auth-ended-cover-cleared.png: 1080x2400 sha256=c9f8da85699295ceb5488328ced0efed1cbeebaf2937f7909bd376f5bcbd4394
-- r2b-content-portrait-dark.png: 1080x2400 sha256=32bdb20a074165bd50be7cc5342e5bf009500cae3b0799093083ad5b4d1a4751
-- r2b-content-portrait-light.png: 1080x2400 sha256=35f2a5eb0babc08ef8d1a0692e708bc9d14ae0e463791c6169433e193f2be777
-- r2b-membership-denied-cover-cleared.png: 1080x2400 sha256=39b3d31ab5b1e43bd3a8293e50a15011cb8b8a868d4804b05b048ba3de6f6c90
-- r2b-preview-portrait-light.png: 1080x2400 sha256=c24aa6fcc7a6f46a76bfb28a20aab26b65b957bc268113e6390955cfa8b24c2e
-lintIssuesBySeverity: {'Warning': 4}
-crashScanBytes: 0

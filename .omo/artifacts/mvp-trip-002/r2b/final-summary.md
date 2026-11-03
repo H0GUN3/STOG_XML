@@ -1,7 +1,0 @@
-# MVP-TRIP-002 R2b final verification
-
-PASS. Corrected backend 111/111+bootJar and Android JVM16/instrumentation44/Lint/assemble receipts were reused without duplication. The executed jar provenance is recorded in `bootjar-provenance.json` (SHA-256 `f8753f9149ece4a04dcb8de573f3a590f1c847384bfe18b0f9fda4d712bb5028`) and tied to `logs/backend-e2e.log` startup lines. The final verifier-owned run used native `ACTION_OPEN_DOCUMENT`, a generated image, normal synthetic auth, a selective successful-response loss proxy, the corrected bootJar, isolated PostgreSQL V1-V5 and an owned private media root.
-
-The run verified initial green SET/display/thumbnail, exact pixels, blue replacement committed `201` response loss and same-request `200` replay, member visibility of the initial shared green cover, owner blue replacement, then removed-member metadata/file/thumbnail 404, native remove dialog cancel/confirm, exact UNCHANGED replay, same UUID across SET/REMOVE, invalid image bounds, deleted-trip metadata/file/thumbnail 404 with retained pointer, and logout clearing. Machine facts: 9 cover requests, one dropped successful 201, 4 denied-cover probes, cover rows 4, cover ledgers 7, UNCHANGED ledger 1, main version 9, and four exact display/thumbnail file pairs.
-
-Cleanup passed: role/schema 0|0, pre-existing metadata unchanged, private root removed, backend/provider/emulator/listener/reverse absent, settings restored. Historical failures remain in `attempts.md` and `historical-first400-failure.json`. Real Kakao/public/TLS/hardware API23/37/TalkBack remain NOT_RUN.

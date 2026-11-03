@@ -1,9 +1,0 @@
-{
-  "status": "HISTORICAL_FIXED_BY_BACKEND_MULTIPART_BOUNDARY_CORRECTION",
-  "observedStatuses": [400, 400],
-  "observedCodes": ["INVALID_REQUEST", "INVALID_REQUEST"],
-  "surfaceReached": "native picker generated green preview",
-  "evidenceNarrative": "attempts.md and prior final-verification history",
-  "replacementEvidence": "backend/multipart-boundary-correction/verification-summary.json",
-  "note": "This failure is preserved and is not described as a committed-response replay."
-}

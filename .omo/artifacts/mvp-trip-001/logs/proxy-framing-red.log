@@ -1,4 +1,0 @@
-complete_http_frame_sent=true
-peer_kept_alive=true
-old_proxy_forwardable_before_timeout=false
-observed=TIMEOUT_WITH_BUFFERED_COMPLETE_RESPONSE

@@ -1,5 +1,0 @@
-{
-  "status": "EXPECTED_RED",
-  "scenario": "explicit blank local properties must disable environment fallback",
-  "generatedValuesPrinted": false
-}

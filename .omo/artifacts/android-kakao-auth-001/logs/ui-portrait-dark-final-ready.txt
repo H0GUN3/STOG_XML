@@ -1,2 +1,0 @@
-  overrideConfig={1.0 310mcc260mnc [ko_KR,en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long compactNeeded port night finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.1845 fontWeightAdjustment=0}
-    topResumedActivity=ActivityRecord{136366368 u0 com.stog.app/.MainActivity t206}

@@ -1,8 +1,0 @@
-{
-  "status": "EXPECTED_RED",
-  "command": ".\\gradlew.bat :app:testDebugUnitTest --no-daemon",
-  "failure": ":app:compileDebugUnitTestJavaWithJavac",
-  "cause": "AuthStateMachine and its gateway seams did not exist yet",
-  "testsAuthoredBeforeBehavior": 5,
-  "credentialsPresent": false
-}

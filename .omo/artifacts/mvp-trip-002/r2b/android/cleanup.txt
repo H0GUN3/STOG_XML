@@ -1,3 +1,0 @@
-font_scale restored to 1.0 (observed before test).
-Owned /sdcard/Pictures/STOG-R2b-QA screenshots were pulled to artifact then removed; final device ls returned no such directory.
-`run-as com.stog.app` reported unknown package before cleanup, so no installed app-private cache remained to inspect. The generated MediaStore JPEG was deleted by the instrumentation test. Pixel_8 no-snapshot emulator was terminated.

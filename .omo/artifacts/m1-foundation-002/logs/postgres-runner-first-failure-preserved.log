@@ -1,4 +1,0 @@
-Prior sanitized failure evidence preserved before runner repair:
-status=blocked connectionOnly=true generatedFixture=false authenticated=false cleanupSucceeded=false
-issue=Windows redirected-stdin WSL psql path did not return within the bounded external invocation.
-passwordOutput=none

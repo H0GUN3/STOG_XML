@@ -1,5 +1,0 @@
-dd2a84c05560aac41f984d79d7d5506e782ca142a6c96ababe1a758eaf183723 *.omo/artifacts/android-kakao-auth-001/review-fix/screenshots/configured-contact-sheet-final.png
-dd2a84c05560aac41f984d79d7d5506e782ca142a6c96ababe1a758eaf183723 *.omo/artifacts/android-kakao-auth-001/review-fix/screenshots/configured-contact-sheet.png
-6ae34b8ad241f65eae8daa7004e8c6c84539e9618a54f0f5740acfba09c9ccde *.omo/artifacts/android-kakao-auth-001/review-fix/screenshots/configured-error.png
-942a82d45771b30e812d8c4598e5e016d790156a9e0e60b97303f8d8fe80f94d *.omo/artifacts/android-kakao-auth-001/review-fix/screenshots/configured-logout.png
-ade4176ff84b8010e4b25b2818b7775bacd6b03b888b5c31f419851e41ead924 *.omo/artifacts/android-kakao-auth-001/review-fix/screenshots/configured-success.png

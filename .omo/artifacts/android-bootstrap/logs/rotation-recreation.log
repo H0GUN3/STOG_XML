@@ -1,7 +1,0 @@
-$ adb shell settings get system accelerometer_rotation exit=0
-1
-original accelerometer_rotation=1
-$ adb shell settings get system user_rotation exit=0
-0
-original user_rotation=0
-$ adb shell cmd window user-rotation lock 1 exit=0

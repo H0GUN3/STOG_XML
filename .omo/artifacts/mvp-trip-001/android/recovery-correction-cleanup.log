@@ -1,7 +1,0 @@
-owned device before cleanup:
-Failure [DELETE_FAILED_INTERNAL_ERROR]
-Failure [DELETE_FAILED_INTERNAL_ERROR]
-package check after uninstall:
-OK: killing emulator, bye bye
-OK
-owned emulator removed

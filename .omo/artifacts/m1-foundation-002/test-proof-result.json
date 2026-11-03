@@ -1,7 +1,0 @@
-{
-  "status": "NOT_RUN",
-  "reason": "PostgreSQL integration runtime is not authorized until the isolated runner is ready.",
-  "compileTestJava": "NOT_RUN",
-  "boundaryTests": "NOT_RUN",
-  "postgresqlRuntime": "NOT_RUN"
-}

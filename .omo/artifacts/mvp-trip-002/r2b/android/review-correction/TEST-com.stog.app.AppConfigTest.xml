@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.stog.app.AppConfigTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-06T02:32:46.372Z" hostname="DESKTOP-BMSO7MJ" time="0.004">
-  <properties/>
-  <testcase name="releaseAcceptsOnlyHttpsWithoutCredentialsQueryOrFragment" classname="com.stog.app.AppConfigTest" time="0.002"/>
-  <testcase name="debugCleartextIsLimitedToLiteralIpv4Loopback" classname="com.stog.app.AppConfigTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

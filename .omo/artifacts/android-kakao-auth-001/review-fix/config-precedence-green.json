@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "cases": {
-    "absent": "environment fallback",
-    "blank": "explicitly disables fallback",
-    "set": "local overrides environment"
-  },
-  "fixtureValuesPrinted": false
-}

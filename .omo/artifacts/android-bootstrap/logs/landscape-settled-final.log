@@ -1,2 +1,0 @@
-RECREATION_EVENT=I/wm_relaunch_resume_activity: [0,85551178,177,com.stog.app/.MainActivity,480]
-SETTLED_EVENT=I/wm_on_resume_called: [85551178,com.stog.app.MainActivity,RESUME_ACTIVITY,2]

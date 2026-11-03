@@ -1,9 +1,0 @@
-﻿{
-    "phase":  "corrected-android-gate-cleanup",
-    "reverseBefore":  "",
-    "deviceAbsent":  true,
-    "emulatorProcessAbsent":  true,
-    "packageCleanupAttempted":  true,
-    "backendListenerStarted":  false,
-    "databaseMutated":  false
-}
